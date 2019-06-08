@@ -28,8 +28,6 @@
       <header class="row justify-content-center">
         <h1>Les additions</h1>
       </header>
-
-            
           <div class="row">
             <div class="col-lg-offset-1 col-lg-3 col-md-3 col-6">
               <h2 class="col-lg-12">Additions posées</h2>
