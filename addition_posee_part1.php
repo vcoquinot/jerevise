@@ -25,32 +25,35 @@
 
   <body>
 
-    <?php
+  <?php
     displayExerciceAdditionPoseeDeuxChiffres();
 
-
+    function addition($a,$b){
+      $additionResult = $a + $b;
+      return $additionResult;
+    }
 
     function randCountFirstNumber($a){
       //for($i=1; $i<7; $i++) {
-        $firstRandNumber = $a.rand(10,99);
-        echo $firstRandNumber;
+      $firstRandNumber = $a.rand(10,99);
+      echo $firstRandNumber;
       //}
-        return $firstRandNumber;
+      return $firstRandNumber;
     }
 
-        function randCountSecondNumber($a){
+    function randCountSecondNumber($a){
       //for($i=1; $i<7; $i++) {
-        $secondRandNumber = $a.rand(10,99);
-        echo $secondRandNumber;
+      $secondRandNumber = $a.rand(10,99);
+      echo $secondRandNumber;
       //}
-        return $secondRandNumber;
+      return $secondRandNumber;
     }
-   function displayExerciceAdditionPoseeDeuxChiffres(){
-    ?>
-            <?php $a=1; 
-          for ($i=0; $i<2; $i++){
-        ?>
-        <div class="container">
+
+    function displayExerciceAdditionPoseeDeuxChiffres(){
+      $a=1; 
+      for ($i=0; $i<2; $i++){
+  ?>
+    <div class="container">
       <form action="cible.php" method="post">
 
         <div class="row">
