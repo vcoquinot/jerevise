@@ -24,8 +24,8 @@
   </head>
 
   <body>
-
      <?php
+     //connexion BDD
       try{
         $bdd = new PDO('mysql:host=localhost;dbname=cm;charset=utf8', 'root' , '');
       }
