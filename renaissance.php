@@ -37,7 +37,9 @@
       setlocale(LC_TIME, "fr_FR");
       ?>
       
+
       <?php
+      //accès questions BDD
       $questionsRenaissance = $bdd->query("SELECT * FROM question WHERE 3");
 
       $donnees = $questionsRenaissance->fetch();
