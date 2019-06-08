@@ -24,30 +24,30 @@
   </head>
 
   <body>
-        <section id="accueil_histoire">
+    <section id="accueil_histoire">
       <header class="row justify-content-center">
-        <h1>Chosis la période que tu veux réviser ?</h1>
-          <div class="row justify-content-center">
-            <div class="col-lg-2 col-md-4 col-6">
-              <p class="font-weight-light">Préhistoire</p>
-              <a href="prehistoire.php">
-                <img class="img-fluid" src="assets/img/dagger.png" alt="maths">
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <p class="font-weight-light">Moyen-âge</p>
-              <a href="moyenage.php">
-                 <img class="img-fluid" src="assets/img/armour.png" alt="géométrie">
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <p class="font-weight-light">Renaissance</p>
-              <a href="renaissance.php" >
-                <img class="img-fluid" src="assets/img/castle.png" alt="français">
-              </a>
-            </div>
+      <h1>Chosis la période que tu veux réviser ?</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-4 col-6">
+            <p class="font-weight-light">Préhistoire</p>
+            <a href="prehistoire.php">
+            <img class="img-fluid" src="assets/img/dagger.png" alt="maths">
+            </a>
           </div>
-        </header>
-      </section>
-    </body>
-    </html>
+          <div class="col-lg-2 col-md-3 col-6">
+            <p class="font-weight-light">Moyen-âge</p>
+            <a href="moyenage.php">
+            <img class="img-fluid" src="assets/img/armour.png" alt="géométrie">
+             </a>
+            </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <p class="font-weight-light">Renaissance</p>
+            <a href="renaissance.php" >
+            <img class="img-fluid" src="assets/img/castle.png" alt="français">
+            </a>
+          </div>
+        </div>
+      </header>
+    </section>
+  </body>
+</html>
