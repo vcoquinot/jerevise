@@ -23,8 +23,7 @@
     <![endif]-->
   </head>
 
-  <body>
-   
+  <body>   
     <section id="accueil">
       <header class="row justify-content-center">
         <h1>Quel est ton programme du jour ?</h1>
