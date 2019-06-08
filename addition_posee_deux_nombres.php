@@ -32,6 +32,19 @@
       echo "nombre un =" .$nombreAleatoireUn;
       $nombreAleatoireDeux = $nombre.rand(10,99);
       echo "nombre deux  =".$nombreAleatoireDeux;
+      //enregistrer en BDD
+//TO DO**TO DO ** TO DO ** TO DO ** TO DO ** TO DO ** TO DO **
+      //connexion BDD
+      try{
+        $bdd = new PDO('mysql:host=localhost;dbname=cm;charset=utf8', 'root' , '');
+      }
+      catch(Exception $e)
+      {
+        die('Erreur : '.$e->getMessage());
+      }
+
+      setlocale(LC_TIME, "fr_FR");
+
     ?>
         <div class="container">
           <form action="cible.php" method="post">
