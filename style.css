@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+body {
+  font-family: "Open Sans";
+  background-color: : #009999;
+  margin: 0 auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+
+
+.brief {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem 0rem 0rem;
+  /*.container*/
+  background-color: #009999;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem 0rem 6rem 0rem;
+  box-shadow: 0em -4em 8em -4em rgba(0,0,0,0.5) inset;
+  border-bottom: 0.3rem solid darken($primaryColour,10%);
+}
+
+  h1 {
+    font-size: 5rem;
+    margin: 0rem;
+  }
+
+  p {
+    margin: 0rem;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.09rem;
+  
+}
+
+#formulaire{
+	/*width: 40%;*/
+	margin-top : -2rem;
+
+}
+
+form {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.3rem 1rem 0.1rem rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.15rem;
+  border: 2px solid #009999;
+  font-size: 2rem;
+  font-weight: 200;
+  width: 30%;
+}
+
+button{
+	background-color: #009999;
+	color: #fff;
+	border-color: #009999;
+}
+button:hover {
+    cursor: pointer : ;
+    background-color: lighten(#009999,10%);
+  }
+
+a {
+     text-decoration: none;
+     font-weight: 300;
+     color: lighten($primaryColour, 25%);
+  }
+      
+a:hover {
+      text-decoration: underline;
+   }
+    
+
+/*ACCUEIL*/
+h3{
+	text-align: center;
+	font-color: white;
+}

@@ -1,0 +1,39 @@
+body {
+  padding-top: 10px;
+}
+[class*="col-"] {
+  background-color: white; 
+  border-color: pink;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+}
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#video{
+  position: absolute;
+  z-index: 1;
+}
+
+#play{
+  position:absolute;
+  z-index: 2;
+  width:20%;
+}
+
+
+
+*{
+  color: #4e0f5e;
+  font-family: 'kalam','Georgia','sans-serif';
+ }
+
+
+
