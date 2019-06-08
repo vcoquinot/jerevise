@@ -28,8 +28,6 @@
       <header class="row justify-content-center">
         <h1>Les maths, c'est parti !</h1>
       </header>
-
-            
           <div class="row justify-content-center">
             <h2 class="col-lg-2">Opérations</h2>
             <div class="col-lg-2 col-md-4 col-6">
