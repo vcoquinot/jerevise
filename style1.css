@@ -6,12 +6,12 @@ body {
   margin: 0 auto;
 }
 
-input:focus,
+/*input:focus,
 select:focus,
 textarea:focus,
 button:focus {
 	outline: none;
-}
+}*/
 
 .container-fluid{
 
@@ -45,7 +45,6 @@ button:focus {
 form {
   padding: 1rem;
   border-radius: 0.25rem;
-  box-shadow:  0.3rem 0.1rem 0.1rem rgba(0,0,0,0.35);
   text-align: center;
 
 }
@@ -125,5 +124,21 @@ img{
   border: solid 1px grey;
 }
 
+/*queston*/
+.question{
+  margin-top: 20px;
+}
 
+/***************************************************************
+/*RENAISSANCE*/
+/***************************************************************/
+#renaissance {
+  padding: 1rem;
+  text-align: center;
 
+}
+/*progress bar*/
+.bar {
+  height : 25%;
+  border: solid black 10px;
+}

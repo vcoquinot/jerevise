@@ -24,9 +24,10 @@
   </head>
 
   <body>
-    <section id="accueil_histoire">
+    <section id="accueil">
       <header class="row justify-content-center">
-      <h1>Chosis la période que tu veux réviser ?</h1>
+        <h1>Ton voyage dans le temps commence...</h1>
+      </header>
         <div class="row justify-content-center">
           <div class="col-lg-2 col-md-4 col-6">
             <p class="font-weight-light">Préhistoire</p>
