@@ -47,8 +47,10 @@ session_start();
 
         <section id="accueil">
           <header class="row justify-content-center">
+
             <?php 
             $numero = 1;
+
             $question ="Question N°"?>
             <h1><?php echo $question."". $numero++?></h1>
           </header>
@@ -95,22 +97,7 @@ session_start();
           </form>
         </div>
       </section>
-
-          <!--ESPACE SCORE-->
-        <section id="score">
-          <div class="container_renaissance">
-            <div class="row">
-              <div class="col-lg-12">Ton score</div>
-            </div>
-            <!-- BARRE DE PROGRESSION-->
-            <div class="row text-center">
-
-              
-          
-          </div>
-        </div>
-      </section>
-
+     
     </body>
   </html>
       
