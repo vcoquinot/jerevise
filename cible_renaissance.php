@@ -47,31 +47,33 @@ session_start();
       $inputRenaissance = $_POST["maReponse"];
       //récupération id question posée
       $idQuestion= $_SESSION['id_question'];
+      $nombreQuestion= $_SESSION['nombreQuestion'];
 
+      $score = $_SESSION['score'];
       //recherche de la réponse associée à la question
       $reponseRenaissance = $bdd->query("SELECT intitule_reponse 
             FROM question,reponse
             WHERE question.id_question = $idQuestion AND reponse.id_reponse = $idQuestion");
       $donnees = $reponseRenaissance->fetch();
       $reponseCorrecte = strtoupper($donnees['intitule_reponse']);
-      
+      //^[a-zA-Z0-9 _-]+$
       
 
       //Mise en majuscules des données pour comparaison 
       $reponseCorrecte = strtoupper($donnees['intitule_reponse']);
       $reponseUtilisateur = strtoupper($inputRenaissance);
       $isCorrect=false;
-      $score =0;
+      
          //vérification correspondance réponse utilisateur et réponse correcte
             $pattern = '/' . preg_quote($reponseUtilisateur) . '/';
             //calcul du score
             if(preg_match($pattern,$reponseCorrecte))
             { 
                   $isCorrect = true;
-                  $nouveauScore=$score+1;
+                  $score++;
                   ?>
 
-                  <!--ESPACE ACUEIL DE LA PAGE AVEC COMMENTAIRE-->
+                  <!--ESPACE ACCUEIL DE LA PAGE AVEC COMMENTAIRE-->
                   <section id="accueil_renaissance">
                       
                         <?php
@@ -98,7 +100,7 @@ session_start();
                   <section id="score">
                     <div class="container_renaissance">
                         <div class="row">
-                              <div class="col-lg-12">Ton score est <?php echo $nouveauScore ?></div>
+                              <div class="col-lg-12">Ton score est <?php echo $score ?></div>
                         </div>
                   <?php
             }else 
@@ -119,9 +121,16 @@ session_start();
                         </div>
             <?php
             }
+            //TO DO BOUCLE !!!!!!!TO DO BOUCLE !!!!!!!
+            if($nombreQuestion==6){
+              echo "tu as fini le questionnaire";
+            }
             ?>
             <div class="row">
                   <div class="col-lg-4"></div>
+
+            
                   <a class="btn btn-primary col-lg-3" href="http://localhost/jerevise/renaissance.php" role="button">Question suivante</a>
            </div>
       </section>
+

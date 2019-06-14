@@ -24,40 +24,53 @@
   </head>
 
   <body>
-      <div class="container-fluid">
-          <div class="brief">
-            <h1>JE RÉVISE</h1>
-            <!--<p><span id="verb">...et je deviens</span> trop fort !</p>-->
-          </div>
-      </div> 
-
-      <section id="formulaire">
-         
-        <!--<form method="POST" action="" accept-charset="UTF-8">-->
-
-        <form>
-          <div class="form-group row justify-content-md-center"> 
-            <div class="col-md-3 col-lg-3">           
-              <input type="text" class="form-control" id="pseudo" aria-describedby="pseudoHelp" placeholder="Ton pseudo">
-            </div>
-          </div>
-          <div class="form-group row justify-content-md-center">
-            <div class="col-md-3 col-lg-3"> 
-              <input type="password" class="form-control" id="inputPassword3" placeholder="Ton mot de passe">
-            </div>
-          </div>
-          <div class="form-group row justify-content-md-center">
-            <button class="col-md-3 col-lg-3" id="valider" type="submit" value="valider">Valider</button>
-          </div>
-        </form>
-
-      <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-    </section>
+    <?php require_once("connexion_bdd.php")?>
+    <?php include ("fonction.php");?>
+    <div class="container-fluid">
+      <div class="brief">
+        <h1>CM AU TOP</h1>
+      </div>
+    </div> 
 
 
-    </div>
+    <!-- ***************************************   -->
+    <!-- TESTS CONNEXION UTILISATEUR          -->
+    <!-- ***************************************   -->
+    <?php
 
+      if (!(isset($_POST['pseudo']))){
+        afficherFormulaireConnexion();
+      }else
+        {
+          $pseudo = $_POST['pseudo'];
+          $mdp= md5($_POST['mdp']); 
+          
+          //Vérification que le pseudo existe dans BDD
+          $donneebdd_pseudo = $bdd->query("SELECT pseudo FROM utilisateur WHERE pseudo = '$pseudo'");
+          $donnee_pseudo = $donneebdd_pseudo->fetch();
+          $donneebdd_pseudo->closeCursor();
+              
+            if ($pseudo == $donnee_pseudo['pseudo']){
+              //vérification pwd correct+ si pwd associé au pseudo
+              $donneebdd_mdp = $bdd->query("SELECT mdp FROM utilisateur WHERE mdp = '$mdp' AND pseudo = '$pseudo'");
+              $donnee_mdp = $donneebdd_mdp->fetch(); 
+              $donneebdd_mdp->closeCursor();
+                //redirection page accueil         
+                if($mdp == $donnee_mdp['mdp']){
+                  $_SESSION['pseudo']=$pseudo;
+                  header('Location: /jerevise/accueil.php');    
+                }else{
+                    echo "<p class='message'>Ce n'est pas le bon mot de passe !</p>";
+                    afficherFormulaireConnexion();
+                }
+            }else
+            {
+          echo "<p class='message'>Ce pseudo n'existe pas</p>";
+          afficherFormulaireConnexion();
+        }
+      }
+    ?>
 
-  
+    
 
  </body>

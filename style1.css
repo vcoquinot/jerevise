@@ -14,7 +14,6 @@ button:focus {
 }*/
 
 .container-fluid{
-
   background-color: #009999;
   background-position: center;
   background-size: cover;
@@ -142,6 +141,12 @@ img{
   color: #009999;
   font-size: 5rem;
   padding-bottom:2rem;
+}
+
+/*A voir*/
+#questionnaire_renaissance p{
+  color: white;
+  font-size: 3rem;
 }
 /*progress bar*/
 .bar {

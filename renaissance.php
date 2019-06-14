@@ -1,7 +1,3 @@
-<?php
-// Start the session
-session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -32,32 +28,45 @@ session_start();
 
   <body>
      <?php
+    /* utilisation de session pour compter nombre de questions posees */
+    session_start();
+    /* verification session en démarrage ou en cours */
+    if(isset($_SESSION['nombreQuestion']))
+    {
+      $_SESSION['nombreQuestion'] = $_SESSION['nombreQuestion']++;
+    }
+    /* initialisation des variables*/
+    else
+    {
+    /* initialisation du nombre de questions */
+    $_SESSION['nombreQuestion']=0;
+    }
+
+//SCORE
+    /* verification session en démarrage ou en cours */
+    if(isset($_SESSION['score']))
+    {
+      $_SESSION['score'] = $_SESSION['score']++;
+    }
+    /* initialisation des variables*/
+    else
+    {
+    /* initialisation du score */
+    $_SESSION['score']= 0;
+}
+
+
+
      //connexion BDD
-      try{
-        $bdd = new PDO('mysql:host=localhost;dbname=cm;charset=utf8', 'root' , '');
-      }
-      catch(Exception $e)
-      {
-        die('Erreur : '.$e->getMessage());
-      }
-
-      setlocale(LC_TIME, "fr_FR");
-      ?>
-
-
+require_once("connexion_bdd.php")?>
         <section id="accueil">
           <header class="row justify-content-center">
-
-            <?php 
-            $numero = 1;
-
-            $question ="Question N°"?>
-            <h1><?php echo $question."". $numero++?></h1>
+            <h3>Tu vas avoir une suite de 6 questions.<br/> Vérifie si tes réponses sont justes et tu sauras si tu es calé(e) !</h1>
           </header>
         </section>
 
-        <section id="questionaire_renaissance">
-          <div class="container">
+        <section id="questionnaire_renaissance">
+          <div class="container-fluid">
             
             
             <!--QUESTION ALLEATOIRE-->
@@ -68,7 +77,7 @@ session_start();
                   //recherche alléatoire d'une question
                 $questionsRenaissance = $bdd->query("SELECT intitule, id_question FROM question WHERE 3 ORDER BY RAND() LIMIT 1");
                 $donnees = $questionsRenaissance->fetch();
-                echo $donnees['intitule'];
+                ?><p><?php echo $donnees['intitule'];?></p><?php
                 $idQuestion =  $donnees['id_question'];
                 $_SESSION['id_question'] = $donnees['id_question'];
                 ?>
