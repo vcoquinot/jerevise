@@ -85,3 +85,17 @@ function displayFormCreationCompte(){
     <?php
 }
 ?>
+<?php
+function validationAdresseMail($chaine){
+    $modele = "/(^[a-z])([a-z0-9)])+(\.|-)?([a-z0-9]{2,})\.([a-z{2,4}$)/";
+    $ch=strtolower($ch);
+    if(preg_match($modele, $ch)){
+        echo "chaine valide <br />";
+        return TRUE;
+    }
+    else{
+        echo "chaine valide <br />";
+        return FALSE;
+    }
+}
+?>

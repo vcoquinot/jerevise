@@ -1,3 +1,7 @@
+<?php session_start();?>
+<?php require_once("connexion_bdd.php")?>
+    
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,49 +30,34 @@
     <![endif]-->
   </head>
 
+
   <body>
-     <?php
-    /* utilisation de session pour compter nombre de questions posees */
-    session_start();
-    /* verification session en démarrage ou en cours */
-    if(isset($_SESSION['nombreQuestion']))
-    {
-      $_SESSION['nombreQuestion'] = $_SESSION['nombreQuestion']++;
-    }
-    /* initialisation des variables*/
-    else
-    {
-    /* initialisation du nombre de questions */
-    $_SESSION['nombreQuestion']=0;
-    }
+  <?php
 
-//SCORE
-    /* verification session en démarrage ou en cours */
-    if(isset($_SESSION['score']))
-    {
-      $_SESSION['score'] = $_SESSION['score']++;
-    }
-    /* initialisation des variables*/
-    else
-    {
-    /* initialisation du score */
-    $_SESSION['score']= 0;
-}
+  //COMPTEUR NOMBRE DE QUESTIONS 
+  if (!isset ($_SESSION['numeroQuestion'])){// initialisation de la variable
+    $_SESSION['numeroQuestion']= 1;
+  }else{
+    $_SESSION['numeroQuestion']++;
+  }
+  ?>
 
+   <?php      
+  if (!isset ($_SESSION['score'])){// initialisation de la variable
+    $_SESSION['score']=0 ;
 
+  }
+  ?>
 
-     //connexion BDD
-require_once("connexion_bdd.php")?>
         <section id="accueil">
           <header class="row justify-content-center">
-            <h3>Tu vas avoir une suite de 6 questions.<br/> Vérifie si tes réponses sont justes et tu sauras si tu es calé(e) !</h1>
+            <h3>Question N°<?php echo $_SESSION['numeroQuestion'] ?><br/></h3>
           </header>
         </section>
 
         <section id="questionnaire_renaissance">
           <div class="container-fluid">
-            
-            
+                 
             <!--QUESTION ALLEATOIRE-->
             <div class="row">
               <div class="col-lg-12">
@@ -77,7 +66,9 @@ require_once("connexion_bdd.php")?>
                   //recherche alléatoire d'une question
                 $questionsRenaissance = $bdd->query("SELECT intitule, id_question FROM question WHERE 3 ORDER BY RAND() LIMIT 1");
                 $donnees = $questionsRenaissance->fetch();
-                ?><p><?php echo $donnees['intitule'];?></p><?php
+                ?>
+                <p><?php echo $donnees['intitule'];?></p>
+                <?php
                 $idQuestion =  $donnees['id_question'];
                 $_SESSION['id_question'] = $donnees['id_question'];
                 ?>
@@ -96,6 +87,7 @@ require_once("connexion_bdd.php")?>
             <div class="row">
               <div class="col-lg-12">
               <input type="text" name="maReponse" placeholder="ma réponse">
+              <input type="hidden" name="numeroDeQuestionPosee" value="1">
               </div>
             </div>
             <div class="row">

@@ -1,3 +1,5 @@
+<?php include "fonction.php"; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
       <head>
@@ -51,6 +53,7 @@
      
                      //insertion reste des donnees du formulaire
                     $mdp = md5($mdp);
+                    
                     $bdd->exec("INSERT INTO `utilisateur`(`prenom`,`pseudo`,`mdp`) VALUES ('$prenom','$pseudo','$mdp')");
 
                      //REDIRECTION TABLEAU DE BORD                 
@@ -69,6 +72,7 @@
                     //cas pwd et pwd confirm non identiques
                     else 
                     {
+
                         if ($mdp != $mdp_confirm)
                         {
                             echo "<p class='message'>Les mots de passe ne sont pas identiques</p>";
