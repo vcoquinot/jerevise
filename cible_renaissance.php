@@ -57,12 +57,7 @@
   if(preg_match($pattern,$reponseCorrecte))
   { 
     $isCorrect === true;
-    
-    echo "nouveau score = ". $_SESSION['score']++;
-      //SCORE
-
-    
-    
+   
   ?>
     <!--ESPACE COMMENTAIRE BONNE RÉPONSE-->
     <section id="accueil_renaissance">
@@ -82,15 +77,14 @@
         </div>
       </div>
     </section>
+
     
     <?php
   }
-
-    //CAS 2 **** RÉPONSE INCORRECTE
+    //CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
   else 
   {
     ?>
-      <!--ESPACE MAUVAISE RÉPONSE DONNÉE-->
       <section class="verification">
         <div class="container_renaissance">
           <div class="row justify-content-center">
@@ -105,11 +99,51 @@
       </section>
   <?php
   }
-  ?>
 
+  //SCORE BARRE DE PROGRESSION
+ echo "Tu as ". $_SESSION['score']++. " points";
 
+  switch ($_SESSION['score']) {
+                  case 0:
+                  ?><div class="bar col-lg-1"><progress class="bar" value="0" max="10"></progress></div>
+                  <?php break;
+                  case 1:
+                  ?><div class="col-lg-1"><progress class="bar" value="1" max="10"></progress></div>
+                  <?php break;
+                  case 2:
+                  ?><div class="col-lg-1"><progress class="bar" value="2" max="10"></progress></div>
+                  <?php break;
+                  case 3:
+                  ?><div class="col-lg-1"><progress class="bar" value="3" max="10"></progress></div>
+                  <?php break;
+                  case 4:
+                  ?><div class="col-lg-1"><progress class="bar" value="4" max="10"></progress></div>
+                  <?php break;
+                  case 5:
+                  ?><div class="col-lg-1"><progress value="5" max="10"></progress></div>
+                  <?php break;
+                  case 6:
+                  ?><div class="col-lg-1"><progress value="6" max="10"></progress></div>
+                  <?php break;
+                  case 7:
+                  ?><div class="col-lg-1"><progress value="7" max="10"></progress></div>
+                  <?php break;
+                  case 8:
+                  ?><div class="col-lg-1"><progress value="8" max="10"></progress></div>
+                  <?php break;
+                  case 9:
+                  ?><div class="col-lg-1"><progress value="9" max="10"></progress></div>
+                  <?php break;
+                  case 10:
+                  ?><div class="col-lg-1"><progress value="10" max="10"></progress></div>
+                  <?php break;
+                  default :
+                  echo 'Vous avez plus de 10 points' ;
+                  ?><div class="col-lg-1"><progress value="12" max="13"></progress></div>
+                  <?php break;
+
+  }
   
-  <?php  
   //LIMITE DE 8 QUESTIONS 
 
       //incrémentation nbre questions posées
@@ -117,8 +151,10 @@
       
       if($numeroQuestion == 50){
         echo "Score total : ". $_SESSION['score'];
-      ?><a href="http://localhost/jerevise/accueil.php">Accueil</a><?php
-      } else{
+      ?><a href="http://localhost/jerevise/accueil.php">Accueil</a>
+      <?php
+      } else
+      {
       ?>
          <!--QUESTION SUIVANTE-->
         <section>
