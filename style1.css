@@ -6,15 +6,10 @@ body {
   margin: 0 auto;
 }
 
-/*input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-	outline: none;
-}*/
+
 
 .container-fluid{
-  background-color: #009999;
+  background-color: #008888;
   background-position: center;
   background-size: cover;
   padding: 1rem 0rem 6rem 0rem;

@@ -69,7 +69,7 @@ function displayFormCreationCompte(){
             </div>
 
     <!-- bouton creation compte -->
-    <section id="bouton-creer-compte" class="container">
+    <section id="bouton-creer-compte" class="container-fluid">
         <div class="row text-center">
             <div class="col-lg-6"></div>
             <button class="col-md-3 col-lg-3" id="creer_compte" type="submit" value="créer mon compte"><a href="accueil.php"> Je crée mon compte</a></button>
@@ -83,19 +83,5 @@ function displayFormCreationCompte(){
     </section>
     <!-- FIN formulaire -->
     <?php
-}
-?>
-<?php
-function validationAdresseMail($chaine){
-    $modele = "/(^[a-z])([a-z0-9)])+(\.|-)?([a-z0-9]{2,})\.([a-z{2,4}$)/";
-    $ch=strtolower($ch);
-    if(preg_match($modele, $ch)){
-        echo "chaine valide <br />";
-        return TRUE;
-    }
-    else{
-        echo "chaine valide <br />";
-        return FALSE;
-    }
 }
 ?>
