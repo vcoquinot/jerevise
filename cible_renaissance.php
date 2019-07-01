@@ -72,9 +72,6 @@
         <header class="row justify-content-center">
           <h3><?php echo $felicitaion; ?></h3>
         </header>
-        <div class="row justify-content-center">
-          
-        </div>
       </div>
     </section>
 
@@ -101,17 +98,15 @@
   }
 
   //SCORE BARRE DE PROGRESSION
- echo "Tu as ". $_SESSION['score']++. " points";
-
-  switch ($_SESSION['score']) {
+   switch ($_SESSION['numeroQuestion']) {
                   case 0:
-                  ?><div class="bar col-lg-1"><progress class="bar" value="0" max="10"></progress></div>
+                  ?><div class="bar col-lg-1"><progress class="bar" value="0" max="8"></progress></div>
                   <?php break;
                   case 1:
-                  ?><div class="col-lg-1"><progress class="bar" value="1" max="10"></progress></div>
+                  ?><div class="col-lg-1"><progress class="bar" value="1" max="8"></progress></div>
                   <?php break;
                   case 2:
-                  ?><div class="col-lg-1"><progress class="bar" value="2" max="10"></progress></div>
+                  ?><div class="col-lg-1"><progress class="bar" value="2" max="8"></progress></div>
                   <?php break;
                   case 3:
                   ?><div class="col-lg-1"><progress class="bar" value="3" max="10"></progress></div>
@@ -120,47 +115,69 @@
                   ?><div class="col-lg-1"><progress class="bar" value="4" max="10"></progress></div>
                   <?php break;
                   case 5:
-                  ?><div class="col-lg-1"><progress value="5" max="10"></progress></div>
+                  ?><div class="col-lg-1"><progress value="5" max="8"></progress></div>
                   <?php break;
                   case 6:
-                  ?><div class="col-lg-1"><progress value="6" max="10"></progress></div>
+                  ?><div class="col-lg-1"><progress value="6" max="8"></progress></div>
                   <?php break;
                   case 7:
-                  ?><div class="col-lg-1"><progress value="7" max="10"></progress></div>
+                  ?><div class="col-lg-1"><progress value="7" max="8"></progress></div>
                   <?php break;
                   case 8:
-                  ?><div class="col-lg-1"><progress value="8" max="10"></progress></div>
-                  <?php break;
-                  case 9:
-                  ?><div class="col-lg-1"><progress value="9" max="10"></progress></div>
-                  <?php break;
-                  case 10:
-                  ?><div class="col-lg-1"><progress value="10" max="10"></progress></div>
+                  ?><div class="col-lg-1"><progress value="8" max="8"></progress></div>
                   <?php break;
                   default :
-                  echo 'Vous avez plus de 10 points' ;
-                  ?><div class="col-lg-1"><progress value="12" max="13"></progress></div>
-                  <?php break;
+                  /*echo 'Tu as atteint le nombre total de questions' ;*/
+                  break;
 
   }
   
+
   //LIMITE DE 8 QUESTIONS 
 
       //incrémentation nbre questions posées
       //$nombreQuestion= $_SESSION['nombreQuestion'];
       
-      if($numeroQuestion == 50){
-        echo "Score total : ". $_SESSION['score'];
-      ?><a href="http://localhost/jerevise/accueil.php">Accueil</a>
+      if($numeroQuestion >= 8){
+        ?><section class="container-scoreFinal">
+          <div class="row justify-content-center">
+            <div class="col-lg-1"></div>
+              <img class="img-fluid" src="assets/img/clap.png" alt="applaudissements">
+            </div>
+        </div>
+      </div>
+      <header class="row justify-content-center">
+          <h3>
+            <?php echo "Tu as obtenu un total de ". $_SESSION['score']++. " points sur ". $numeroQuestion;
+            $_SESSION['score'] = 0; 
+            $_SESSION['numeroQuestion'] = 0;?></h3>
+
+        </header>
+          </div>
+        </section>
+          ?><a href="http://localhost/jerevise/accueil.php">Accueil</a>
       <?php
       } else
-      {
-      ?>
+      { 
+      ?><section class="container-score">
+          <div class="row justify-content-center">
+            <div class="col-lg-1"></div>
+              <img class="img-fluid" src="assets/img/clap.png" alt="applaudissements">
+            </div>
+        </div>
+      </div>
+      <header class="row justify-content-center">
+          <h3>
+            <?php echo "Tu as ". $_SESSION['score']++. " points";?></h3>
+        </header>
+          </div>
+        </section>
+        
          <!--QUESTION SUIVANTE-->
         <section>
           <div class="row">
-          <div class="col-lg-4"></div>
-            <a class="btn btn-primary col-lg-3" href="http://localhost/jerevise/renaissance.php" role="button">Question suivante</a>
+          <div class="col-lg-5"></div>
+            <a class="btn btn-primary col-lg-2" href="http://localhost/jerevise/renaissance.php" role="button">Question suivante</a>
           </div>
         </section>
 
