@@ -48,7 +48,26 @@
             </a>
           </div>
         </div>
-      </header>
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-4 col-6">
+            <p class="font-weight-light"></p>
+            <a href=".php">
+            <img class="img-fluid" src="" alt="">
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <p class="font-weight-light">Vocabulaire</p>
+            <a href="histoire_vocabulaire.php">
+            <img class="img-fluid" src="assets/img/dictionary.png" alt="dictionnaire">
+             </a>
+            </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <p class="font-weight-light"></p>
+            <a href=".php" >
+            <img class="img-fluid" src="assets/img/" alt="">
+            </a>
+          </div>
+        </div>
     </section>
   </body>
 </html>

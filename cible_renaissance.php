@@ -33,113 +33,93 @@
   <?php
      
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $inputRenaissance = $_POST["maReponse"];
+  $inputRenaissance = $_POST["reponseRenaissance"];
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
-    
-  //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
-  //recherche de la réponse associée à la question dans la BDD
-  $reponseRenaissance = $bdd->query("SELECT intitule_reponse 
+
+  if($numeroQuestion<=8){
+    //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
+    //recherche de la réponse associée à la question dans la BDD
+    $reponseRenaissance = $bdd->query("SELECT intitule_reponse 
       FROM question,reponse
       WHERE question.id_question = $idQuestion AND reponse.id_reponse = $idQuestion");
-  $donnees = $reponseRenaissance->fetch();
+    $donnees = $reponseRenaissance->fetch();
 
-  //Comparaison réponse de l'utilisateur et réponse correcte
-  $reponseCorrecte = strtoupper($donnees['intitule_reponse']);
-  $reponseUtilisateur = strtoupper($inputRenaissance);    
-  $pattern = '/' . preg_quote($reponseUtilisateur) . '/';
-  $reponseRenaissance->closeCursor();
+    //Comparaison réponse de l'utilisateur et réponse correcte
+    $reponseCorrecte = strtoupper($donnees['intitule_reponse']);
+    $reponseUtilisateur = strtoupper($inputRenaissance);    
+    $pattern = '/' . preg_quote($reponseUtilisateur) . '/';
+    $reponseRenaissance->closeCursor();
 
-  //CAS 1 **** RÉPONSE CORRECTE
-  $isCorrect=false;
-  if($reponseUtilisateur != null && preg_match($pattern,$reponseCorrecte))
-  { 
-    $isCorrect === true; 
-    $_SESSION['score']++; ?>
-    <!--ESPACE COMMENTAIRE BONNE RÉPONSE-->
-    <section id="container_renaissance">
-    <?php
-    //RECHERCHE COMMENTAIRE ALÉATOIRE BONNE RÉPONSE DANS LA BDD
-    $commentaireReussite = $bdd->query("SELECT commentaire_reussite, id_image FROM reussite ORDER BY RAND() LIMIT 1");
-    $donneesReussite = $commentaireReussite->fetch();
-    $felicitaion = $donneesReussite['commentaire_reussite'];
-    //$image=$donneesReussite['id_image'];
-    $commentaireReussite->closeCursor();
-    ?>
-      <header class="row justify-content-center">
-        <h3><?php echo $felicitaion; ?></h3>
-      </header>
-      <div class="row justify-content-center">
-          <img class="img-fluid" src="assets/img/clap.png" alt="applaudissements">
-      </div>
-      <header class="row justify-content-center">
-        <h3><?php echo "Tu as ". $_SESSION['score']. " points";?></h3>
-      </header>
-    </section>
-    <?php 
-  }
-
-  //CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
-  else {
-    ?>
-    <section class="verification">
-      <div class="container_renaissance">
+      //CAS 1 **** RÉPONSE CORRECTE
+    $isCorrect=false;
+    if($reponseUtilisateur != null && preg_match($pattern,$reponseCorrecte))
+    { 
+      $isCorrect === true; 
+      $_SESSION['score']++; ?>
+      <!--ESPACE COMMENTAIRE BONNE RÉPONSE-->
+      <section id="container_renaissance">
+      <?php
+      //RECHERCHE COMMENTAIRE ALÉATOIRE BONNE RÉPONSE DANS LA BDD
+      $commentaireReussite = $bdd->query("SELECT commentaire_reussite, id_image FROM reussite ORDER BY RAND() LIMIT 1");
+      $donneesReussite = $commentaireReussite->fetch();
+      $felicitaion = $donneesReussite['commentaire_reussite'];
+      //$image=$donneesReussite['id_image'];
+      $commentaireReussite->closeCursor();
+      ?>
+        <header class="row justify-content-center">
+          <h3><?php echo $felicitaion; ?></h3>
+        </header>
         <div class="row justify-content-center">
-          <div class= "col-lg-3"></div>
-          <div class="col-lg-6">Oups, mauvaise réponse!</div>
-        </div> 
-        <div class="row justify-content-center">
-          <div class= "col-lg-3"></div>     
-          <div class="col-lg-6">La réponse est  : <?php echo $reponseCorrecte ?></div>
+            <img class="img-fluid" src="assets/img/clap.png" alt="applaudissements">
         </div>
-      </div>
-    </section>
-    <?php
-  }
-
-  //LIMITE DE 8 QUESTIONS 
-      
-  if($numeroQuestion >= 8){
-    ?>
-    <section class="container-scoreFinal">
-      <header class="row justify-content-center">
-        <h3>
-        <?php 
-        //NOMBRE ÉTOILES
-        for($i=1; $i == $_SESSION['score']; $i++ ){
+        <header class="row justify-content-center">
+          <h3><?php echo "Tu as ". $_SESSION['score']. " points";?></h3>
+        </header>
+      </section>
+      <?php 
+    }//CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
+      else {
         ?>
-          <div class="row justify-content-center">
-            <div class="col-lg-1"></div>
-              <img class="img-fluid" src="assets/img/star.png" alt="étoile">
+        <section class="verification">
+          <div class="container_renaissance">
+            <div class="row justify-content-center">
+              <div class= "col-lg-3"></div>
+              <div class="col-lg-6">Oups, mauvaise réponse!</div>
+            </div> 
+            <div class="row justify-content-center">
+              <div class= "col-lg-3"></div>     
+              <div class="col-lg-6">La réponse est  : <?php echo $reponseCorrecte ?></div>
             </div>
           </div>
+        </section>
         <?php
-        }
-        echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $numeroQuestion;
-             
-        //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
-        $_SESSION['score'] = 0; 
-        $_SESSION['numeroQuestion'] = 0;?></h3>
-      </header>
-   </section>
-    ?><a href="http://localhost/jerevise/accueil.php">Accueil</a>
-    <?php
-  } else
-  { 
-  ?>
-
-        
-         <!--QUESTION SUIVANTE-->
+      }
+    ?>
+    <!--QUESTION SUIVANTE-->
         <section>
           <div class="row">
           <div class="col-lg-5"></div>
             <a class="btn btn-primary col-lg-2" href="http://localhost/jerevise/renaissance.php" role="button">Question suivante</a>
           </div>
         </section>
+        <section class="container-scoreFinal">
+          <header class="row justify-content-center">
+            <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $numeroQuestion;?></h3>
+            <?php
+            //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
+            $_SESSION['score'] = 0; 
+            $_SESSION['numeroQuestion'] = 0;
+            header( "refresh:5;url=accueil.php" );        
 
-  <?php 
-      }
+  }
+  ?>
+    
+  
 
-      
-      ?>
+  
+
+ 
+        
+  
   </body>
