@@ -37,90 +37,55 @@
     //INITIALISATION DES COMPTEURS
     //****************************
 
+    //COMPTEUR SCORE      
+    if (!isset ($_SESSION['score'])){
+      $_SESSION['score']=0 ;
+    }
+
     //COMPTEUR NOMBRE DE QUESTIONS 
     if (!isset ($_SESSION['numeroQuestion'])){
       $_SESSION['numeroQuestion']= 1;
     }else{
       $_SESSION['numeroQuestion']++;
     }
+    
 
-    //COMPTEUR SCORE      
-    if (!isset ($_SESSION['score'])){
-      $_SESSION['score']=0 ;
-    }
+    //****************************
+    //QUESTIONS
+    //****************************
+    //LIMITATION À 8 QUESTIONS OU RETOUR ACCUEIL 
+    if($_SESSION['numeroQuestion'] >8){
+      $_SESSION['numeroQuestion'] =0;
+      $_SESSION['score'] =0;
+      header("location:accueil.php");
+    }else{
     ?>
-
-
-    <!--**************************
-      QUESTIONS POSÉES
-    ****************************-->
+     <!-- affichage des questions-->
       <section id="accueil">
         <header class="row justify-content-center">
           <h3>Question N°<?php echo $_SESSION['numeroQuestion'] ?><br/></h3>
-          <?php
-          //BARRE DE PROGRESSION NOMBRE DE QUESTIONS POSÉES
-          switch ($_SESSION['numeroQuestion']) {
-             case 0:
-              ?><div class="bar col-lg-1"><progress value="0" max="8"></progress></div>
-              <?php 
-              break;
-            case 1:
-              ?><div class="col-lg-1"><progress value="1" max="8"></progress></div>
-              <?php 
-              break;
-            case 2:
-              ?><div class="col-lg-1"><progress value="2" max="8"></progress></div>
-              <?php 
-              break;
-            case 3:
-              ?><div class="col-lg-1"><progress value="3" max="10"></progress></div>
-              <?php 
-              break;
-            case 4:
-              ?><div class="col-lg-1"><progress value="4" max="8"></progress></div>
-              <?php 
-              break;
-            case 5:
-              ?><div class="col-lg-1"><progress class="bar" value="5" max="8"></progress></div>
-              <?php 
-              break;
-            case 6:
-              ?><div class="col-lg-1"><progress class="bar" value="6" max="8"></progress></div>
-              <?php 
-              break;
-            case 7:
-              ?><div class="col-lg-1"><progress class="bar" value="7" max="8"></progress></div>
-              <?php 
-              break;
-            case 8:
-              ?><div class="col-lg-1"><progress class="bar" value="8" max="8"></progress></div>
-              <?php break;
-              default :
-              break;          
-          }
-          ?>
         </header>
       </section>
 
-      <section id="questionnaire_renaissance">
+      <section class="questionnaire">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
               <form action="cible_renaissance.php" method="post">
               <?php
               //recherche alléatoire d'une question
-              $questionsRenaissance = $bdd->query("SELECT intitule, id_question FROM question WHERE 3 ORDER BY RAND() LIMIT 1");
-              $donnees = $questionsRenaissance->fetch();
+              $questionRenaissance = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 3 && id_theme = 2 ORDER BY RAND() LIMIT 1");
+              $donneesRenaissance = $questionRenaissance->fetch();
               ?>
-              <p><?php echo $donnees['intitule'];?></p>
+              <p><?php echo $donneesRenaissance['intitule_question'];?></p>
               <?php
-              $idQuestion =  $donnees['id_question'];
-              $_SESSION['id_question'] = $donnees['id_question'];
+             
+              $_SESSION['id_question'] = $donneesRenaissance['id_question'];
               ?>
               </form>
             </div> 
           </div>
-              <?php $questionsRenaissance->closeCursor();?>
+              <?php $questionRenaissance->closeCursor();?>
 
         </div>
       </section>
@@ -133,7 +98,7 @@
           <form action="cible_renaissance.php" method="post">
             <div class="row">
               <div class="col-lg-12">
-              <input type="text" name="maReponse" placeholder="ma réponse">
+              <input type="text" name="reponseRenaissance" placeholder="ma réponse">
               <input type="hidden" name="numeroDeQuestionPosee" value="1">
               </div>
             </div>
@@ -145,6 +110,9 @@
           </form>
         </div>
       </section>
+      <?php
+    }
+      ?>
      
     </body>
   </html>
