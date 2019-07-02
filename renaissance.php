@@ -60,6 +60,19 @@
       header("location:accueil.php");
     }else{
     ?>
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-1" src="assets/img/caravel.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+          <img class="d-block w-1" src="assets/img/paint.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+          <img class="d-block w-1" src="assets/img/caravel.png" alt="Third slide">
+          </div>
+        </div>
+      </div>
      <!-- affichage des questions-->
       <section id="accueil">
         <header class="row justify-content-center">
