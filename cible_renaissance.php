@@ -33,10 +33,11 @@
   <?php
      
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $inputRenaissance = $_POST["reponseRenaissance"];
+  $reponseUtilisateur = $_POST["reponseRenaissance"];
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
 
+  //*****LIMITATION À 8 QUESTIONS
   if($numeroQuestion<=8){
     //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
     //recherche de la réponse associée à la question dans la BDD
@@ -46,8 +47,7 @@
     $donnees = $reponseRenaissance->fetch();
 
     //Comparaison réponse de l'utilisateur et réponse correcte
-    $reponseCorrecte = strtoupper($donnees['intitule_reponse']);
-    $reponseUtilisateur = strtoupper($inputRenaissance);    
+    $reponseCorrecte = $donnees['intitule_reponse'];   
     $pattern = '/' . preg_quote($reponseUtilisateur) . '/';
     $reponseRenaissance->closeCursor();
 
@@ -95,14 +95,18 @@
         </section>
         <?php
       }
-    ?>
-    <!--QUESTION SUIVANTE-->
+      
+      ?>
+          <!--QUESTION SUIVANTE-->
         <section>
           <div class="row">
           <div class="col-lg-5"></div>
             <a class="btn btn-primary col-lg-2" href="http://localhost/jerevise/renaissance.php" role="button">Question suivante</a>
           </div>
         </section>
+      <?php
+      }else{
+        ?>
         <section class="container-scoreFinal">
           <header class="row justify-content-center">
             <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $numeroQuestion;?></h3>
@@ -110,9 +114,11 @@
             //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
             $_SESSION['score'] = 0; 
             $_SESSION['numeroQuestion'] = 0;
-            header( "refresh:5;url=accueil.php" );        
-
-  }
+            //TO DO************
+            //*****************
+            //retour accueil
+            header( "refresh:10;url=accueil.php" ); 
+       }      
   ?>
     
   
