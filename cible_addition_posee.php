@@ -1,12 +1,9 @@
+<?php session_start(); ?>
+<?php include("fonction_maths.php");?>
 <?php
-
-    function addition($a,$b){
-        $additionResult = $a + $b;
-        return $additionResult;
-    }
-
-      
+   
     $score=0;
+
     $resultatAdditionCorrect = addition($nombreAleatoireUn,$nombreAleatoireDeux);
     echo "resultatAdditionCorrect = ".$resultatAdditionCorrect;
 

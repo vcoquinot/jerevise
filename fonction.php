@@ -1,5 +1,6 @@
-    <?php function afficherFormulaireConnexion(){
-    ?>    
+<!-- FONCTIONS ACCUEIL-->
+<?php function afficherFormulaireConnexion(){
+?>    
     <section id="formulaire">
       <form>
         <div class="form-group row justify-content-md-center"> 
@@ -28,10 +29,11 @@
             <a href = "">mot de passe oublié"</a>
         </div>
     </form>
-    <?php
+<?php
     }
-    ?>
+?>
     </section> 
+   
 
 
 
@@ -39,7 +41,6 @@
 function displayFormCreationCompte(){
 ?>
     <section id="formulaire-creation-compte" class="container-fluid">
-
         <form action="creation_compte.php" method="post">
             <div class="form-group row">
                 <div class="col-lg-3"></div>
@@ -52,7 +53,6 @@ function displayFormCreationCompte(){
                 value="<?php echo (isset($_POST['prenom'])) ? ($_POST['prenom']) : "" ;?>"required>
                 </div>
             </div>
-
             <div class="form-group row">
                 <div class="col-lg-5"></div>
                 <div class="col-lg-4">
@@ -68,20 +68,25 @@ function displayFormCreationCompte(){
                 </div>
             </div>
 
-    <!-- bouton creation compte -->
-    <section id="bouton-creer-compte" class="container-fluid">
-        <div class="row text-center">
-            <div class="col-lg-6"></div>
-            <button class="col-md-3 col-lg-3" id="creer_compte" type="submit" value="créer mon compte"><a href="accueil.php"> Je crée mon compte</a></button>
-        <!--TO DO *TO DO*TO DO* TO DO : lien sur bouton *TO DO  *TO DO * TO DO -->
-        <!--TO DO *TO DO*TO DO* TO DO : direction compte créé *TO DO  *TO DO * TO DO -->
-
-        </div>
-    </section>
-        
+            <!-- bouton creation compte -->
+            <section id="bouton-creer-compte" class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-lg-6"></div>
+                    <button class="col-md-3 col-lg-3" id="creer_compte" type="submit" value="créer mon compte"><a href="accueil.php"> Je crée mon compte</a></button>
+                <!--TO DO *TO DO*TO DO* TO DO : lien sur bouton *TO DO  *TO DO * TO DO -->
+                <!--TO DO *TO DO*TO DO* TO DO : direction compte créé *TO DO  *TO DO * TO DO -->
+                </div>
+            </section>
         </form>
     </section>
-    <!-- FIN formulaire -->
-    <?php
-}
+<?php
+    }
 ?>
+
+    <!-- FIN formulaire -->
+
+
+<!-- *************************************************************--> 
+<!-- *************************************************************--> 
+
+
