@@ -12,54 +12,65 @@
         
     <form action="cible_addition_posee.php" method="post">
         <div class="container">
-          <div class = "col-lg-6">
+          <div class = "col-lg-12">
             <div class="row">
-              <div class="col-lg-2"></div>
-              <input class="col-lg-4" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
+              <div class="col-lg-1"></div>
+              <input class="col-lg-3" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
               </input>
-              <div class="col-lg-2"></div>
-              <input class="col-lg-4" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
+              <div class="col-lg-1"></div>
+              <input class="col-lg-3" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
+              </input>
+              <div class="col-lg-1"></div>
+              <input class="col-lg-3" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
               </input>
             </div>
           </div>
         </div>
       <div class="container">
-        <div class = "col-lg-6">
+        <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4"><?php $randCountFirstNumber = randCountNumberWithTwoFigures($a) ;?></div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4"><?php $randCountFirstNumber= randCountNumberWithTwoFigures($a) ;?></div>
-            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3"><?php $randCountFirstNumber = randCountNumberWithTwoFigures($a) ;?></div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3"><?php $randCountFirstNumber= randCountNumberWithTwoFigures($a) ;?></div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3"><?php $randCountFirstNumber= randCountNumberWithTwoFigures($a) ;?></div>
           </div>
         </div>
+      </div>
         <div class="container">
-        <div class = "col-lg-6">
+        <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-2">+</div>
-            <div class="col-lg-4"><?php $randCountSecondtNumber = randCountNumberWithTwoFigures($a)  ;?></div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4"><?php $randCountSecondNumber = randCountNumberWithTwoFigures($a)  ;?></div>
-            </div>
+            <div class="col-lg-1">+</div>
+            <div class="col-lg-3"><?php $randCountSecondtNumber = randCountNumberWithTwoFigures($a)  ;?></div>
+            <div class="col-lg-1">+</div>
+            <div class="col-lg-3"><?php $randCountSecondNumber = randCountNumberWithTwoFigures($a)  ;?></div>
+            <div class="col-lg-1">+</div>
+            <div class="col-lg-3"><?php $randCountSecondNumber = randCountNumberWithTwoFigures($a)  ;?></div>
           </div>
         </div>
+      </div>
         <div class="container">
-        <div class = "col-lg-6">
+        <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4">_________________</div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4">_________________</div>
-            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">_________________</div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">_________________</div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">_________________</div>
           </div>
         </div>
+        </div>
         <div class="container">
-        <div class = "col-lg-6">
+        <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-2">=</div>
-            <input class="col-lg-4" name="sommeUne"  type="text"  id="inputSomme" placeholder="total"></input>
-            <div class="col-lg-2">=</div>
-            <input class="col-lg-4" name="sommeUne"  type="text"  id="inputSomme" placeholder="total"></input>
+            <div class="col-lg-1">=</div>
+            <input class="col-lg-3" name="sommeUne"  type="text"  id="inputSomme" placeholder="total"></input>
+            <div class="col-lg-1">=</div>
+            <input class="col-lg-3" name="sommeUne"  type="text"  id="inputSomme" placeholder="total"></input>
+            <div class="col-lg-1">=</div>
+            <input class="col-lg-3" name="sommeUne"  type="text"  id="inputSomme" placeholder="total"></input>
           </div>
         </div>
       </div>
