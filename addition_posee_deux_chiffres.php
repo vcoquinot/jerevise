@@ -27,7 +27,7 @@
 
   <body>
    
-<?php displayExerciceAdditionPoseeDeuxChiffres() ?>
+<?php displayExerciceAdditionPoseeDeuxChiffres(); ?>
 
   </body>
 </html>

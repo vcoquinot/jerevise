@@ -1,16 +1,15 @@
 <?php session_start(); ?>
-<?php include("fonction_maths.php");?>
+
+<?php include("fonctions_maths.php");?>
 <?php
    
     $score=0;
 
-    $resultatAdditionCorrect = addition($nombreAleatoireUn,$nombreAleatoireDeux);
-    echo "resultatAdditionCorrect = ".$resultatAdditionCorrect;
-
-    if($_POST["somme"] == $resultatAdditionCorrect){
-        $score++;
-        echo "Bravo !! Tu as ". $score . "point";
+    if($_POST["somme"] == $_POST["sommeCorrecte"]){
+       $score++;
     }
+        echo "Tu as ". $score . "point";
+
 
 ?>
 
