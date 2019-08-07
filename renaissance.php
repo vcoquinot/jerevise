@@ -12,7 +12,7 @@
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
       <title>Je révise ! / histoire : la Renaissance</title>      
-      <link href="style1.css"  type="text/css" rel="stylesheet">
+      <link href="main.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -60,19 +60,9 @@
       header("location:accueil.php");
     }else{
     ?>
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-1" src="assets/img/caravel.png" alt="First slide">
-          </div>
-          <div class="carousel-item">
-          <img class="d-block w-1" src="assets/img/paint.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-          <img class="d-block w-1" src="assets/img/caravel.png" alt="Third slide">
-          </div>
-        </div>
-      </div>
+
+          <img class="defil" src="assets/img/caravel.png" alt="Third slide">
+          
      <!-- affichage des questions-->
       <section id="accueil">
         <header class="row justify-content-center">
