@@ -25,9 +25,6 @@
 
   <body>
        <section id="accueil">
-      <header class="row justify-content-center">
-        <h1>Les additions</h1>
-      </header>
          <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-3 col-6">
@@ -56,9 +53,9 @@
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <a href="addition_dix.php"><button class="addition  col-lg-4">+ 10</button></a>
-              <a href="addition_cent.php"><button class="addition col-lg-4">+ 100</button></a>
-            <a href="addition_mille.php"><button class="addition col-lg-3">+1000</button></a>            
+              <a href="addition_dix.php"><img src=assets/img/add10.png alt="add 10"></img></a>
+              <a href="addition_cent.php"><img src=assets/img/add100.png alt="add 100"></img></a>
+            <a href="addition_mille.php"><img src=assets/img/add1000.png alt="add 1000"></img></a>
             </div>
           </div>
           
