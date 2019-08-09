@@ -2,46 +2,10 @@
 
 body {
   font-family: "Open Sans";
-  background-color: : #009999;
   margin: 0 auto;
 }
 
-
-
-.container-fluid{
-  background-color: #008888;
-  background-position: center;
-  background-size: cover;
-  padding: 1rem 0rem 6rem 0rem;
-  box-shadow: 0em -4em 8em -4em rgba(0,0,0,0.5) inset;
-  border-bottom: 0.3rem solid darken($primaryColour,10%);
-}
-
-.brief {
-  color: #fff;
-  font-size: 4rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 2rem 0rem 0rem;
-  }
-
-  .brief h1 {
-    font-size: 8rem;
-    margin: 0rem;
-  }
-
-#formulaire{
-	/*width: 40%;*/
-	margin-top : -2rem;
-
-}
-
-form {
-  padding: 1rem;
-  border-radius: 0.25rem;
-  text-align: center;
-
-}
+/*ACCUEIL _ CONNEXION*/
 
 input {
   margin-bottom: 1rem;
@@ -66,42 +30,10 @@ input {
 }
 
 button:hover {
-    cursor: pointer : ;
+    cursor: pointer ;
     background-color: lighten(#009999,10%);
   }
 
-a {
-     text-decoration: none;
-     font-weight: 300;
-     color: lighten($primaryColour, 25%);
-  }
-      
-a:hover {
-      text-decoration: underline;
-   }
-    
-
-/*ACCUEIL*/
-#accueil h1 {
-  color: #009999;
-  font-size: 5rem;
-  padding-bottom:2rem;
-}
-
-#accueil p{
-  text-align: center;
-  color: #009999;
-  font-size: 2rem;
-  padding-right: 4rem;
-}
-
-#accueil .row{
-  padding-bottom:4rem;
-}
-
-img{
-  padding-right: 4rem;
-}
 
 /*maths/additions*/
 .addition{

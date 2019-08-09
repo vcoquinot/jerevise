@@ -26,11 +26,11 @@
   <body>
     <?php require_once("connexion_bdd.php")?>
     <?php include ("fonction.php");?>
-    <div class="container-fluid">
-      <div class="brief">
-        <h1>CM AU TOP</h1>
+    <div class="container-fluid" id="accueil">
+   
+      <img class="mw-100" src="assets/img/school.jpg" alt="école">
       </div>
-    </div> 
+
 
 
     <!-- ***************************************   -->

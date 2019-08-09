@@ -19,8 +19,8 @@
           </div>
         </div>
         <div class="form-group row justify-content-md-center">
-        <button class="col-md-3 col-lg-3" id="valider" type="submit" value="valider"><a href="accueil.php"> Valider</a></button>
-        <!--TO DO *TO DO*TO DO* TO DO : lien sur bouton *TO DO  *TO DO * TO DO -->
+
+        <a href="accueil.php" class="btn col-md-3 col-lg-3" role="button" aria-pressed="true" id="valider">Valider</a>
         </div>
         <div class="form-group row justify-content-md-center">
             <a href = "creation_compte.php">Créer mon compte</a>
