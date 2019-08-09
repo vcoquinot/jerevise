@@ -31,16 +31,38 @@
          <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-3 col-6">
+              <h2 class="col-lg-12">Calcul mental</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="addition_sept.php"><img src=assets/img/add7.png alt="add7"></img></a>
+              <a href="addition_huit.php"><img src=assets/img/add8.png alt="add8"></img></a>
+            <a href="addition_neuf.php"><img src=assets/img/add9.png alt="add9"></img></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-3 col-6">
               <h2 class="col-lg-12">Additions posées</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <a href="addition_posee_deux_chiffres.php"><button class="addition  col-lg-4">À deux chiffres</button></a>
-              <a href="addition_posee_trois_chiffres.php"><button class="addition col-lg-4">À trois chiffres</button></a>
-              <a href="addition_decimales.php"><button class="addition col-lg-3">Décimales</button></a>            
+              <a href="addition_posee_deux_chiffres.php"><img src=assets/img/add2figures.png alt="add2"></img></a>
+              <a href="addition_posee_trois_chiffres.php"><img src=assets/img/add3figures.png alt="add2"></img></a>
+              <a href="addition_decimales.php"><img src=assets/img/add_decimals.png alt="add decimals"></img></a>
             </div>
           </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="addition_dix.php"><button class="addition  col-lg-4">+ 10</button></a>
+              <a href="addition_cent.php"><button class="addition col-lg-4">+ 100</button></a>
+            <a href="addition_mille.php"><button class="addition col-lg-3">+1000</button></a>            
+            </div>
+          </div>
+          
+         </div>
          
             
 
