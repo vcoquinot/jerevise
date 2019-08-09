@@ -35,7 +35,7 @@ button:hover {
   }
 
 
-/*maths/additions*/
+/*maths-------- additions*/
 .addition{
   border: solid 5px #009999;
   border-radius: 1rem;
@@ -46,6 +46,7 @@ button:hover {
   font-weight: 800;
 
 }
+
 #number{
   border: solid 1px grey;
 }

@@ -28,24 +28,23 @@
       <header class="row justify-content-center">
         <h1>Les additions</h1>
       </header>
+         <div class="container">
           <div class="row">
-            <div class="col-lg-offset-1 col-lg-3 col-md-3 col-6">
+            <div class="col-lg-6 col-md-3 col-6">
               <h2 class="col-lg-12">Additions posées</h2>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-offset-1 col-lg-3">
-              <!--!!!!!!!!!!!!!!!!!!!!!!!!!pas un bouton !!!-->
-              <!--!!!!!!!!!!!!!!!!!!!!!!!!!REVOIR !!!-->
-              <!--!!!!!!!!!!!!!!!!!!!!!!!!!REVOIR !!!-->
-              <a href="addition_posee_deux_chiffres.php"><button class="addition"> . . <br/> + <br/>   . .<br/> ______</button>
-            </a></div>
-            <div class="col-lg-3 col-md-3 col-6">
-              <!--!!!!!!!!!!!!!!!!!!!!!!!!!LIEN !!!-->
-              <!--!!!!!!!!!!!!!!!!!!!!!!!!!LIEN !!!-->
-              <!--!!!!!!!!!!!!!!!!!!!!!!!!!REVOIR !!!--> 
-               <button class="addition"><a href="addition_posee_part1.php">2 chiffres</a></button>
+            <div class="col-lg-12">
+              <a href="addition_posee_deux_chiffres.php"><button class="addition  col-lg-4">À deux chiffres</button></a>
+              <a href="addition_posee_trois_chiffres.php"><button class="addition col-lg-4">À trois chiffres</button></a>
+              <a href="addition_decimales.php"><button class="addition col-lg-3">Décimales</button></a>            
             </div>
+          </div>
+         
+            
+
+            
             <div class="col-lg-3 col-md-3 col-6">
               <a href="addition_posee_trois_chiffres"> <button class="addition">3 chiffres et plus</button></a>
             </div>
