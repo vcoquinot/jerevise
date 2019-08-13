@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Je révise ! / additions posées à 3 chiffres</title>      
+      <title>Je révise ! / Soustractions posées à 2 chiffres</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -27,9 +27,21 @@
 
   <body>
    
-<?php displayExerciceAdditionPoseeTroisChiffres() ?>
+<?php 
 
-  </body>
-</html>
+calculerScore(); 
+calculerNombreDeQuestionsPosees();
+  //****************************
+    //QUESTIONS
+    //****************************
+    //LIMITATION À 8 QUESTIONS OU RETOUR ACCUEIL 
+    if($_SESSION['numeroQuestion'] >8){
+      $_SESSION['numeroQuestion'] =0;
+      $_SESSION['score'] =0;
+      header("location:accueil.php");
+    }else{
+      displayExerciceSoustractionPoseeDeuxChiffres();
+    }
+  ?>
   </body>
 </html>

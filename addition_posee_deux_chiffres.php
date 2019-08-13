@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php include("fonctions_maths.php");?>
+<?php include("fonction.php");?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -29,17 +29,19 @@
    
 <?php 
 
-//LIMITATION À 8 QUESTIONS OU RETOUR ACCUEIL 
-    if($_SESSION['nombreOperation'] >8){
-      //Remise des compteur sscore et numeroOperation à 0
-      $_SESSION['nombreOperation'] = 0;
+calculerScore(); 
+calculerNombreDeQuestionsPosees();
+  //****************************
+    //QUESTIONS
+    //****************************
+    //LIMITATION À 8 QUESTIONS OU RETOUR ACCUEIL 
+    if($_SESSION['numeroQuestion'] >8){
+      $_SESSION['numeroQuestion'] =0;
       $_SESSION['score'] =0;
-      //redicrection
       header("location:accueil.php");
     }else{
-      displayExerciceAdditionPoseeDeuxChiffres(); 
+      displayExerciceAdditionPoseeDeuxChiffres();
     }
-    ?>
-
+  ?>
   </body>
 </html>

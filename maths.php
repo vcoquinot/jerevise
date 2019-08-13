@@ -36,7 +36,7 @@
               </a>
             </div>
             <div class="col-lg-2 col-md-3 col-6">
-              <a href="geometrie.php">
+              <a href="soustractions.php">
                  <img class="img-fluid" src="assets/img/substract.png" alt="soustraction">
               </a>
             </div>

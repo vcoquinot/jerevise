@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Je révise ! / additions posées à 3 chiffres</title>      
+      <title>Je révise ! /Soustractions posées à 3 chiffres</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -27,7 +27,7 @@
 
   <body>
    
-<?php displayExerciceAdditionPoseeTroisChiffres() ?>
+<?php displayExerciceSoustractionPoseeTroisChiffres() ?>
 
   </body>
 </html>
