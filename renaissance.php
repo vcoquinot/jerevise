@@ -11,7 +11,7 @@
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
       <title>Je révise ! / histoire : la Renaissance</title>      
-      <link href="main.css"  type="text/css" rel="stylesheet">
+      <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -53,8 +53,15 @@
       header("location:accueil.php");
     }else{
     ?>
-
-          <img class="defil" src="assets/img/caravel.png" alt="Third slide">
+    <section id="renaissance">
+      <div class="row justify-content-center">
+        
+        <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/caravel.png" alt="caravelle"></div>
+        </div>
+      </div>
+    </section>
+          
           
      <!-- affichage des questions-->
       <section id="accueil">
@@ -66,20 +73,22 @@
       <section class="questionnaire">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8">
               <form action="cible_renaissance.php" method="post">
               <?php
               //recherche alléatoire d'une question
               $questionRenaissance = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 3 && id_theme = 2 ORDER BY RAND() LIMIT 1");
               $donneesRenaissance = $questionRenaissance->fetch();
               ?>
-              <p><?php echo $donneesRenaissance['intitule_question'];?></p>
+              <h2><?php echo $donneesRenaissance['intitule_question'];?></h2>
               <?php
              
               $_SESSION['id_question'] = $donneesRenaissance['id_question'];
               ?>
               </form>
-            </div> 
+            </div>
+            
           </div>
               <?php $questionRenaissance->closeCursor();?>
 
@@ -92,14 +101,21 @@
       <section id="reponse_renaissance">
         <div class="container">
           <form action="cible_renaissance.php" method="post">
-            <div class="row">
+            
               <div class="col-lg-12">
+                <div class="row">
+                <div class="col-lg-4"></div>
+              <div class="col-lg-6">
               <input type="text" name="reponseRenaissance" placeholder="ma réponse">
               <input type="hidden" name="numeroDeQuestionPosee" value="1">
               </div>
             </div>
-            <div class="row">
+            </div>
+            
               <div class="col-lg-12">
+                <div class="row">
+                <div class="col-lg-4"></div>
+              <div class="col-lg-6">
               <input type="submit" value=" Valider ma réponse ">
               </div>
             </div>

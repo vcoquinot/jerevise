@@ -27,7 +27,19 @@
 
   <body>
    
-<?php displayExerciceAdditionPoseeDeuxChiffres(); ?>
+<?php 
+
+//LIMITATION À 8 QUESTIONS OU RETOUR ACCUEIL 
+    if($_SESSION['nombreOperation'] >8){
+      //Remise des compteur sscore et numeroOperation à 0
+      $_SESSION['nombreOperation'] = 0;
+      $_SESSION['score'] =0;
+      //redicrection
+      header("location:accueil.php");
+    }else{
+      displayExerciceAdditionPoseeDeuxChiffres(); 
+    }
+    ?>
 
   </body>
 </html>

@@ -4,6 +4,7 @@
 
 <?php function displayExerciceAdditionPoseeDeuxChiffres(){ 
   $a=0;
+  $_SESSION['nombreOperation'] = 0;
 ?>
   <br/>
   <br/>
