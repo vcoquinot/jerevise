@@ -89,4 +89,20 @@ function displayFormCreationCompte(){
 <!-- *************************************************************--> 
 <!-- *************************************************************--> 
 
+<?php
+function calculerScore(){
+    if (!isset ($_SESSION['score'])){
+      $_SESSION['score']=0 ;
+    }
+}
+?>
 
+<?php
+function calculerNombreDeQuestionsPosees(){
+    if (!isset ($_SESSION['numeroQuestion'])){
+      $_SESSION['numeroQuestion']= 1;
+    }else{
+      $_SESSION['numeroQuestion']++;
+    }
+}
+?>

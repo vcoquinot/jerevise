@@ -59,48 +59,6 @@
             </div>
           </div>
           
-         </div>
-         
-            
-
-            
-            <div class="col-lg-3 col-md-3 col-6">
-              <a href="addition_posee_trois_chiffres"> <button class="addition">3 chiffres et plus</button></a>
-            </div>
-            
-          </div>
-
-          <div class="row">
-            <div class="col-lg-offset-1 col-lg-2 col-md-3 col-6">
-              <h2 >Calcul mental</h2>
-              <img class="img-fluid" src="assets/img/maths.png" alt="Calcul mental">
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <button class="addition ">Additions à 1 chiffre<br/>9+8</button>
-            </div>
-              <div class="col-lg-offset-1 col-lg-3 col-md-4 col-6">
-                <button class="addition btn btn-light">Ajouter 10<br/>+10</button>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <button class="addition">Ajouter 100<br/>+100</button>
-              </div>
-              <div class="col-lg-3 col-md-4 col-6">
-                <button class="addition">Ajouter 1000<br/>+1000</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-lg-2 col-md-4 col-6">
-              <button>Ajouter 9<br/>+9</button>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <button>Ajouter 8<br/>+8</button>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <button>Ajouter 7<br/>+7</button>
-            </div>
-          </div>
-
+         </div> 
         </section>
       </body>

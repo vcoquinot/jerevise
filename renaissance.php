@@ -1,7 +1,6 @@
-<?php session_start();?>
-<?php require_once("connexion_bdd.php")?>
-    
-
+<?php session_start(); ?>
+<?php include ("fonction.php"); ?>
+<?php require_once("connexion_bdd.php"); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -38,16 +37,10 @@
     //****************************
 
     //COMPTEUR SCORE      
-    if (!isset ($_SESSION['score'])){
-      $_SESSION['score']=0 ;
-    }
+    calculerScore();
 
     //COMPTEUR NOMBRE DE QUESTIONS 
-    if (!isset ($_SESSION['numeroQuestion'])){
-      $_SESSION['numeroQuestion']= 1;
-    }else{
-      $_SESSION['numeroQuestion']++;
-    }
+    calculerNombreDeQuestionsPosees();
     
 
     //****************************
