@@ -7,11 +7,21 @@ body {
 
 /*ACCUEIL _ CONNEXION*/
 #accueil h1{
-  color : #F64754;
+  color : #b88a9f;  
+  font-size: 80px;
+  padding-bottom: 1rem;
   } 
 
 .font-weight-light{
-  font-size: 1.5rem;
+  color: #b88a9f;
+  font-size: 25px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+#accueil img{
+  margin-right: 40px;
 }
 
 

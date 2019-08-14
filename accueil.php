@@ -7,7 +7,7 @@
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
       <title>Je révise ! / CM1</title>      
-      <link href="style1.css"  type="text/css" rel="stylesheet">
+      <link href="main1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
@@ -26,22 +26,24 @@
   <body>   
     <section id="accueil">
       <header class="row justify-content-center">
-        <h1>Quel est ton programme du jour ?</h1>
+        <h1>Choisis ta matière</h1>
           <div class="row justify-content-center">
             <div class="col-lg-2 col-md-4 col-6">
-              <p class="font-weight-light">maths</p>
+              <p class="font-weight-light text-center">MATHS</p>
               <a href="maths.php">
                 <img class="img-fluid" src="assets/img/math.png" alt="maths">
               </a>
             </div>
+            <div class="col-lg-1 col-md-1 col-1"></div>
             <div class="col-lg-2 col-md-3 col-6">
-              <p class="font-weight-light">géométrie</p>
+              <p class="font-weight-light text-center">GÉOMÉTRIE</p>
               <a href="geometrie.php">
                  <img class="img-fluid" src="assets/img/rulers.png" alt="géométrie">
               </a>
             </div>
+            <div class="col-lg-1 col-md-1 col-1"></div>
             <div class="col-lg-2 col-md-3 col-6">
-              <p class="font-weight-light">français</p>
+              <p class="font-weight-light text-center">FRANCAIS</p>
               <a href="francais.php" >
                 <img class="img-fluid" src="assets/img/folders.png" alt="français">
               </a>
@@ -50,20 +52,21 @@
 
           <div class="row justify-content-center">
             <div class="col-lg-2 col-md-4 col-6">
-              <p class="font-weight-light">histoire</p>
+              <p class="font-weight-light text-center">HISTOIRE</p>
               <a href="histoire.php">
                 <img class="img-fluid" src="assets/img/papyrus.png" alt="histoire">
               </a>
             </div>
+            <div class="col-lg-1 col-md-1 col-1"></div>
             <div class="col-lg-2 col-md-3 col-6">
-
-              <p class="font-weight-light">géographie</p>
+              <p class="font-weight-light text-center">GÉOGRAPHIE</p>
               <a href="geographie.php">
                  <img class="img-fluid" src="assets/img/globe.png" alt="géographie">
               </a>
             </div>
+            <div class="col-lg-1 col-md-1 col-1"></div>
             <div class="col-lg-2 col-md-3 col-6">
-              <p class="font-weight-light">sciences</p>
+              <p class="font-weight-light text-center">SCIENCES</p>
               <a href="sciences.php" >
                 <img class="img-fluid" src="assets/img/chemistry.png" alt="sciences">
               </a>
