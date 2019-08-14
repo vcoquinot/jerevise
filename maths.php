@@ -40,6 +40,12 @@
           <div class="row justify-content-center">
             <div class="col-lg-2">
               <a href="addition.php"><img class="img-fluid" src="assets/img/add.png" alt="addition"></a>
+              <div class="row justify-content-center">
+                <a href="addition.php">À 2 chiffres</a>
+              </div>
+              <div class="row justify-content-center">
+                <a href="addition.php">À 3 chiffres</a>
+              </div>
             </div>
             <div class="col-lg-2">
               <a href="soustractions.php"><img class="img-fluid" src="assets/img/substract.png" alt="soustraction"></a>
