@@ -7,7 +7,7 @@
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
       <title>Je révise ! / maths</title>      
-      <link href="style1.css"  type="text/css" rel="stylesheet">
+      <link href="main1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
@@ -24,68 +24,96 @@
   </head>
 
   <body>
-       <section id="accueil">
+    <section id="accueil">
       <header class="row justify-content-center">
-        <h1>Les maths, c'est parti !</h1>
+         <h1>Les maths, c'est parti !</h1>
       </header>
+    </section>
+
+   
+    <section class="col-lg-12 theme">
+     <div class="row justify-content-center">
+        <div class="col-lg-4 operation">
+          <header class="row justify-content-center">
+            <h2>Opérations posées</h2>
+          </header>
           <div class="row justify-content-center">
-            <h2 class="col-lg-2">Opérations</h2>
-            <div class="col-lg-2 col-md-4 col-6">
-              <a href="addition.php">
-                <img class="img-fluid" src="assets/img/add.png" alt="addition">
-              </a>
+            <div class="col-lg-2">
+              <a href="addition.php"><img class="img-fluid" src="assets/img/add.png" alt="addition"></a>
             </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <a href="soustractions.php">
-                 <img class="img-fluid" src="assets/img/substract.png" alt="soustraction">
-              </a>
+            <div class="col-lg-2">
+              <a href="soustractions.php"><img class="img-fluid" src="assets/img/substract.png" alt="soustraction"></a>
             </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <a href="francais.php" >
-                <img class="img-fluid" src="assets/img/multiply.png" alt="multiplication">
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <a href="francais.php" >
-                <img class="img-fluid" src="assets/img/divide.png" alt="division">
-              </a>
+            <div class="row justify-content-center">
+              <div class="col-lg-2">
+                <a href="multplication.php"><img class="img-fluid" src="assets/img/multiply.png" alt="multiplication"></a>
+              </div>
+              <div class="col-lg-2">
+                  <a href="division.php"><img class="img-fluid" src="assets/img/divide.png" alt="division"></a>
+              </div>
             </div>
           </div>
-
+        </div>
+                <div class="col-lg-4 operation">
+          <header class="row justify-content-center">
+            <h2>Calcul mental</h2>
+          </header>
           <div class="row justify-content-center">
-            <h2 class="col-lg-2">Fractions</h2>
-            <div class="col-lg-2 col-md-4 col-6">
-              <a href="addition.php">
-                <img class="img-fluid" src="assets/img/fraction.png" alt="fraction">
-              </a>
+            <div class="col-lg-2">
+              <a href="addition.php"><img class="img-fluid" src="assets/img/add.png" alt="addition"></a>
             </div>
-
-            <div class="col-lg-offset-4 col-lg-2col-md-3 col-6"></div>
-            
-          </div>
-
-          <div class="row justify-content-center">
-            <h2 class="col-lg-2">Décimaux</h2>
-            <div class="col-lg-2 col-md-4 col-6">
-              <a href="addition.php">
-                <img class="img-fluid" src="assets/img/add.png" alt="addition">
-              </a>
+            <div class="col-lg-2">
+              <a href="soustractions.php"><img class="img-fluid" src="assets/img/substract.png" alt="soustraction"></a>
             </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <a href="geometrie.php">
-                 <img class="img-fluid" src="assets/img/substract.png" alt="soustraction">
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <a href="francais.php" >
-                <img class="img-fluid" src="assets/img/multiply.png" alt="multiplication">
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6">
-              <a href="francais.php" >
-                <img class="img-fluid" src="assets/img/divide.png" alt="division">
-              </a>
+            <div class="row justify-content-center">
+              <div class="col-lg-2">
+                <a href="multplication.php"><img class="img-fluid" src="assets/img/multiply.png" alt="multiplication"></a>
+              </div>
+              <div class="col-lg-2">
+                  <a href="division.php"><img class="img-fluid" src="assets/img/divide.png" alt="division"></a>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="col-lg-4 operation">
+          <header class="row justify-content-center">
+            <h2>Décimaux</h2>
+          </header>
+          <div class="row justify-content-center">
+            <div class="col-lg-2">
+              <a href="addition.php"><img class="img-fluid" src="assets/img/add.png" alt="addition"></a>
+            </div>
+            <div class="col-lg-2">
+              <a href="soustractions.php"><img class="img-fluid" src="assets/img/substract.png" alt="soustraction"></a>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-2">
+                <a href="multplication.php"><img class="img-fluid" src="assets/img/multiply.png" alt="multiplication"></a>
+              </div>
+              <div class="col-lg-2">
+                  <a href="division.php"><img class="img-fluid" src="assets/img/divide.png" alt="division"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+<!--
+  <section class="theme">
+    <header class="row justify-content-center">
+      <h2 class="col-lg-2">Fractions</h2>
+    </header>
+    <div class="row justify-content-center">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-1 col-md-4 col-6">
+        <a href="addition.php"><img class="img-fluid" src="assets/img/fraction.png" alt="fraction"></a>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-1 col-md-3 col-6"></div>
+    </div>
+  </section>
+-->
+
 
           

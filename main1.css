@@ -5,7 +5,10 @@ body {
   margin: 0 auto;
 }
 
-/*ACCUEIL _ CONNEXION*/
+/*ACCUEIL */
+/* --------------------------------------------------
+-----------------------------------------------------
+*/
 #accueil h1{
   color : #b88a9f;  
   font-size: 80px;
@@ -24,7 +27,10 @@ body {
   margin-right: 40px;
 }
 
-
+/*CONNEXION */
+/* --------------------------------------------------
+-----------------------------------------------------
+*/
 input {
   margin-bottom: 1rem;
   text-align: center;
@@ -53,7 +59,31 @@ button:hover {
   }
 
 
-/*maths-------- additions*/
+/*MATHS*/
+/* --------------------------------------------------
+-----------------------------------------------------
+*/
+.theme{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.fleche p{
+  color: #c7f2cc;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.theme h2{
+  margin-bottom : 50px;
+}
+
+
+
+/*MATHS - ADDITIONS */
+/* --------------------------------------------------
+-----------------------------------------------------
+*/
 .addition{
   border: solid 5px #009999;
   border-radius: 1rem;
