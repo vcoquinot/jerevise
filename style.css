@@ -94,3 +94,15 @@ h3{
 	text-align: center;
 	font-color: white;
 }
+
+/***************************************************************
+/*FRANCAIS*/
+/***************************************************************/
+
+#conjugaison{
+  margin-top: 40px;
+}
+.bloc1, .bloc2, .bloc3, .bloc4 {
+  border: 1px solid black;
+  margin-right :10px;
+}
