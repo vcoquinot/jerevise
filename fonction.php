@@ -95,9 +95,23 @@ function calculerScore(){
       $_SESSION['score']=0 ;
     }
 }
-?>
 
-<?php
+
+function afficherScore(){
+  ?>
+        <section class="container-scoreFinal">
+          <header class="row justify-content-center">
+            <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $_SESSION['numeroQuestion'];?></h3>
+            <?php
+            //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
+            $_SESSION['score'] = 0; 
+            $_SESSION['numeroQuestion'] = 0;
+            //TO DO************
+            //*****************
+            //retour accueil
+            header( "refresh:5;url=accueil.php"); 
+}
+
 function calculerNombreDeQuestionsPosees(){
     if (!isset ($_SESSION['numeroQuestion'])){
       $_SESSION['numeroQuestion']= 1;
@@ -106,6 +120,7 @@ function calculerNombreDeQuestionsPosees(){
     }
 }
 ?>
+
 
 <!-- MATHS
 ________________________________________________________
@@ -458,5 +473,49 @@ ________________________________________________________
     </form>
 <?php 
     }
+?>
+
+<!-- FRANçAIS
+________________________________________________________
+-->
+
+<!-- FONCTIONS AFFICHAGE-->
+<?php 
+function afficherFormulaireConjugaison(){
+  ?>
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-4"></div>
+        <div class="col-lg-6">
+          <input type="text" name="reponseFutur" placeholder="ma réponse">
+          <input type="hidden" name="numeroDeQuestionPosee" value="1">
+        </div>
+      </div>
+    </div>
+            
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-4"></div>
+          <div class="col-lg-6">
+            <input type="submit" value=" Phrase suivante ">
+        </div>
+      </div>
+
+<?php
+}
+      
+function verifierReponseUtilisateur(){
+  ?>
+  <section class="verification">
+    <div class="container_conjugaison">
+      <div class="row justify-content-center">
+        <div class= "col-lg-3"></div>
+          <div class="col-lg-6">Oups, mauvaise réponse!</div>
+        </div> 
+        <div class="row justify-content-center">
+          <div class= "col-lg-3"></div>     
+          <div class="col-lg-6">La réponse est  : <?php echo $_SESSION['reponseCorrecte']; ?>
+<?php
+}
 ?>
 
