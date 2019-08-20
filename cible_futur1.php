@@ -30,10 +30,9 @@
   </head>
 
   <body>
-  <?php
-     
+  <?php     
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $reponseUtilisateur = $_POST["reponseFutur1"];
+  $reponseUtilisateur = $_POST["reponseFutur"];
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
 
@@ -48,32 +47,25 @@
 
     //Comparaison réponse de l'utilisateur et réponse correcte
     $isCorrect=false;
-    $reponseCorrecte = $donnees['intitule_reponse'];   
-    $pattern = '/' . preg_quote($reponseUtilisateur) . '/';
+    $_SESSION['reponseCorrecte'] = $donnees['intitule_reponse'];   
+    /*$pattern = '/' . preg_quote($reponseUtilisateur) . '/';*/
     $reponseFutur->closeCursor();
+
     
 
     //CAS 1 **** RÉPONSE CORRECTE
-    if($reponseUtilisateur != null && preg_match($pattern,$reponseCorrecte))
+    if($reponseUtilisateur != null && ($reponseUtilisateur===$_SESSION['reponseCorrecte']))
     { 
       $isCorrect === true; 
       // + 1 point
       $_SESSION['score']++; 
+      //question suivante
       header( "Location: futur.php"); 
 
     }//CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
       else {
-        ?>
-        <section class="verification">
-          <div class="container_futur1">
-            <div class="row justify-content-center">
-              <div class= "col-lg-3"></div>
-              <div class="col-lg-6">Oups, mauvaise réponse!</div>
-            </div> 
-            <div class="row justify-content-center">
-              <div class= "col-lg-3"></div>     
-              <div class="col-lg-6">La réponse est  : <?php echo $reponseCorrecte ?>
-              	<?php header( "refresh:2;url=futur.php") ?>
+ 		verifierReponseUtilisateur();
+        header( "refresh:2;url=futur.php") ?>
               </div>
             </div>
           </div>
@@ -87,19 +79,7 @@
 
      //AU DESSUS DE 10 QUESTIONS
     }else{
-        ?>
-        <!-- affichage du score total-->
-        <section class="container-scoreFinal">
-          <header class="row justify-content-center">
-            <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $numeroQuestion;?></h3>
-            <?php
-            //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
-            $_SESSION['score'] = 0; 
-            $_SESSION['numeroQuestion'] = 0;
-            //TO DO************
-            //*****************
-            //retour accueil
-            header( "refresh:10;url=accueil.php"); 
-       }      
+    	afficherScore();
+    }      
   ?>
   </body>

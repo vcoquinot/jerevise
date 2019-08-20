@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Je révise ! / Conjugaison : le futur 1er groupe</title>      
+      <title>Futur</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -41,10 +41,12 @@
 
     //COMPTEUR NOMBRE DE QUESTIONS 
     calculerNombreDeQuestionsPosees();
+
+
   if($_SESSION['numeroQuestion'] >8){
+    afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
-    header("location:accueil.php");
   }else{
     ?>
     <section id="futur_premier_groupe">
@@ -95,24 +97,7 @@
       <section id="reponse_futur1">
         <div class="container">
           <form action="cible_futur1.php" method="post">
-            
-              <div class="col-lg-12">
-                <div class="row">
-                <div class="col-lg-4"></div>
-              <div class="col-lg-6">
-              <input type="text" name="reponseFutur1" placeholder="ma réponse">
-              <input type="hidden" name="numeroDeQuestionPosee" value="1">
-              </div>
-            </div>
-            </div>
-            
-              <div class="col-lg-12">
-                <div class="row">
-                <div class="col-lg-4"></div>
-              <div class="col-lg-6">
-              <input type="submit" value=" Phrase suivante ">
-              </div>
-            </div>
+            <?php afficherFormulaireConjugaison(); ?>
           </form>
         </div>
       </section>
