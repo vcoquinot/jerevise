@@ -73,9 +73,6 @@
       <div class="row justify-content-center">
         <h2>Entraîne-toi !</h2>
       </div>      
-      <div class="row justify-content-center">
-        <h2>Entraîne-toi !</h2>
-      </div>
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-1"></div>
