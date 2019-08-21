@@ -58,9 +58,6 @@
               <div class="col-lg-12 row justify-content-center">
               <a href="futur_verbe_yer.php">verbes en -YER</a>
               </div>
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_accent.php">Verbes avec accent</a>
-              </div>
             </div> 
             <div class="col-lg-12 row justify-content-center">
               <img src="assets/img/4stars.png" alt="4 étoiles">
