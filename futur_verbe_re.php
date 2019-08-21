@@ -43,40 +43,38 @@
     calculerNombreDeQuestionsPosees();
 
   
-  if($_SESSION['numeroQuestion'] > 6){
+  if($_SESSION['numeroQuestion'] >6){
+    afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
-    header("location:score.php");
   }else{
     ?>
-    <section id="futur_verbe_re">
+    <section id="futur_premier_groupe">
       <div class="row justify-content-center">
-        <h2> Le futur des verbes en -RE (prendre, peindre...)</h2>
+        <h2>Le futur des verbes en -RE</h2>
       </div>
       <div class="row justify-content-center">
+        <div class="col-lg-1"></div>
         <div class="col-lg-4">
-          <img class="img-fluid" src="assets/img/ugly.png" alt="attention !">
+          <img class="img-fluid" src="assets/img/ugly_re.png" alt="enlève le -E">
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/futur_boy_re.png" alt="conjugaison verbes _YER">
+          <img class="img-fluid" src="assets/img/futur_dre.png" alt="garçon">
         </div>
         </div>
       </div>
     </section>
-          
-          
-     <!-- affichage des questions-->
-
-
-      <section class="questionnaire">        
+    
+    <!-- affichage des questions-->
+    <section class="questionnaire">      
       <div class="row justify-content-center">
         <h2>Entraîne-toi !</h2>
       </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-8">
-              <form action="cible_futur1.php" method="post">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-8">
+            <form action="cible_futur1.php" method="post">
               <?php
               //recherche alléatoire d'une question
               $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 7 ORDER BY RAND() LIMIT 1");
@@ -87,27 +85,25 @@
              
               $_SESSION['id_question'] = $donneesFutur['id_question'];
               ?>
-              </form>
-            </div>
-            
+            </form>
           </div>
-              <?php $questionFutur->closeCursor();?>
-
         </div>
-      </section>
+        <?php $questionFutur->closeCursor();?>
+      </div>
+    </section>
 
     <!--**************************
         RÉPONSES UTILISATEUR
     ****************************-->
-      <section id="reponse_futur">
-        <div class="container">
-          <form action="cible_futur_re.php" method="post"> 
-            <?php afficherFormulaireConjugaison(); ?>
-          </form>
-        </div>
-      </section>
-      <?php
+    <section id="reponse_futur">
+      <div class="container">
+        <form action="cible_futur_re.php" method="post">
+        <?php afficherFormulaireConjugaison(); ?>
+        </form>
+      </div>
+    </section>
+    <?php
     }
-      ?>
+    ?>
   </body>
 </html>
