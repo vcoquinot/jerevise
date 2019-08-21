@@ -51,7 +51,7 @@
     ?>
     <section id="futur_verbes_irreguliers">
       <div class="row justify-content-center">
-        <h2> Le futur des verbes (bizarres)irréguliers</h2>
+        <h2> Le futur des verbes bizarres... On les appelle verbes irréguliers</h2>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-2"></div>

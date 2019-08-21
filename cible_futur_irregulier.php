@@ -48,13 +48,13 @@
     //Comparaison réponse de l'utilisateur et réponse correcte
     $isCorrect=false;
     $_SESSION['reponseCorrecte'] = $donnees['intitule_reponse'];   
-    $pattern = '/' . preg_quote($reponseUtilisateur) . '/';
+    /*$pattern = '/' . preg_quote($reponseUtilisateur) . '/';*/
     $reponseFutur->closeCursor();
 
     
 
     //CAS 1 **** RÉPONSE CORRECTE
-    if($reponseUtilisateur != null && preg_match($pattern,$_SESSION['reponseCorrecte']))
+    if($reponseUtilisateur != null && && ($reponseUtilisateur===$_SESSION['reponseCorrecte']))
     { 
       $isCorrect === true; 
       // + 1 point
