@@ -54,14 +54,7 @@
         <h2>Le futur des verbes en -RE</h2>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="assets/img/ugly_re.png" alt="enlève le -E">
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/futur_dre.png" alt="garçon">
-        </div>
-        </div>
+        <img class="img-fluid" src="assets/img/futur_dre.png" alt="garçon">
       </div>
     </section>
     
