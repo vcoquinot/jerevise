@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Futur verbes -RE</title>      
+      <title>Futur verbes avec accent</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -42,23 +42,24 @@
     //COMPTEUR NOMBRE DE QUESTIONS 
     calculerNombreDeQuestionsPosees();
 
-  
-  if($_SESSION['numeroQuestion'] > 6){
+
+  if($_SESSION['numeroQuestion'] >6){
+    afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
-    header("location:score.php");
   }else{
     ?>
-    <section id="futur_verbe_re">
+    <section id="futur_accent">
       <div class="row justify-content-center">
-        <h2> Le futur des verbes en -RE (prendre, peindre...)</h2>
+        <h2>Le futur des verbes en avec accent</h2>
       </div>
       <div class="row justify-content-center">
+        <div class="col-lg-1"></div>
         <div class="col-lg-4">
-          <img class="img-fluid" src="assets/img/ugly.png" alt="attention !">
+          <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/futur_boy_re.png" alt="conjugaison verbes _YER">
+          <img class="img-fluid" src="assets/img/futur1.png" alt="garçon">
         </div>
         </div>
       </div>
@@ -68,7 +69,10 @@
      <!-- affichage des questions-->
 
 
-      <section class="questionnaire">        
+      <section class="questionnaire">
+      <div class="row justify-content-center">
+        <h2>Entraîne-toi !</h2>
+      </div>
       <div class="row justify-content-center">
         <h2>Entraîne-toi !</h2>
       </div>
@@ -76,10 +80,10 @@
           <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-lg-8">
-              <form action="cible_futur1.php" method="post">
+              <form action="cible_futur_accent.php" method="post">
               <?php
               //recherche alléatoire d'une question
-              $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 7 ORDER BY RAND() LIMIT 1");
+              $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 9 ORDER BY RAND() LIMIT 1");
               $donneesFutur = $questionFutur->fetch();
               ?>
               <h2><?php echo $donneesFutur['intitule_question'];?></h2>
@@ -101,7 +105,7 @@
     ****************************-->
       <section id="reponse_futur">
         <div class="container">
-          <form action="cible_futur_re.php" method="post"> 
+          <form action="cible_futur_accent.php" method="post">
             <?php afficherFormulaireConjugaison(); ?>
           </form>
         </div>

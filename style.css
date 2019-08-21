@@ -102,7 +102,20 @@ h3{
 #conjugaison{
   margin-top: 40px;
 }
+
+#conjugaison a{
+text-decoration: none;
+font-color: black;
+}
+
+.titre{
+  margin-bottom : 30px;
+}
 .bloc1, .bloc2, .bloc3, .bloc4 {
-  border: 1px solid black;
+  border: 1px solid #d8a75b;
   margin-right :10px;
+}
+
+.questionnaire{
+  margin-top: 40px;
 }

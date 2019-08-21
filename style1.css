@@ -70,9 +70,18 @@ button:hover {
 #conjugaison{
   margin-top: 40px;
 }
+
+#conjugaison a{
+text-decoration: none;
+}
+
 .bloc{
   border: 1px solid black;
   margin-right :10px;
+}
+
+.questionnaire{
+  margin-top: 40px;
 }
 /***************************************************************
 /*RENAISSANCE*/

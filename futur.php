@@ -43,13 +43,16 @@
     calculerNombreDeQuestionsPosees();
 
 
-  if($_SESSION['numeroQuestion'] >8){
+  if($_SESSION['numeroQuestion'] > 10){
     afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
   }else{
     ?>
-    <section id="futur_premier_groupe">
+    <section id="futur">
+      <div class="row justify-content-center">
+        <h2> Le futur</h2>
+      </div>
       <div class="row justify-content-center">
         <div class="col-lg-1"></div>
         <div class="col-lg-4">
@@ -61,20 +64,21 @@
         </div>
       </div>
     </section>
-          
-          
+     
      <!-- affichage des questions-->
 
-
-      <section class="questionnaire">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-8">
-              <form action="cible_futur1.php" method="post">
+    <section class="questionnaire">      
+      <div class="row justify-content-center">
+        <h2>Entraîne-toi !</h2>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-8">
+              <form action="cible_futur.php" method="post">
               <?php
               //recherche alléatoire d'une question
-              $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 5 ORDER BY RAND() LIMIT 1");
+              $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme BETWEEN 5 AND 9  ORDER BY RAND() LIMIT 1");
               $donneesFutur = $questionFutur->fetch();
               ?>
               <h2><?php echo $donneesFutur['intitule_question'];?></h2>
@@ -84,19 +88,17 @@
               ?>
               </form>
             </div>
-            
           </div>
-              <?php $questionFutur->closeCursor();?>
-
+          <?php $questionFutur->closeCursor();?>
         </div>
       </section>
 
     <!--**************************
         RÉPONSES UTILISATEUR
     ****************************-->
-      <section id="reponse_futur1">
+      <section id="reponse_futur">
         <div class="container">
-          <form action="cible_futur1.php" method="post">
+          <form action="cible_futur.php" method="post">
             <?php afficherFormulaireConjugaison(); ?>
           </form>
         </div>

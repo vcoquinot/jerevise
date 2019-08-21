@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Futur 1er groupe</title>      
+      <title>Futur -ER -IR</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -36,8 +36,8 @@
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
 
-  //*****LIMITATION À 10 QUESTIONS
-  if($numeroQuestion<=10){
+  //*****LIMITATION À 8 QUESTIONS
+  if($numeroQuestion<=7){
     //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
     //recherche de la réponse associée à la question dans la BDD
     $reponseFutur = $bdd->query("SELECT intitule_reponse 
@@ -60,12 +60,12 @@
       // + 1 point
       $_SESSION['score']++; 
       //question suivante
-      header( "Location: futur.php"); 
+      header( "Location: futur_1.php"); 
 
     }//CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
       else {
  		verifierReponseUtilisateur();
-        header( "refresh:2;url=futur.php") ?>
+        header( "refresh:2;url=futur_1.php") ?>
               </div>
             </div>
           </div>
