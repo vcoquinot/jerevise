@@ -64,15 +64,9 @@
         </div>
       </div>
     </section>
-          
-          
+           
      <!-- affichage des questions-->
-
-
       <section class="questionnaire">
-      <div class="row justify-content-center">
-        <h2>Entraîne-toi !</h2>
-      </div>
       <div class="row justify-content-center">
         <h2>Entraîne-toi !</h2>
       </div>

@@ -83,6 +83,17 @@ text-decoration: none;
 .questionnaire{
   margin-top: 40px;
 }
+
+/*Futur -RE*/
+#futur_verbe_re .img-fluid{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/*TO DO : optimisation code en passant en classe iso id*/
+#futur_accent .img-fluid{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 /***************************************************************
 /*RENAISSANCE*/
 /***************************************************************/
