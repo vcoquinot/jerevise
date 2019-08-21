@@ -51,7 +51,7 @@
     ?>
     <section id="futur_premier_groupe">
       <div class="row justify-content-center">
-        <h2>Le futur des verbes en -RE</h2>
+        <h2>Le futur des verbes en -RE come prendre, peindre,...</h2>
       </div>
       <div class="row justify-content-center">
         <img class="img-fluid" src="assets/img/futur_dre.png" alt="garçon">
