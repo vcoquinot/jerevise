@@ -37,7 +37,7 @@
   $numeroQuestion = $_SESSION['numeroQuestion'];
 
   //*****LIMITATION À 10 QUESTIONS
-  if($numeroQuestion<=10){
+  if($numeroQuestion<=9){
     //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
     //recherche de la réponse associée à la question dans la BDD
     $reponseFutur = $bdd->query("SELECT intitule_reponse 

@@ -51,26 +51,13 @@
     ?>
     <section id="futur">
       <div class="row justify-content-center">
-        <h2> Le futur</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/futur1.png" alt="garçon">
-        </div>
-        </div>
+      <img class="img-fluid" src="assets/img/futur.png" alt="conjugaison">
       </div>
     </section>
      
      <!-- affichage des questions-->
 
     <section class="questionnaire">      
-      <div class="row justify-content-center">
-        <h2>Entraîne-toi !</h2>
-      </div>
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-1"></div>
