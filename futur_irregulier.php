@@ -54,14 +54,7 @@
         <h2> Le futur des verbes bizarres... On les appelle verbes irréguliers</h2>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="assets/img/futur_irregulier_girl.png" alt="conjugaison">
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/futur_irregulier.png" alt="verbes irréguliers">
-        </div>
-        </div>
+        <img class="img-fluid" src="assets/img/futur_irregulier_girl.png" alt="conjugaison">
       </div>
     </section>
           
