@@ -43,7 +43,8 @@
             <?php 
             for ($i= 1; $i<9 ; $i++){
               ?>
-            <div class="col-lg-6"><?php $randFirstNumber = randCountNumberWithTwoFigures($a) ;?> + <?php echo $secondNumber;?> = <input class="col-lg-3" name="somme" type="text" placeholder="total"></input>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5"><?php $randFirstNumber = randCountNumberWithTwoFigures($a) ;?> + <?php echo $secondNumber;?> = <input class="col-lg-3" name="somme" type="text" placeholder="total"></input>
             </div>
             <?php
             }
