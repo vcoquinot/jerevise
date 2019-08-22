@@ -43,7 +43,7 @@
     calculerNombreDeQuestionsPosees();
 
 
-  if($_SESSION['numeroQuestion'] >8){
+  if($_SESSION['numeroQuestion'] = 8){
     afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
