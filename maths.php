@@ -30,112 +30,82 @@
       </header>
     </section>
    
-    <section class="col-lg-12 theme">
+    <section class="col-lg-12">
       <div class="row justify-content-center">
-
-
-      <div class="col-lg-1 bloc1">
-        
-          <img class="img-fluid" src="assets/img/add.png" alt="conjuguer"></a>
-       
+        <div class="col-lg-1 bloc1">
+        <img class="img-fluid" src="assets/img/add.png" alt="conjuguer"></a>
           <div class="row justify-content-center">
             <div class="col-lg-12 row justify-content-center">
-              <a href="present_1.php">calcul mental</a>
+              <h3>Calcul mental</h3>
+              <a href="addition_mental_7.php"><button type="button" class="btn">+7</button></a>
             </div>
             <div class="col-lg-12 row justify-content-center">
-              <a href="present_1.php">additions posées</a>
+              <a href="addition_mental_8.php"><button type="button" class="btn">+8</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition_mental_9.php"><button type="button" class="btn">+9</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition_mental_10.php"><button type="button" class="btn">+10</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition_mental_100.php"><button type="button" class="btn">+100</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition_mental_1000.php"><button type="button" class="btn">+1000</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <h3>Opérations posées</h3>
+              <a href="addition_posee_deux_chiffres.php"><button type="button" class="btn">2 chiffres</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition_posee_deux_chiffres.php"><button type="button" class="btn">3 chiffres</button></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-1 bloc2">
+        <img class="img-fluid" src="assets/img/substract.png" alt="conjuguer"></a>
+          <div class="row justify-content-center">
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition.php"><button type="button" class="btn">Calcul mental</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition.php"><button type="button" class="btn">Additions posées à 2 chiffres</button></a>
             </div>
           </div>
         </div>
 
-
-
-
-        
         <div class="col-lg-1"></div>
-        <div class="col-lg-1">
-          <img class="img-fluid" src="assets/img/substract.png" alt="conjuguer"></a>
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-1">
+
+        <div class="col-lg-1 bloc3">
           <img class="img-fluid" src="assets/img/multiply.png" alt="conjuguer"></a>
+          <div class="row justify-content-center">
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition.php"><button type="button" class="btn">Calcul mental</button></a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition.php"><button type="button" class="btn">Additions posées à 2 chiffres</button></a>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-1">
+
+        <div class="col-lg-1 bloc4">        
           <img class="img-fluid" src="assets/img/divide.png" alt="conjuguer"></a>
-        </div>
-      </div>
-     <div class="row justify-content-center">
-        <div class="col-lg-4 operation">
-          <header class="row justify-content-center">
-            <h2>Opérations posées</h2>
-          </header>
           <div class="row justify-content-center">
-            <div class="col-lg-2">
-              <a href="addition.php"><img class="img-fluid" src="assets/img/add.png" alt="addition"></a>
-              <div class="row justify-content-center">
-                <a href="addition.php">À 2 chiffres</a>
-              </div>
-              <div class="row justify-content-center">
-                <a href="addition.php">À 3 chiffres</a>
-              </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition.php"><button type="button" class="btn">Calcul mental</button></a>
             </div>
-            <div class="col-lg-2">
-              <a href="soustractions.php"><img class="img-fluid" src="assets/img/substract.png" alt="soustraction"></a>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-2">
-                <a href="multplication.php"><img class="img-fluid" src="assets/img/multiply.png" alt="multiplication"></a>
-              </div>
-              <div class="col-lg-2">
-                  <a href="division.php"><img class="img-fluid" src="assets/img/divide.png" alt="division"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-                <div class="col-lg-4 operation">
-          <header class="row justify-content-center">
-            <h2>Calcul mental</h2>
-          </header>
-          <div class="row justify-content-center">
-            <div class="col-lg-2">
-              <a href="addition.php"><img class="img-fluid" src="assets/img/add.png" alt="addition"></a>
-            </div>
-            <div class="col-lg-2">
-              <a href="soustractions.php"><img class="img-fluid" src="assets/img/substract.png" alt="soustraction"></a>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-2">
-                <a href="multplication.php"><img class="img-fluid" src="assets/img/multiply.png" alt="multiplication"></a>
-              </div>
-              <div class="col-lg-2">
-                  <a href="division.php"><img class="img-fluid" src="assets/img/divide.png" alt="division"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 operation">
-          <header class="row justify-content-center">
-            <h2>Décimaux</h2>
-          </header>
-          <div class="row justify-content-center">
-            <div class="col-lg-2">
-              <a href="addition.php"><img class="img-fluid" src="assets/img/add.png" alt="addition"></a>
-            </div>
-            <div class="col-lg-2">
-              <a href="soustractions.php"><img class="img-fluid" src="assets/img/substract.png" alt="soustraction"></a>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-2">
-                <a href="multplication.php"><img class="img-fluid" src="assets/img/multiply.png" alt="multiplication"></a>
-              </div>
-              <div class="col-lg-2">
-                  <a href="division.php"><img class="img-fluid" src="assets/img/divide.png" alt="division"></a>
-              </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="addition.php"><button type="button" class="btn">Additions posées à 2 chiffres</button></a>
             </div>
           </div>
         </div>
       </div>
+
+
       </section>
 
 <!--
