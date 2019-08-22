@@ -116,6 +116,23 @@ font-color: black;
   margin-right :10px;
 }
 
+.bloc1{
+  background-color: #fcd290;
+}
+.bloc2{
+  background-color: #facc84;
+}
+.bloc3{
+  background-color: #f5c273;
+}
+.bloc4{
+  background-color: #fac169;
+}
+.bloc5{
+  background-color: #fabc5c;
+}
+
+
 .questionnaire{
   margin-top: 40px;
 }
