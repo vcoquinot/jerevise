@@ -43,7 +43,7 @@
     calculerNombreDeQuestionsPosees();
 
 
-  if($_SESSION['numeroQuestion'] >8){
+  if($_SESSION['numeroQuestion'] = 8){
     afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
@@ -54,14 +54,7 @@
         <h2>Le futur des verbes en -ER et -IR</h2>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/futur1.png" alt="garçon">
-        </div>
-        </div>
+        <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
       </div>
     </section>
     
