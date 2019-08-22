@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Futur verbe en -YER</title>      
+      <title>Futur verbes en -YER</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -43,7 +43,7 @@
     calculerNombreDeQuestionsPosees();
 
 
-  if($_SESSION['numeroQuestion'] > 6){
+  if($_SESSION['numeroQuestion'] = 6){
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
     header("Location:accueil.php");
@@ -54,13 +54,7 @@
         <h2> Le futur des verbes en -YER (essuyer)</h2>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-4">
-          <img class="img-fluid" src="assets/img/attention.png" alt="attention !">
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/futur_girl_yer.png" alt="conjugaison verbes _YER">
-        </div>
-        </div>
+        <img class="img-fluid" src="assets/img/futur_girl_yer.png" alt="conjugaison verbes _YER">
       </div>
     </section>
           
