@@ -161,6 +161,14 @@
         
       </div>
     </section>
+
+    <section class="container-fluid" id="vocabulaire">
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/vocabulaire.png" alt="conjuguer"></a>
+        </div>
+      </div>
+    </section>
     
   </body>
 </html>
