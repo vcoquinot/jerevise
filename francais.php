@@ -44,35 +44,28 @@
           </header>
           <div class="row justify-content-center">
             <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/1star.png" alt="1 étoile">
-              <div class="col-lg-12 row justify-content-center">
               <a href="present_1.php">Verbes du 1er groupe</a>
-              </div>
             </div>
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/2stars.png" alt="2 étoiles">
+            
               <div class="col-lg-12 row justify-content-center">
               <a href="futur_verbe_re.php">verbes en -RE</a>
               </div>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/3stars.png" alt="3 étoiles">
+          
+            
               <div class="col-lg-12 row justify-content-center">
               <a href="futur_verbe_yer.php">verbes en -YER</a>
               </div>
-            </div> 
-            <div class="col-lg-12 row justify-content-center">
-              <img src="assets/img/4stars.png" alt="4 étoiles">
+
+            
                 <div class="col-lg-12 row justify-content-center">
                 <a href="futur_irregulier.php">Verbes bizarres !</a>
                 </div>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <img src="assets/img/5stars.png" alt="5 étoiles">
+
+            
                 <div class="col-lg-12 row justify-content-center">
                 <a href="futur.php">On mélange tout ! !</a>
                 </div>
-            </div>            
+          
           </div>
         </div>
         <div class="col-lg-2 bloc2">
@@ -80,39 +73,31 @@
             <h2>Au futur</h2>
           </header>
           <div class="row justify-content-center">
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/1star.png" alt="1 étoile">
+            
               <div class="col-lg-12 row justify-content-center">
               <a href="futur_1.php">Verbes en -ER, -IR</a>
               </div>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/2stars.png" alt="2 étoiles">
               <div class="col-lg-12 row justify-content-center">
               <a href="futur_verbe_re.php">verbes en -RE</a>
               </div>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/3stars.png" alt="3 étoiles">
+
+            
               <div class="col-lg-12 row justify-content-center">
               <a href="futur_verbe_yer.php">verbes en -YER</a>
               </div>
               <div class="col-lg-12 row justify-content-center">
-              <a href="futur_accent.php">Verbes avec accent</a>
+              <a href="futur_accent.php">Être et avoir</a>
               </div>
-            </div> 
-            <div class="col-lg-12 row justify-content-center">
-              <img src="assets/img/4stars.png" alt="4 étoiles">
+
                 <div class="col-lg-12 row justify-content-center">
                 <a href="futur_irregulier.php">Verbes bizarres !</a>
                 </div>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <img src="assets/img/5stars.png" alt="5 étoiles">
+
+           
                 <div class="col-lg-12 row justify-content-center">
                 <a href="futur.php">On mélange tout ! !</a>
                 </div>
-            </div>            
+                      
           </div>
         </div>
         <div class="col-lg-2 bloc3">
@@ -134,62 +119,46 @@
             </div>            
           </div>
         </div>
-        <div class="col-lg-2 bloc4">
+                <div class="col-lg-2 bloc4">
           <header class="row justify-content-center">
             <h2>Au passé composé</h2>
           </header>
-        <div class="row justify-content-center">
+          <div class="row justify-content-center">
             <div class="col-lg-12 ">
-              <a href="present_premier_groupe.php">1er groupe</a>
+              <a href="imparfait_premier_groupe.php">1er groupe</a>
             </div>
             <div class="col-lg-12">
-                <a href="present_deuxieme_groupe">2è groupe</a>
+                <a href="imparfait_deuxieme_groupe">2è groupe</a>
             </div>
             <div class="col-lg-12">
-                <a href="present_troisieme_groupe">3è groupe</a>
+                <a href="imparfait_troisieme_groupe">3è groupe</a>
             </div>
             <div class="col-lg-12">
                 <a href="present_irregulier.php">Irrégulier</a>
             </div>            
           </div>
         </div>
-              <div class="col-lg-2 bloc5">
+
+                <div class="col-lg-2 bloc5">
           <header class="row justify-content-center">
             <h2>Au passé simple</h2>
           </header>
           <div class="row justify-content-center">
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/1star.png" alt="1 étoile">
-              <div class="col-lg-12 row justify-content-center">
-              <a href="present_1.php">Verbes du 1er groupe</a>
-              </div>
+            <div class="col-lg-12 ">
+              <a href="imparfait_premier_groupe.php">1er groupe</a>
             </div>
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/2stars.png" alt="2 étoiles">
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_verbe_re.php">verbes en -RE</a>
-              </div>
+            <div class="col-lg-12">
+                <a href="imparfait_deuxieme_groupe">2è groupe</a>
             </div>
-            <div class="col-lg-12 row justify-content-center">
-            <img src="assets/img/3stars.png" alt="3 étoiles">
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_verbe_yer.php">verbes en -YER</a>
-              </div>
-            </div> 
-            <div class="col-lg-12 row justify-content-center">
-              <img src="assets/img/4stars.png" alt="4 étoiles">
-                <div class="col-lg-12 row justify-content-center">
-                <a href="futur_irregulier.php">Verbes bizarres !</a>
-                </div>
+            <div class="col-lg-12">
+                <a href="imparfait_troisieme_groupe">3è groupe</a>
             </div>
-            <div class="col-lg-12 row justify-content-center">
-              <img src="assets/img/5stars.png" alt="5 étoiles">
-                <div class="col-lg-12 row justify-content-center">
-                <a href="futur.php">On mélange tout ! !</a>
-                </div>
+            <div class="col-lg-12">
+                <a href="present_irregulier.php">Irrégulier</a>
             </div>            
           </div>
         </div>
+        
       </div>
     </section>
     
