@@ -29,9 +29,42 @@
          <h1>Les maths, c'est parti !</h1>
       </header>
     </section>
-
    
     <section class="col-lg-12 theme">
+      <div class="row justify-content-center">
+
+
+      <div class="col-lg-1 bloc1">
+        
+          <img class="img-fluid" src="assets/img/add.png" alt="conjuguer"></a>
+       
+          <div class="row justify-content-center">
+            <div class="col-lg-12 row justify-content-center">
+              <a href="present_1.php">calcul mental</a>
+            </div>
+            <div class="col-lg-12 row justify-content-center">
+              <a href="present_1.php">additions posées</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1">
+          <img class="img-fluid" src="assets/img/substract.png" alt="conjuguer"></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1">
+          <img class="img-fluid" src="assets/img/multiply.png" alt="conjuguer"></a>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1">
+          <img class="img-fluid" src="assets/img/divide.png" alt="conjuguer"></a>
+        </div>
+      </div>
      <div class="row justify-content-center">
         <div class="col-lg-4 operation">
           <header class="row justify-content-center">
