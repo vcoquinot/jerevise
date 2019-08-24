@@ -27,7 +27,7 @@
 
   <body>
     <?php 
-    $a=0;
+    $firstNumber=0;
     $secondNumber=7;
     ?>
     <section id="mentalPlusSept">
@@ -36,18 +36,23 @@
       </div>
     </section>   
 
-      <form action="cible_addition_mentale.php" method="post">
+      <form action="cible_addition.php" method="post">
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">
             <?php 
-            for ($i= 1; $i<9 ; $i++){
+            //for ($i= 1; $i<9 ; $i++){
               ?>
             <div class="col-lg-1"></div>
-            <div class="col-lg-5"><?php $randFirstNumber = randCountNumberWithTwoFigures($a) ;?> + <?php echo $secondNumber;?> = <input class="col-lg-3" name="somme" type="text" placeholder="total"></input>
+            <div class="col-lg-5"><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?> + <?php echo $secondNumber;?> = <input class="col-lg-3" name="somme" type="text" placeholder="total"></input>
+            <input type="hidden" name="numeroQuestion" value="1">
+            <input class="col-lg-2" type="hidden"
+            name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $secondNumber); 
+            echo $sommeCorrecte;
+            ?>">
             </div>
             <?php
-            }
+            //}
             ?>
           </div>
         </div>
