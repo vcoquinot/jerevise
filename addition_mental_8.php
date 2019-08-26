@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>+7</title>      
+      <title>+8</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -33,76 +33,71 @@
     </section>
 
     <?php
-    calculerScore(); 
-    calculerNombreDeQuestionsPosees();
-    //****************************
-    //QUESTIONS
-    //****************************
-    //LIMITATION À 8 QUESTIONS OU RETOUR ACCUEIL + remise compteurs à zéro
-    if($_SESSION['numeroQuestion'] >8){
-      $_SESSION['numeroQuestion'] =0;
-      $_SESSION['score'] =0;
-      header("location:accueil.php");
-    }else{
     //initialisation des variables
     $firstNumber=0;
     $secondNumber=8;
-    $numeroQuestion =0;
     ?>
-      <form action="cible_addition.php" method="post">
+
+    <!--****************************
+    //QUESTIONS
+    //****************************-->
+
+    <form action="cible_addition.php" method="get">
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">            
             <div class="col-lg-2"></div>
             <div class="col-lg-5">
-              <!--Calcul N° un-->
-              <input type="hidden" name="numeroQuestion" value="<?php $numeroQuestion= $numeroQuestion++?>">
+              <!-- premier chiffre aléatoire-->
               <?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?> + 
               <?php echo $secondNumber;?> =
+              <!-- transmission des données-->
               <input class="col-lg-3" name="resultatUn" type="text" placeholder="total"></input>
-              <input class="col-lg-2" type="hidden"
-              name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $secondNumber); 
+              <input class="col-lg-2" name="resultatCorrectUn" type="hidden"
+               value="<?php echo $resultatCorrectUn= addition($randFirstNumber, $secondNumber); 
               ?>">
             </div>
             <!--Calcul N° deux-->
-            <input type="hidden" name="numeroQuestion" value="<?php $numeroQuestion++?>">
             <div class="col-lg-5"><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?> 
             + 
-            <?php echo $secondNumber;?> = <input class="col-lg-3" name="resultatDeu" type="text" placeholder="total"></input>
+            <?php echo $secondNumber;?> = <input class="col-lg-3" name="resultatDeux" type="text" placeholder="total"></input>
             
             <input class="col-lg-2" type="hidden"
-            name="resultatCorrectDeux" value="<?php $sommeCorrecte= addition($randFirstNumber, $secondNumber); 
+            name="resultatCorrectDeux" value="<?php echo $resultatCorrectDeux= addition($randFirstNumber, $secondNumber); 
             ?>">
             </div>
           </div>
-
-
-                
+          <!--Calcul N° quatre-->
           <div class="row">            
             <div class="col-lg-2"></div>
-            <div class="col-lg-5"><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?> + <?php echo $secondNumber;?> = <input class="col-lg-3" name="sommeNumeroTrois" type="text" placeholder="total"></input>
-            <input type="hidden" name="numeroQuestion" value="<?php $numeroQuestion++?>">
+            <div class="col-lg-5">
+              <!-- premier chiffre aléatoire-->
+              <?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?> + 
+              <?php echo $secondNumber;?> =
+              <!-- transmission des données-->
+              <input class="col-lg-3" name="resultatTrois" type="text" placeholder="total"></input>
+              <input class="col-lg-2" name="resultatCorrectTrois" type="hidden"
+               value="<?php echo $resultatCorrectDeux= addition($randFirstNumber, $secondNumber); 
+              ?>">
+            </div>
+            <!--Calcul N° quatre-->
+            <div class="col-lg-5"><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?> 
+            + 
+            <?php echo $secondNumber;?> = <input class="col-lg-3" name="resultatQuatre" type="text" placeholder="total"></input>
+            
             <input class="col-lg-2" type="hidden"
-            name="sommeCorrecteNumeroTrois" value="<?php $sommeCorrecte= addition($randFirstNumber, $secondNumber); 
-            ?>">
-            </div><div class="col-lg-5"><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?> + <?php echo $secondNumber;?> = <input class="col-lg-3" name="sommeNumeroQuatre" type="text" placeholder="total"></input>
-            <input type="hidden" name="numeroQuestion" value="<?php $numeroQuestion++?>">
-            <input class="col-lg-2" type="hidden"
-            name="sommeCorrecteNumeroQuatre" value="<?php $sommeCorrecte= addition($randFirstNumber, $secondNumber); 
+            name="resultatCorrectQuatre" value="<?php echo $resultatCorrectQuatre= addition($randFirstNumber, $secondNumber); 
             ?>">
             </div>
           </div>
-        </div>
-      </div>
+
       
       <div class = "col-lg-12">
         <div class="row justify-content-center">
           <input type="submit" value="Vérifier">
+          <input class="col-lg-2" name="score" type="hidden" value="0">
         </div>
       </div>
     </form>
-    <?php
-    }
-    ?>
   </body>
 </html>
