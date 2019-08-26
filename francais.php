@@ -30,6 +30,13 @@
       </header>
     </section>
 
+    <section class="container-fluid" id="conjugaison">
+      <div class="row justify-content-center">
+        <div class="col-lg-2">          
+        </div>
+      </div>
+    </section>
+
 
     <section class="container-fluid" id="conjugaison">
       <div class="row justify-content-center">
@@ -37,135 +44,208 @@
           <img class="img-fluid" src="assets/img/conjuguer.png" alt="conjuguer"></a>
         </div>
       </div>
+      <section class="container-fluid" id="conjugaison">
+        <div class="row justify-content-center">
+          <div class="col-lg-2">          
+          </div>
+        </div>
+      </section>
       <div class="row justify-content-center">
-      <div class="col-lg-2 bloc1">
+        <div class="col-lg-2">
           <header class="row justify-content-center">
-            <h2>Au présent</h2>
+            <h2>présent</h2>
           </header>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 row justify-content-center">
-              <a href="present_1.php">Verbes du 1er groupe</a>
-            </div>
-            
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_verbe_re.php">verbes en -RE</a>
-              </div>
-          
-            
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_verbe_yer.php">verbes en -YER</a>
-              </div>
-
-            
-                <div class="col-lg-12 row justify-content-center">
-                <a href="futur_irregulier.php">Verbes bizarres !</a>
-                </div>
-
-            
-                <div class="col-lg-12 row justify-content-center">
-                <a href="futur.php">On mélange tout ! !</a>
-                </div>
-          
-          </div>
         </div>
-        <div class="col-lg-2 bloc2">
+        <div class="col-lg-2">
           <header class="row justify-content-center">
-            <h2>Au futur</h2>
+            <h2>futur</h2>
           </header>
-          <div class="row justify-content-center">
-            
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_1.php">Verbes en -ER, -IR</a>
-              </div>
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_verbe_re.php">verbes en -RE</a>
-              </div>
-
-            
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_verbe_yer.php">verbes en -YER</a>
-              </div>
-              <div class="col-lg-12 row justify-content-center">
-              <a href="futur_accent.php">Être et avoir</a>
-              </div>
-
-                <div class="col-lg-12 row justify-content-center">
-                <a href="futur_irregulier.php">Verbes bizarres !</a>
-                </div>
-
-           
-                <div class="col-lg-12 row justify-content-center">
-                <a href="futur.php">On mélange tout ! !</a>
-                </div>
-                      
-          </div>
         </div>
-        <div class="col-lg-2 bloc3">
+        <div class="col-lg-2">
           <header class="row justify-content-center">
-            <h2>À l'imparfait</h2>
+            <h2>imparfait</h2>
           </header>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 ">
-              <a href="imparfait_premier_groupe.php">1er groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="imparfait_deuxieme_groupe">2è groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="imparfait_troisieme_groupe">3è groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="present_irregulier.php">Irrégulier</a>
-            </div>            
-          </div>
         </div>
-                <div class="col-lg-2 bloc4">
+        <div class="col-lg-2">
           <header class="row justify-content-center">
-            <h2>Au passé composé</h2>
+            <h2>passé composé</h2>
           </header>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 ">
-              <a href="imparfait_premier_groupe.php">1er groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="imparfait_deuxieme_groupe">2è groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="imparfait_troisieme_groupe">3è groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="present_irregulier.php">Irrégulier</a>
-            </div>            
-          </div>
         </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <h2>passé simple</h2>
+          </header>
+        </div>
+      </div>
 
-                <div class="col-lg-2 bloc5">
+<!--première ligne-->
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
           <header class="row justify-content-center">
-            <h2>Au passé simple</h2>
+            <a href="present_1.php">Verbes du 1er groupe</a>
           </header>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 ">
-              <a href="imparfait_premier_groupe.php">1er groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="imparfait_deuxieme_groupe">2è groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="imparfait_troisieme_groupe">3è groupe</a>
-            </div>
-            <div class="col-lg-12">
-                <a href="present_irregulier.php">Irrégulier</a>
-            </div>            
-          </div>
         </div>
-        
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">Verbes en -ER, -IR</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="imparfait_premier_groupe.php">1er groupe</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">1er groupe</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">1er groupe</a>
+          </header>
+        </div>
+      </div>
+<!--seconde ligne-->
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_verbe_yer.php">xx</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_verbe_re.php">verbes en -RE</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="imparfait_premier_groupe.php">xx</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">xx</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">XX</a>
+          </header>
+        </div>
+      </div>
+<!--troisième ligne-->
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_verbe_yer.php">verbes en -YER</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+           <a href="futur_accent.php">xx</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="imparfait_premier_groupe.php">xx</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">x</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">XX</a>
+          </header>
+        </div>
+      </div>
+<!--quatrième ligne-->
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_verbe_yer.php">Être et avoir</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+           <a href="futur_accent.php">Être et avoir</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="imparfait_premier_groupe.php">Être et avoir</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">Être et avoir</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">Être et avoir</a>
+          </header>
+        </div>
+      </div>
+  <!--cinquième ligne-->
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_verbe_yer.php">on mélange tout !</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+           <a href="futur_accent.php">on mélange tout !</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="imparfait_premier_groupe.php">on mélange tout !</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">on mélange tout !</a>
+          </header>
+        </div>
+        <div class="col-lg-2">
+          <header class="row justify-content-center">
+            <a href="futur_1.php">on mélange tout !</a>
+          </header>
+        </div>
+      </div>
       </div>
     </section>
+
+    <section class="container-fluid" id="conjugaison">
+      <div class="row justify-content-center">
+        <div class="col-lg-2">          
+        </div>
+      </div>
+      <section class="container-fluid" id="conjugaison">
+      <div class="row justify-content-center">
+        <div class="col-lg-2">          
+        </div>
+      </div>
+      </section>
+    </section>
+
 
     <section class="container-fluid" id="vocabulaire">
       <div class="row justify-content-center">
         <div class="col-lg-2">
-          <img class="img-fluid" src="assets/img/vocabulaire.png" alt="conjuguer"></a>
+          <img class="img-fluid" src="assets/img/vocab.png" alt="vocabulaire"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid" id="conjugaison">
+      <div class="row justify-content-center">
+        <div class="col-lg-2">          
         </div>
       </div>
     </section>
