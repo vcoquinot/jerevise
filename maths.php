@@ -13,6 +13,7 @@
 
 <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,83 +31,169 @@
       </header>
     </section>
    
-    <section class="col-lg-12">
+ 
+    <div class="container col-lg-12">
       <div class="row justify-content-center">
-        <div class="col-lg-1 bloc1">
-        <img class="img-fluid" src="assets/img/add.png" alt="conjuguer"></a>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 row justify-content-center">
-              <h3>Calcul mental</h3>
-              <a href="addition_mental_7.php"><button type="button" class="btn">+7</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition_mental_8.php"><button type="button" class="btn">+8</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition_mental_9.php"><button type="button" class="btn">+9</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition_mental_10.php"><button type="button" class="btn">+10</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition_mental_100.php"><button type="button" class="btn">+100</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition_mental_1000.php"><button type="button" class="btn">+1000</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <h3>Opérations posées</h3>
-              <a href="addition_posee_deux_chiffres.php"><button type="button" class="btn">2 chiffres</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition_posee_deux_chiffres.php"><button type="button" class="btn">3 chiffres</button></a>
-            </div>
-          </div>
+        <div class="col-lg-6 row justify-content-center">
+          <h3>Calcul mental</h3>
+          <div class="col-lg-3 ">
+            <img class="img-fluid" src="assets/img/thinking.png">
+           </div> 
         </div>
-        
-        <div class="col-lg-1"></div>
-
-        <div class="col-lg-1 bloc2">
-        <img class="img-fluid" src="assets/img/substract.png" alt="conjuguer"></a>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition.php"><button type="button" class="btn">Calcul mental</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition.php"><button type="button" class="btn">Additions posées à 2 chiffres</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-1"></div>
-
-        <div class="col-lg-1 bloc3">
-          <img class="img-fluid" src="assets/img/multiply.png" alt="conjuguer"></a>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition.php"><button type="button" class="btn">Calcul mental</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition.php"><button type="button" class="btn">Additions posées à 2 chiffres</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-1 bloc4">        
-          <img class="img-fluid" src="assets/img/divide.png" alt="conjuguer"></a>
-          <div class="row justify-content-center">
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition.php"><button type="button" class="btn">Calcul mental</button></a>
-            </div>
-            <div class="col-lg-12 row justify-content-center">
-              <a href="addition.php"><button type="button" class="btn">Additions posées à 2 chiffres</button></a>
-            </div>
-          </div>
+        <div class="col-lg-6 row justify-content-center">
+        <h3>Opérations posées</h3>
         </div>
       </div>
-
-
-      </section>
+    </div>
+    <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 row justify-content-center">
+          <h3></h3>
+        </div>
+        <div class="col-lg-6 row justify-content-center">
+        <h3></h3>
+        </div>
+      </div>
+    </div>
+    <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 row justify-content-center">
+          <a href="addition_mental_7.php">
+            <button type="button" class="btn">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              7
+            </button>
+          </a>
+          <a href="addition_mental_8.php">
+            <button type="button" class="btn">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              8
+            </button>
+          </a>
+          <a href="addition_mental_9.php">
+            <button type="button" class="btn">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              9
+              </button>
+          </a> 
+        </div>
+        <div class="col-lg-6 row justify-content-center">
+          <a href="addition_posee_deux_chiffres.php">
+            <button type="button" class="btn">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              2 chiffres
+            </button>
+        </a>
+      <a href="addition_posee_trois_chiffres.php.php">
+        <button type="button" class="btn">
+          <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+          3 chiffres
+          </button>
+      </a>
+        </div>
+      </div>
+    </div>
+    <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 row justify-content-center">
+          <a href="addition_mental_7.php">
+          <button type="button" class="btn">
+            <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+            10
+          </button>
+      </a>
+      <a href="addition_mental_8.php">
+        <button type="button" class="btn">
+          <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+          100
+          </button>
+      </a>
+      <a href="addition_mental_9.php">
+        <button type="button" class="btn">
+          <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+          1000
+          </button>
+      </a> 
+        </div>
+        <div class="col-lg-6 row justify-content-center">
+        
+        </div>
+      </div>
+    </div>
+    <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 row justify-content-center">
+          <h3>--</h3>
+        </div>
+        <div class="col-lg-6 row justify-content-center">
+        <h3>--</h3>
+        </div>
+      </div>
+    </div>
+        <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 row justify-content-center">
+           <a href="addition_mental_9.php">
+            <button type="button" class="btn">
+              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+              9
+              </button>
+          </a> 
+        </div>
+        <div class="col-lg-6 row justify-content-center">
+          <a href="addition_posee_deux_chiffres.php">
+            <button type="button" class="btn">
+              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+              2 chiffres
+            </button>
+        </a>
+      <a href="addition_posee_trois_chiffres.php.php">
+        <button type="button" class="btn">
+          <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+          3 chiffres
+          </button>
+      </a>
+        </div>
+      </div>
+    </div>
+    <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 row justify-content-center">
+          <a href="addition_mental_7.php">
+          <button type="button" class="btn">
+            <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+            10
+          </button>
+      </a>
+      <a href="addition_mental_8.php">
+        <button type="button" class="btn">
+          <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+          100
+          </button>
+      </a>
+      <a href="addition_mental_9.php">
+        <button type="button" class="btn">
+          <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+          1000
+          </button>
+      </a> 
+        </div>
+        <div class="col-lg-6 row justify-content-center">
+        
+        </div>
+      </div>
+    </div>
+    <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 row justify-content-center">
+          <h3>--</h3>
+        </div>
+        <div class="col-lg-6 row justify-content-center">
+        <h3>--</h3>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!--
   <section class="theme">
