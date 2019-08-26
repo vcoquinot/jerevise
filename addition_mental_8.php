@@ -26,9 +26,9 @@
   </head>
 
   <body>
-    <section id="mentalPlusSept">
+    <section id="mentalPlusHuit">
       <div class="row justify-content-center">
-      <img class="img-fluid" src="assets/img/maths_+7.png" alt="conjugaison">
+      <img class="img-fluid" src="assets/img/maths_+8.png" alt="conjugaison">
       </div>
     </section>
 
@@ -46,7 +46,7 @@
     }else{
     //initialisation des variables
     $firstNumber=0;
-    $secondNumber=7;
+    $secondNumber=8;
     $numeroQuestion =0;
     ?>
       <form action="cible_addition.php" method="post">

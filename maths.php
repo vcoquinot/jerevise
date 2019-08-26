@@ -32,32 +32,44 @@
     </section>
    
  
-    <div class="container col-lg-12">
+    <div class="container col-lg-12" id="titres" >
       <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
+        <div class="col-lg-4 row justify-content-center">
           <h3>Calcul mental</h3>
-          <div class="col-lg-3 ">
-            <img class="img-fluid" src="assets/img/thinking.png">
-           </div> 
         </div>
-        <div class="col-lg-6 row justify-content-center">
-        <h3>Opérations posées</h3>
+        <div class="col-lg-4 row justify-content-center">
+        <h3>Opérations posées</h3> 
         </div>
-      </div>
-    </div>
-    <div class="container col-lg-12">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
-          <h3></h3>
-        </div>
-        <div class="col-lg-6 row justify-content-center">
-        <h3></h3>
+        <div class="col-lg-4 row justify-content-center">
+        <h3>Problèmes</h3>
         </div>
       </div>
     </div>
-    <div class="container col-lg-12">
+<!--images-->
+    <div class="container col-lg-12" id="images" >
       <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2 row justify-content-center">
+          <img class="img-fluid" src="assets/img/thinking.png" alt="calcul mental">
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2 row justify-content-center">
+          <img class="img-fluid" src="assets/img/copywriting.png" alt="calcul mental"> 
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2 row justify-content-center">
+          <img class="img-fluid" src="assets/img/puzzle.png" alt="problèmes">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+
+<!--opérations-->
+    <div class="container col-lg-12" id="titres" >
+      <div class="row justify-content-center">
+        <div class="col-lg-4 row justify-content-center">
           <a href="addition_mental_7.php">
             <button type="button" class="btn">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
@@ -74,125 +86,70 @@
             <button type="button" class="btn">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
               9
-              </button>
-          </a> 
+            </button>
+          </a>
         </div>
-        <div class="col-lg-6 row justify-content-center">
-          <a href="addition_posee_deux_chiffres.php">
+        <div class="col-lg-4 row justify-content-center">
+          <a href="addition_.php">
             <button type="button" class="btn">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
               2 chiffres
             </button>
-        </a>
-      <a href="addition_posee_trois_chiffres.php.php">
-        <button type="button" class="btn">
-          <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-          3 chiffres
-          </button>
-      </a>
-        </div>
-      </div>
-    </div>
-    <div class="container col-lg-12">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
-          <a href="addition_mental_7.php">
-          <button type="button" class="btn">
-            <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-            10
-          </button>
-      </a>
-      <a href="addition_mental_8.php">
-        <button type="button" class="btn">
-          <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-          100
-          </button>
-      </a>
-      <a href="addition_mental_9.php">
-        <button type="button" class="btn">
-          <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-          1000
-          </button>
-      </a> 
-        </div>
-        <div class="col-lg-6 row justify-content-center">
-        
-        </div>
-      </div>
-    </div>
-    <div class="container col-lg-12">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
-          <h3>--</h3>
-        </div>
-        <div class="col-lg-6 row justify-content-center">
-        <h3>--</h3>
-        </div>
-      </div>
-    </div>
-        <div class="container col-lg-12">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
-           <a href="addition_mental_9.php">
+          </a>
+        <a href="addition_.php">
             <button type="button" class="btn">
-              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-              9
-              </button>
-          </a> 
-        </div>
-        <div class="col-lg-6 row justify-content-center">
-          <a href="addition_posee_deux_chiffres.php">
-            <button type="button" class="btn">
-              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-              2 chiffres
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              3 chiffres
             </button>
-        </a>
-      <a href="addition_posee_trois_chiffres.php.php">
-        <button type="button" class="btn">
-          <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-          3 chiffres
-          </button>
-      </a>
+          </a>  
+        </div>
+        <div class="col-lg-4 row justify-content-center">
+        <a href="addition_mental_9.php">
+            <button type="button" class="btn">périmètre</i></button>
+          </a>
         </div>
       </div>
     </div>
-    <div class="container col-lg-12">
+
+    <!--opérations-->
+    <div class="container col-lg-12" id="titres" >
       <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
+        <div class="col-lg-4 row justify-content-center">
           <a href="addition_mental_7.php">
-          <button type="button" class="btn">
-            <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-            10
-          </button>
-      </a>
-      <a href="addition_mental_8.php">
-        <button type="button" class="btn">
-          <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-          100
-          </button>
-      </a>
-      <a href="addition_mental_9.php">
-        <button type="button" class="btn">
-          <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-          1000
-          </button>
-      </a> 
+            <button type="button" class="btn">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              10
+            </button>
+          </a>
+          <a href="addition_mental_8.php">
+            <button type="button" class="btn">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              100
+            </button>
+          </a>
+          <a href="addition_mental_9.php">
+            <button type="button" class="btn">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              1000
+            </button>
+          </a>
         </div>
-        <div class="col-lg-6 row justify-content-center">
-        
+        <div class="col-lg-4 row justify-content-center">
+          <a href="addition_.php">
+            <button type="button" class="btn"></button>
+          </a>
+        <a href="addition_.php">
+            <button type="button" class="btn"></button>
+          </a>  
+        </div>
+        <div class="col-lg-4 row justify-content-center">
+        <a href="addition_mental_9.php">
+            <button type="button" class="btn">durée</button>
+          </a>
         </div>
       </div>
     </div>
-    <div class="container col-lg-12">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 row justify-content-center">
-          <h3>--</h3>
-        </div>
-        <div class="col-lg-6 row justify-content-center">
-        <h3>--</h3>
-        </div>
-      </div>
-    </div>
+
   </section>
 
 <!--
