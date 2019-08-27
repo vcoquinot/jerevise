@@ -1,3 +1,11 @@
+.btn .btn-success{
+  margin-right: 1px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  border-radius: 25px;
+}
+
+
 #renaissance {
   padding: 1rem;
   text-align: center;
