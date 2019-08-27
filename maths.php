@@ -67,31 +67,109 @@
     </div>
 
 <!--opérations-->
-    <div class="container col-lg-12" id="titres" >
+    <div class="container col-lg-12">
       <div class="row justify-content-center">
         <div class="col-lg-4 row justify-content-center">
           <a href="addition_mental_7.php">
-            <button type="button" class="btn btn-success">
+            <button type="button" class="btn btn-success rounded-circle">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
               7
             </button>
           </a>
           <a href="addition_mental_8.php">
-            <button type="button" class="btn btn-success">
+            <button type="button" class="btn btn-success rounded-circle">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
               8
             </button>
           </a>
           <a href="addition_mental_9.php">
-            <button type="button" class="btn btn-success">
+            <button type="button" class="btn btn-success rounded-circle">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
               9
             </button>
           </a>
         </div>
         <div class="col-lg-4 row justify-content-center">
+          <a href="addition_posee_deux_chiffres.php">
+            <button type="button" class="rounded-circle">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              2 chiffres
+            </button>
+          </a>
+        <a href="addition_.php">
+            <button type="button" class="rounded-circle">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              3 chiffres
+            </button>
+          </a>  
+        </div>
+        <div class="col-lg-4 row justify-content-center">
+        <a href="addition_mental_9.php">
+            <button type="button" class="rounded-circle">périmètre</i></button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--opérations-->
+    <div class="container col-lg-12" id="titres" >
+      <div class="row justify-content-center">
+        <div class="col-lg-4 row justify-content-center">
+          <a href="addition_mental_10.php">
+            <button type="button" class="rounded-circle">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              10
+            </button>
+          </a>
+          <a href="addition_mental_100.php">
+            <button type="button" class="rounded-circle">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              100
+            </button>
+          </a>
+          <a href="addition_mental_1000.php">
+            <button type="button" class="rounded-circle">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              1000
+            </button>
+          </a>
+        </div>
+        <div class="col-lg-4 row justify-content-center">
           <a href="addition_.php">
-            <button type="button" class="btn-operation">
+            <button type="button" class="btn rounded-circle"></button>
+          </a>
+        <a href="addition_.php">
+            <button type="button" class="btn rounded-circle"></button>
+          </a>  
+        </div>
+        <div class="col-lg-4 row justify-content-center">
+        <a href="addition_mental_9.php">
+            <button type="button" class="btn rounded-circle">durée</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--opérations-->
+    <div class="container col-lg-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 row justify-content-center">
+          <a href="soustraction_mental_10.php">
+            <button type="button" class="btn btn-success rounded-circle">
+              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+              10
+            </button>
+          </a>
+          <a href="soustraction_mental_100.php">
+            <button type="button" class="btn btn-success rounded-circle">
+              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+              100
+            </button>
+          </a>
+        </div>
+        <div class="col-lg-4 row justify-content-center">
+          <a href="addition_.php">
+            <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
               2 chiffres
             </button>
@@ -106,45 +184,6 @@
         <div class="col-lg-4 row justify-content-center">
         <a href="addition_mental_9.php">
             <button type="button" class="btn-operation">périmètre</i></button>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!--opérations-->
-    <div class="container col-lg-12" id="titres" >
-      <div class="row justify-content-center">
-        <div class="col-lg-4 row justify-content-center">
-          <a href="addition_mental_10.php">
-            <button type="button" class="btn-operation">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              10
-            </button>
-          </a>
-          <a href="addition_mental_100.php">
-            <button type="button" class="btn-operation">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              100
-            </button>
-          </a>
-          <a href="addition_mental_1000.php">
-            <button type="button" class="btn-operation">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              1000
-            </button>
-          </a>
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-          <a href="addition_.php">
-            <button type="button" class="btn"></button>
-          </a>
-        <a href="addition_.php">
-            <button type="button" class="btn"></button>
-          </a>  
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-        <a href="addition_mental_9.php">
-            <button type="button" class="btn">durée</button>
           </a>
         </div>
       </div>

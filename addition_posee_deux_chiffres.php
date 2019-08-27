@@ -40,8 +40,15 @@ calculerNombreDeQuestionsPosees();
       $_SESSION['score'] =0;
       header("location:accueil.php");
     }else{
+      ?>
+      <section id="mentalPlusHuit">
+        <div class="row justify-content-center">
+          <img class="img-fluid" src="assets/img/maths_2_chiffres.png" alt="addition de 7">
+        </div>
+      </section>
+      <?php
       displayExerciceAdditionPoseeDeuxChiffres();
     }
-  ?>
+    ?>
   </body>
 </html>
