@@ -226,14 +226,6 @@ ________________________________________________________
     function afficherCommentaire(){
       $nombreCalculs= 4;
       $score= $_GET['score'];
-      $resultatUn= $_GET['resultatUn'];
-      $resultatCorrectUn= $_GET['resultatCorrectUn'];
-      $resultatDeux= $_GET['resultatDeux'];
-      $resultatCorrectDeux= $_GET['resultatCorrectDeux'];
-      $resultatTrois= $_GET['resultatTrois'];
-      $resultatCorrectTrois= $_GET['resultatCorrectTrois'];
-      $resultatQuatre= $_GET['resultatQuatre'];
-      $resultatCorrectQuatre= $_GET['resultatCorrectQuatre'];
       ?>
       <section class="container">
       <div class="row justify-content-center">
@@ -279,20 +271,27 @@ ________________________________________________________
 <!-- FONCTIONS AFFICHAGE DES OPÉRATIONS-->
 
 <!-- ADDITIONS-->
-<?php function displayExerciceAdditionPoseeDeuxChiffres(){ 
-  $a=0;
-  $_SESSION['nombreOperation'] = 0;
-?>
+  <?php function afficherExerciceAdditionPoseeDeuxChiffres(){ 
+    $a=0;
+    $_SESSION['nombreOperation'] = 0;
+    // deux nombres aléatoires à additioner        
+    $a=0;
+    $b=0;
+    $randFirstNumber = $a.rand(10,99);;
+    $randSecondNumber = $a.rand(10,99);
+                
+  ?>
   <br/>
   <br/>
         
     <form action="cible_addition_posee.php" method="post">
+        <!-- retenues-->
         <div class="container">
           <div class = "col-lg-12">
             <div class="row">
               <div class="col-lg-5"></div>
-              <input class="col-lg-3" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
-              </input>
+              <input class="col-lg-1" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
+              <span class="col-lg-1"></span>
               <div class="col-lg-4"></div>
           </div>
         </div>
@@ -300,47 +299,62 @@ ________________________________________________________
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-3"><?php $randFirstNumber = randCountNumberWithTwoFigures($a) ;?></div>
+            <div class="col-lg-5"></div>  
+
+              <!-- séparation en chiffres par dizaine, unité-->
+              <b><span class="col-lg-1"><?php echo $dizaine=substr($randFirstNumber,1,1); ?></span>
+              <span class="col-lg-1"><?php echo $unite=substr($randFirstNumber,2,3); ?></span>
             <div class="col-lg-3"></div>
           </div>
         </div>
       </div>
-        <div class="container">
+      <!--opérateur-->
+      <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-1">+</div>
-            <div class="col-lg-3"><?php $randSecondNumber = randCountNumberWithTwoFigures($a)  ;?></div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-1"></div> 
+              <i class="fa fa-plus-circle" style="color:#FF502F"></i>               
+            </div>
             <div class="col-lg-3"></div>
           </div>
         </div>
       </div>
-        <div class="container">
+      <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-3"></div>
+            <div class="col-lg-5"></div>  
+
+              <!-- séparation en chiffres par dizaine, unité-->
+              <b><span class="col-lg-1"><?php echo $dizaine=substr($randSecondNumber,1,1); ?></span>
+              <span class="col-lg-1"><?php echo $unite=substr($randSecondNumber,2,3); ?></span>
             <div class="col-lg-3"></div>
           </div>
         </div>
-        </div>
-        <div class="container">
+      
+      </div>
+      <!--total opération-->
+      <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-1">=</div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-1"></div> 
+              <b><span>=</span></b>              
+            </div>
+            <div class="col-lg-3"></div>
+          </div>
         </div>
+      </div>
+      <!--Résultat opération-->
         <div class="container">
-        <div class = "col-lg-12">
-          <div class="row">
-            <div class="col-lg-5"></div>
-            <input class="col-lg-3" name="somme" type="text" placeholder="total"></input>
-            <input class="col-lg-2" type="hidden"
+          <div class = "col-lg-12">
+            <div class="row">
+              <div class="col-lg-5"></div>
+              <input class="col-lg-1" name="somme"  type="text" placeholder="total">
+              <input class="col-lg-2" type="hidden"
             name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $randSecondNumber); 
             echo $sommeCorrecte;
             ?>">
-
             <div class="col-lg-4"></div>
           </div>
         </div>

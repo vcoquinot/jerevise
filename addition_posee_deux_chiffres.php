@@ -48,7 +48,7 @@ calculerNombreDeQuestionsPosees();
         </div>
       </section>
       <?php
-      displayExerciceAdditionPoseeDeuxChiffres();
+      afficherExerciceAdditionPoseeDeuxChiffres();
     }
     ?>
   </body>
