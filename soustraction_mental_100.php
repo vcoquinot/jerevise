@@ -9,7 +9,7 @@
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
       <title>-100</title>      
-      <link href="style1.css"  type="text/css" rel="stylesheet">
+      <link href="mainAll.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
@@ -52,7 +52,7 @@
 
               <!-- premier chiffre aléatoire-->
               <span class="col-lg-1">
-              <b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+              <b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber);?></b></span>
               <i class="fa fa-minus-circle" style="color:#CF455C"></i> 
               <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
               <span class="col-lg-1"><b>=</b></span>
@@ -64,7 +64,7 @@
             </div>
             <!--Calcul N° deux-->
             <div class="col-lg-5">
-              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span>
+              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber) ;?></b></span>
               <i class="fa fa-minus-circle" style="color:#CF455C"></i>
               <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
               <span class="col-lg-1"><b>=</b></span>
@@ -79,7 +79,7 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-5">
               <!-- premier chiffre aléatoire-->
-              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber);?></b></span>
               <i class="fa fa-minus-circle" style="color:#CF455C"></i> 
               <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
               <span class="col-lg-1"><b>=</b></span>
@@ -91,7 +91,7 @@
             </div>
             <!--Calcul N° quatre-->
             <div class="col-lg-5">
-              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span> 
+              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber) ;?></b></span> 
             <i class="fa fa-minus-circle" style="color:#CF455C"></i> 
             <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
             <span class="col-lg-1"><b>=</b></span>
@@ -104,7 +104,7 @@
 
       
       <div class = "col-lg-12">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="monScore">
           <input type="submit" value=" Mon score " style="border-color:#CF455C; background-color: #CF455C; color: white; font-weight: bold; font-size:20px;" >
           <input class="col-lg-2" name="score" type="hidden" value="0">
         </div>

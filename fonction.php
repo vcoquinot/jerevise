@@ -155,6 +155,127 @@ ________________________________________________________
     }
   ?>
 
+  <?php
+  function randCountNumberOverHundred($a){
+      //for($i=1; $i<7; $i++) {
+      $randCountNumberOverHundred = $a.rand(101,999);
+      echo $randCountNumberOverHundred;
+      //}
+      return $randCountNumberOverHundred;
+    }
+  ?>
+
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+    <!-- SCORE TOTAL OPERATIONS-->
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+  <?php 
+    function calculerScoreTotalOperations(){
+      $nombreCalculs= 4;
+      $score= $_GET['score'];
+      $resultatUn= $_GET['resultatUn'];
+      $resultatCorrectUn= $_GET['resultatCorrectUn'];
+      $resultatDeux= $_GET['resultatDeux'];
+      $resultatCorrectDeux= $_GET['resultatCorrectDeux'];
+      $resultatTrois= $_GET['resultatTrois'];
+      $resultatCorrectTrois= $_GET['resultatCorrectTrois'];
+      $resultatQuatre= $_GET['resultatQuatre'];
+      $resultatCorrectQuatre= $_GET['resultatCorrectQuatre'];
+      //* TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR */
+      $isCorrect=false;
+      if($resultatUn == $resultatCorrectUn){ 
+        $isCorrect === true; 
+        $score++; 
+      }
+      if($resultatDeux == $resultatCorrectDeux){ 
+        $isCorrect === true; 
+        $score++; 
+      }
+      if($resultatTrois == $resultatCorrectTrois){ 
+        $isCorrect === true; 
+        $score++; 
+      }
+      if($resultatQuatre == $resultatCorrectQuatre){ 
+        $isCorrect === true; 
+        $score++; 
+      }
+         ?>
+      <section class="container" id="score">
+        <div class="row justify-content-center">
+          <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/target.png" alt ="cible">
+          </div>
+        </div>
+        <header class="row justify-content-center">
+          <h3><?php echo "Tu as obtenu ". $score. " points sur ". $nombreCalculs;?></h3>
+        </header>
+      </section>
+    <?php
+    }
+    ?>
+
+
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+    <!-- COMMENTAIRE SCORE TOTAL -->
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+
+    <?php  
+    function afficherCommentaire(){
+      $nombreCalculs= 4;
+      $score= $_GET['score'];
+      $resultatUn= $_GET['resultatUn'];
+      $resultatCorrectUn= $_GET['resultatCorrectUn'];
+      $resultatDeux= $_GET['resultatDeux'];
+      $resultatCorrectDeux= $_GET['resultatCorrectDeux'];
+      $resultatTrois= $_GET['resultatTrois'];
+      $resultatCorrectTrois= $_GET['resultatCorrectTrois'];
+      $resultatQuatre= $_GET['resultatQuatre'];
+      $resultatCorrectQuatre= $_GET['resultatCorrectQuatre'];
+      ?>
+      <section class="container">
+      <div class="row justify-content-center">
+        <?php
+        if($score==$nombreCalculs){
+          $commentaireReussite = $bdd->query("SELECT commentaire_reussite FROM reussite ORDER BY RAND() LIMIT 1");
+          
+          $donneesReussite = $commentaireReussite->fetch();
+          $felicitation = $donneesReussite['commentaire_reussite'];
+          ?>
+          <h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2>
+        <?php        
+        }else{
+          ?>
+          <h2 class="commentaire" style="color:#FF8080"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2>
+        <?php
+        }
+        ?>
+      </div>
+    </section>
+    <?php
+    } 
+    ?> 
+
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+    <!-- REDIRECTION-->
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+    <?php function redirection(){
+    ?>
+    <section class="container col-lg-12" id="redirection" style = "text-align:center;">
+      <div class="row justify-content-center">
+        <a href="maths.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Rejouer</button></a>
+      <div class="col-lg-1"></div>
+        <a href="accueil.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Accueil</button></a>
+      </div>
+    </section>
+    <?php
+    }
+    ?>
+
 <!-- FONCTIONS AFFICHAGE DES OPÉRATIONS-->
 
 <!-- ADDITIONS-->

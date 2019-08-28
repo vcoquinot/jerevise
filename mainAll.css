@@ -1,0 +1,51 @@
+
+/*GENERAL */
+/* --------------------------------------------------
+-----------------------------------------------------
+*/
+
+/*===========>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> marche pas ?!*/
+#score header{
+  margin-top :40px;
+}
+
+
+/*MATHS - ADDITIONS */
+/* --------------------------------------------------
+-----------------------------------------------------
+*/
+
+#monScore{
+    margin-top :40px;
+}
+/*===========>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> marche pas ?!*/
+.pink .fa{
+  color:#CF455C;
+}
+.addition{
+  border: solid 5px #009999;
+  border-radius: 1rem;
+  background-color: #009999;
+  opacity: 0.8;
+  padding : 2rem;
+  color: #fff;
+  font-weight: 800;
+
+}
+
+#number{
+  border: solid 1px grey;
+}
+
+/*queston*/
+.question{
+  margin-top: 20px;
+}
+
+.commentaire {
+  color: #FF8080;
+}
+
+#redirection{
+  margin-top : 40px;
+}
