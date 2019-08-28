@@ -49,6 +49,7 @@
           <div class="row">            
             <div class="col-lg-2"></div>
             <div class="col-lg-5">
+
               <!-- premier chiffre aléatoire-->
               <span class="col-lg-1">
               <b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
@@ -106,7 +107,7 @@
       
       <div class = "col-lg-12">
         <div class="row justify-content-center">
-          <input type="submit" value="Vérifier">
+          <input type="submit" value=" Mon score " style="border-color:#FF502F; background-color: #FF502F; color: white; font-weight: bold; font-size:20px;" >
           <input class="col-lg-2" name="score" type="hidden" value="0">
         </div>
       </div>
