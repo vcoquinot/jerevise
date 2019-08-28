@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <section id="mentalPlusHuit">
+    <section id="mentalPlusSept">
       <div class="row justify-content-center">
       <img class="img-fluid" src="assets/img/maths_+7.png" alt="addition de 7">
       </div>
@@ -43,7 +43,7 @@
     //QUESTIONS
     //****************************-->
 
-    <form action="cible_addition.php" method="get">
+    <form action="cible_operation_mentale.php" method="get">
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">            

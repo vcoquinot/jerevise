@@ -43,7 +43,7 @@
     //QUESTIONS
     //****************************-->
 
-    <form action="cible_addition.php" method="get">
+    <form action="cible_operation_mentale.php" method="get">
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">            
