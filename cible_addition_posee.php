@@ -16,7 +16,7 @@ if($numeroQuestion<=8){
       $_SESSION['score']++; ?>
 
       <!--ESPACE COMMENTAIRE BONNE RÉPONSE-->
-      <section id="container_renaissance">
+      <section">
       <?php
       //RECHERCHE COMMENTAIRE ALÉATOIRE BONNE RÉPONSE DANS LA BDD
       $commentaireReussite = $bdd->query("SELECT commentaire_reussite, id_image FROM reussite ORDER BY RAND() LIMIT 1");
