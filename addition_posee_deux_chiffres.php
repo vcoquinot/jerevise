@@ -32,6 +32,7 @@
 
 calculerScore(); 
 calculerNombreDeQuestionsPosees();
+
   //****************************
     //QUESTIONS
     //****************************
@@ -39,12 +40,12 @@ calculerNombreDeQuestionsPosees();
     if($_SESSION['numeroQuestion'] >8){
       $_SESSION['numeroQuestion'] =0;
       $_SESSION['score'] =0;
-      header("location:accueil.php");
+      redirection();
     }else{
       ?>
-      <section id="mentalPlusHuit">
+      <section>
         <div class="row justify-content-center">
-          <img class="img-fluid" src="assets/img/maths_2_chiffres.png" alt="addition de 7">
+          <img class="img-fluid" src="assets/img/maths_2_chiffres.png" alt="addition à deux chiffres">
         </div>
       </section>
       <?php
