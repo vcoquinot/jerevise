@@ -273,7 +273,7 @@ ________________________________________________________
 <!-- ADDITIONS-->
   <?php function afficherExerciceAdditionPoseeDeuxChiffres(){ 
     $a=0;
-    $_SESSION['nombreOperation'] = 0;
+    $_SESSION['numeroQuestion'] = 0;
     // deux nombres aléatoires à additioner        
     $a=0;
     $b=0;
@@ -284,26 +284,25 @@ ________________________________________________________
   <br/>
   <br/>
         
-    <form action="cible_addition_posee.php" method="post">
+    <form action="cible_addition_posee.php" method="get">
         <!-- retenues-->
         <div class="container">
           <div class = "col-lg-12">
             <div class="row">
-              <div class="col-lg-5"></div>
-              <input class="col-lg-1" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
-              <span class="col-lg-1"></span>
-              <div class="col-lg-4"></div>
+              <span class="col-lg-6"></span>
+              <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" id="inputRetenue">
+              <span class="col-lg-6"></span>
           </div>
         </div>
       </div>
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-5"></div>  
-
+            <div class="col-lg-6"></div>
               <!-- séparation en chiffres par dizaine, unité-->
-              <b><span class="col-lg-1"><?php echo $dizaine=substr($randFirstNumber,1,1); ?></span>
-              <span class="col-lg-1"><?php echo $unite=substr($randFirstNumber,2,3); ?></span>
+              <b><span class="col-lg-1" style= "font-size:20px"><?php echo $dizaine=substr($randFirstNumber,1,1); ?></span>
+              <span class="col-lg-1" style= "font-size:20px"><?php echo $unite=substr($randFirstNumber,2,3); ?></span></b>
+              <span class="col-lg-1"></span>
             <div class="col-lg-3"></div>
           </div>
         </div>
@@ -312,9 +311,9 @@ ________________________________________________________
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-3"></div>
+            <div class="col-lg-4"></div>
             <div class="col-lg-1"></div> 
-              <i class="fa fa-plus-circle" style="color:#FF502F"></i>               
+              <i class="fa fa-plus-circle" style="color:#FF502F; font-size: 30px"></i>               
             </div>
             <div class="col-lg-3"></div>
           </div>
@@ -323,11 +322,11 @@ ________________________________________________________
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-5"></div>  
+            <div class="col-lg-6"></div>  
 
               <!-- séparation en chiffres par dizaine, unité-->
-              <b><span class="col-lg-1"><?php echo $dizaine=substr($randSecondNumber,1,1); ?></span>
-              <span class="col-lg-1"><?php echo $unite=substr($randSecondNumber,2,3); ?></span>
+              <b><span class="col-lg-1" style= "font-size: 20px"><?php echo $dizaine=substr($randSecondNumber,1,1); ?></span>
+              <span class="col-lg-1" style= "font-size: 20px"><?php echo $unite=substr($randSecondNumber,2,3); ?></span>
             <div class="col-lg-3"></div>
           </div>
         </div>
@@ -337,21 +336,10 @@ ________________________________________________________
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-1"></div> 
-              <b><span>=</span></b>              
-            </div>
-            <div class="col-lg-3"></div>
-          </div>
-        </div>
-      </div>
+            <div class="col-lg-6"></div>
       <!--Résultat opération-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-5"></div>
               <input class="col-lg-1" name="somme"  type="text" placeholder="total">
-              <input class="col-lg-2" type="hidden"
+              <input type="hidden"
             name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $randSecondNumber); 
             echo $sommeCorrecte;
             ?>">

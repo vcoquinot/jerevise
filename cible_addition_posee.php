@@ -11,12 +11,12 @@ if($numeroQuestion<=8){
 
       //CAS 1 **** RÉPONSE CORRECTE
     $isCorrect=false;
-    if($_POST["somme"] == $_POST["sommeCorrecte"]){ 
+    if($_GET["somme"] == $_GET["sommeCorrecte"]){ 
       $isCorrect === true; 
       $_SESSION['score']++; ?>
 
       <!--ESPACE COMMENTAIRE BONNE RÉPONSE-->
-      <section">
+      <section>
       <?php
       //RECHERCHE COMMENTAIRE ALÉATOIRE BONNE RÉPONSE DANS LA BDD
       $commentaireReussite = $bdd->query("SELECT commentaire_reussite, id_image FROM reussite ORDER BY RAND() LIMIT 1");
