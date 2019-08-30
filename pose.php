@@ -8,8 +8,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Je révise ! / additions possée à 2 chiffres</title>      
-      <link href="style1.css"  type="text/css" rel="stylesheet">
+      <title>additions possée à 2 chiffres</title>      
+      <link href="main1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
@@ -62,6 +62,12 @@ calculerNombreDeQuestionsPosees();
    
 
     <?php
+    // deux nombres aléatoires à additioner        
+    $a=0;
+    $b=0;
+    $randFirstNumber = $a.rand(10,99);;
+    $randSecondNumber = $a.rand(10,99);
+                
     poseAddition($randFirstNumber, $randSecondNumber);
     }
     ?>
