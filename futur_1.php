@@ -43,6 +43,7 @@
     calculerNombreDeQuestionsPosees();
 
   if($_SESSION['numeroQuestion'] > 5){
+    afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
     redirectionFrancais();
