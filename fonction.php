@@ -1,3 +1,4 @@
+
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Bootstrap core CSS -->
@@ -851,11 +852,9 @@ function afficherFormulaireConjugaison(){
   <div class="row justify-content-center">
     <input type="submit" value=" Vérifier ma réponse">
   </div>
-
-
-
 <?php
 }
+
 
 function AfficherCommentaireMauvaiseReponse(){
   ?>

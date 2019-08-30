@@ -43,10 +43,11 @@
     calculerNombreDeQuestionsPosees();
 
   
-  if($_SESSION['numeroQuestion'] = 6){
+  if($_SESSION['numeroQuestion'] >5){
     afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
+    redirectionFrancais();
   }else{
     ?>
     <section id="futur_premier_groupe">
@@ -90,7 +91,7 @@
     ****************************-->
     <section id="reponse_futur">
       <div class="container">
-        <form action="cible_futur_re.php" method="post">
+        <form action="cible_futur_re.php" method="get">
         <?php afficherFormulaireConjugaison(); ?>
         </form>
       </div>
