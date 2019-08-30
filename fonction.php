@@ -357,7 +357,7 @@ ________________________________________________________
       </div>
     </form>
 <?php 
-    }
+  }
 ?>
 
 
@@ -368,16 +368,15 @@ ________________________________________________________
   <br/>
   <br/>
         
-    <form action="cible_addition_posee.php" method="post">
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-5"></div>
-              <input class="col-lg-3" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
-              </input>
-              <div class="col-lg-4"></div>
-          </div>
+  <form action="cible_addition_posee.php" method="post">
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-5"></div>
+          <input class="col-lg-3" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue"></input>
+          <div class="col-lg-4"></div>
         </div>
+      </div>
       </div>
       <div class="container">
         <div class = "col-lg-12">
@@ -388,7 +387,7 @@ ________________________________________________________
           </div>
         </div>
       </div>
-        <div class="container">
+      <div class="container">
         <div class = "col-lg-12">
           <div class="row">
             <div class="col-lg-5"></div>
@@ -398,7 +397,7 @@ ________________________________________________________
           </div>
         </div>
       </div>
-        <div class="container">
+      <div class="container">
         <div class = "col-lg-12">
           <div class="row">
             <div class="col-lg-6"></div>
@@ -407,13 +406,13 @@ ________________________________________________________
           </div>
         </div>
         </div>
-        <div class="container">
+      <div class="container">
         <div class = "col-lg-12">
           <div class="row">
             <div class="col-lg-5"></div>
             <div class="col-lg-1">=</div>
         </div>
-        <div class="container">
+      <div class="container">
         <div class = "col-lg-12">
           <div class="row">
             <div class="col-lg-5"></div>
@@ -422,17 +421,15 @@ ________________________________________________________
             name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $randSecondNumber); 
             echo $sommeCorrecte;
             ?>">
-
             <div class="col-lg-4"></div>
           </div>
         </div>
       </div>
-        <br/>
-        <br/>
-
-        <div class="row text-center">
-          <div class="col-lg-6 text-center"></div>
-          <input type="submit" value="Vérifier">
+      <br/>
+      <br/>
+      <div class="row text-center">
+        <div class="col-lg-6 text-center"></div>
+        <input type="submit" value="Vérifier">
         </div>
       </div>
     </form>
@@ -442,122 +439,230 @@ ________________________________________________________
 
 <?php
 function poseAddition($firstNumber, $secondNumber){
-  ?>
-      <form action="cible_pose.php" method="get">
-        <!-- Opération à poser-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <h3 class="col-lg-12 row justify-content-center"><?php echo "Pose ". $firstNumber . "+" . $secondNumber?></h3>
-            </div>
+?>
+<form action="cible_pose.php" method="get">
+  <!-- Opération à poser-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+      <h3 class="col-lg-12 row justify-content-center"><?php echo "Pose ". $firstNumber . "+" . $secondNumber?></h3>
+      </div>
+    </div>
+  </div>
+  <!-- retenues-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <small id="emailHelp" class="form-text text-muted col-lg-3" >Indique ici  les retenues si tu en as -></small>
+        <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+        <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+        <span class="col-lg-1"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Premier nombre à additionner-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+        <div class="col-lg-3"></div>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton premier nombre dans les cases -></small>
+          <!-- séparation en chiffres par dizaine, unité-->
+          <span class="col-lg-1"></span>
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px padding:1px">
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+  </div>
+  <!--opérateur-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-6" style="margin-left:45px"></div>
+          <i class="fa fa-plus-circle col-lg-1" style="color:#FF502F; font-size: 30px"></i>               
           </div>
-        </div>
-        <!-- retenues-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-3"></div>
-              <small id="emailHelp" class="form-text text-muted col-lg-3" >Indique ici  les retenues si tu en as -></small>
-              <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
-              <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
-              <span class="col-lg-1"></span>
-            </div>
-          </div>
-        </div>
-        <!-- Premier nombre à additionner-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-3"></div>
-              <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton premier nombre dans les cases -></small>
-                <!-- séparation en chiffres par dizaine, unité-->
-              <span class="col-lg-1"></span>
-              <input class="col-lg-1" style= "font-size:20px; padding:1px">
-              <input class="col-lg-1" style= "font-size:20px padding:1px">
-              <div class="col-lg-3"></div>
-            </div>
-          </div>
-        </div>
-        <!--opérateur-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-6" style="margin-left:45px"></div>
-                <i class="fa fa-plus-circle col-lg-1" style="color:#FF502F; font-size: 30px"></i>               
-              </div>
-            <div class="col-lg-3"></div>
-          </div>
-        </div>
-        <!-- Second nombre à additionner-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-3"></div>
-              <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton second nombre dans les cases -></small>
-                <!-- séparation en chiffres par dizaine, unité-->
-              <span class="col-lg-1"></span>
-              <input class="col-lg-1" style= "font-size:20px; padding:1px">
-              <input class="col-lg-1" style= "font-size:20px padding:1px">
-              <div class="col-lg-3"></div>
-            </div>
-          </div>
-        </div>
-        <!--=-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-6" style="margin-left:45px"></div>
-                <p class="col-lg-1" style="color:#FF502F; font-size: 30px">=</p>               
-              </div>
-            <div class="col-lg-3"></div>
-          </div>
-        </div>
-        <!-- Second nombre à additionner-->
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-3"></div>
-              <small id="emailHelp" class="form-text text-muted col-lg-3" >Ton résultat (centaine, dizaine, unité)-></small>
-                <!-- séparation en chiffres par dizaine, unité-->
-              <input class="col-lg-1" style= "font-size:20px; padding:1px">
-              <input class="col-lg-1" style= "font-size:20px; padding:1px">
-              <input class="col-lg-1" style= "font-size:20px padding:1px">
-              <div class="col-lg-3"></div>
-            </div>
-          </div>
-        </div>
-
-      <!--total opération-->
-      <div class="container">
-        <div class = "col-lg-12">
-          <div class="row">
-            <span class="col-lg-4"></span>
-            <div class="col-lg-2">Mon total est : </div>
-      <!--Résultat opération-->
-              <input class="col-lg-3" name="somme"  type="text">
-              <input type="hidden"
-            name="sommeCorrecte" value="<?php $sommeCorrecte= addition($firstNumber, $secondNumber); 
-            echo $sommeCorrecte;
-            ?>">
-            <input type="hidden" name="numeroDeQuestionPosee" value="1">
-            <div class="col-lg-4"></div>
-          </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+    <!-- Second nombre à additionner-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton second nombre dans les cases -></small>
+          <!-- séparation en chiffres par dizaine, unité-->
+          <span class="col-lg-1"></span>
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px padding:1px">
+          <div class="col-lg-3"></div>
         </div>
       </div>
-        <br/>
-        <br/>
-
-        <div class="row text-center">
-          <div class="col-lg-6 text-center"></div>
-          <input type="submit" value="Vérifier">
-        </div>
+    </div>
+    <!--=-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-6" style="margin-left:45px"></div>
+          <p class="col-lg-1" style="color:#FF502F; font-size: 30px">=</p></div>
+      <div class="col-lg-3"></div>
+    </div>
+    </div>
+    <!-- Second nombre à additionner-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Ton résultat (centaine, dizaine, unité)-></small>
+          <!-- séparation en chiffres par dizaine, unité-->
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px padding:1px">
+        <div class="col-lg-3"></div>
       </div>
-    </form>
+    </div>
+  </div>
+  <!--total opération-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+        <span class="col-lg-4"></span>
+        <div class="col-lg-2">Mon total est : </div>
+        <!--Résultat opération-->
+        <input class="col-lg-3" name="somme"  type="text">
+        <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($firstNumber, $secondNumber); 
+          echo $sommeCorrecte; ?>">
+        <input type="hidden" name="numeroDeQuestionPosee" value="1">
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
 
-
+  <div class="row text-center">
+    <div class="col-lg-6 text-center"></div>
+    <input type="submit" value="Vérifier">
+  </div>
+  </div>
+</form>
 <?php
 }
 ?> 
+
+function poseAdditionTroisChiffres($firstNumber, $secondNumber){
+?>
+<form action="cible_pose.php" method="get">
+  <!-- Opération à poser-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+      <h3 class="col-lg-12 row justify-content-center"><?php echo "Pose ". $firstNumber . "+" . $secondNumber?></h3>
+      </div>
+    </div>
+  </div>
+  <!-- retenues-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <small id="emailHelp" class="form-text text-muted col-lg-3" >Indique ici  les retenues si tu en as -></small>
+        <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+        <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+        <span class="col-lg-1"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Premier nombre à additionner-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+        <div class="col-lg-3"></div>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton premier nombre dans les cases -></small>
+          <!-- séparation en chiffres par dizaine, unité-->
+          <span class="col-lg-1"></span>
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px padding:1px">
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+  </div>
+  <!--opérateur-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-6" style="margin-left:45px"></div>
+          <i class="fa fa-plus-circle col-lg-1" style="color:#FF502F; font-size: 30px"></i>               
+          </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+    <!-- Second nombre à additionner-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton second nombre dans les cases -></small>
+          <!-- séparation en chiffres par dizaine, unité-->
+          <span class="col-lg-1"></span>
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px padding:1px">
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </div>
+    <!--=-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-6" style="margin-left:45px"></div>
+          <p class="col-lg-1" style="color:#FF502F; font-size: 30px">=</p></div>
+      <div class="col-lg-3"></div>
+    </div>
+    </div>
+    <!-- Second nombre à additionner-->
+    <div class="container">
+      <div class = "col-lg-12">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Ton résultat (centaine, dizaine, unité)-></small>
+          <!-- séparation en chiffres par dizaine, unité-->
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px; padding:1px">
+          <input class="col-lg-1" style= "font-size:20px padding:1px">
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+  </div>
+  <!--total opération-->
+  <div class="container">
+    <div class = "col-lg-12">
+      <div class="row">
+        <span class="col-lg-4"></span>
+        <div class="col-lg-2">Mon total est : </div>
+        <!--Résultat opération-->
+        <input class="col-lg-3" name="somme"  type="text">
+        <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($firstNumber, $secondNumber); 
+          echo $sommeCorrecte; ?>">
+        <input type="hidden" name="numeroDeQuestionPosee" value="1">
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+
+  <div class="row text-center">
+    <div class="col-lg-6 text-center"></div>
+    <input type="submit" value="Vérifier">
+  </div>
+  </div>
+</form>
+<?php
+}
+
+
+
 
 <!-- FONCTIONS SOUSTRACTIONS-->
   <?php function displayExerciceSoustractionPoseeDeuxChiffres(){ 
