@@ -42,11 +42,10 @@
     //COMPTEUR NOMBRE DE QUESTIONS 
     calculerNombreDeQuestionsPosees();
 
-
-  if($_SESSION['numeroQuestion'] = 8){
-    afficherScore();
+  if($_SESSION['numeroQuestion'] > 5){
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
+    redirectionFrancais();
   }else{
     ?>
     <section id="futur_premier_groupe">
@@ -57,41 +56,28 @@
         <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
       </div>
     </section>
+
     
-    <!-- affichage des questions-->
+    <!-- affichage des questions + formulaire réponse-->
     <section class="questionnaire">      
       <div class="row justify-content-center">
-        <h2>Entraîne-toi !</h2>
+        <h2 style =" color:#007065; margin-bottom:20px;">Entraîne-toi !</h2>
       </div>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-1"></div>
-          <div class="col-lg-8">
-            <form action="cible_futur1.php" method="post">
-              <?php
-              //recherche alléatoire d'une question
-              $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 5 ORDER BY RAND() LIMIT 1");
-              $donneesFutur = $questionFutur->fetch();
-              ?>
-              <h2><?php echo $donneesFutur['intitule_question'];?></h2>
-              <?php
-             
-              $_SESSION['id_question'] = $donneesFutur['id_question'];
-              ?>
-            </form>
-          </div>
-        </div>
-        <?php $questionFutur->closeCursor();?>
-      </div>
-    </section>
-
-    <!--**************************
-        RÉPONSES UTILISATEUR
-    ****************************-->
-    <section id="reponse_futur">
-      <div class="container">
-        <form action="cible_futur1.php" method="post">
-        <?php afficherFormulaireConjugaison(); ?>
+        <div class="row justify-content-center">
+          <form action="cible_futur1.php" method="get">
+            <?php
+            //recherche alléatoire d'une question
+            $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 5 ORDER BY RAND() LIMIT 1");
+            $donneesFutur = $questionFutur->fetch();
+            ?>
+            <h2><?php echo $donneesFutur['intitule_question'];?></h2>
+            <?php
+            $_SESSION['id_question'] = $donneesFutur['id_question'];
+            $questionFutur->closeCursor();?>
+    
+          <!--Formulaire réponse-->
+         <?php afficherFormulaireConjugaison(); ?>
         </form>
       </div>
     </section>

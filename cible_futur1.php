@@ -30,14 +30,25 @@
   </head>
 
   <body>
+    <section id="futur_premier_groupe">
+      <div class="row justify-content-center">
+        <h2>Le futur des verbes en -ER et -IR</h2>
+      </div>
+      <div class="row justify-content-center">
+        <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
+      </div>
+    </section>
+
+
   <?php     
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $reponseUtilisateur = $_POST["reponseFutur"];
+  $reponseUtilisateur = $_GET["reponseFutur"];
   $idQuestion= $_SESSION['id_question'];
-  $numeroQuestion = $_SESSION['numeroQuestion'];
+  $numeroQuestion = $_GET['numeroDeQuestionPosee'];
+  //$score = $_SESSION ['score'];
 
-  //*****LIMITATION À 8 QUESTIONS
-  if($numeroQuestion<=7){
+  //*****LIMITATION NOMBRE DE QUESTIONS
+  if($numeroQuestion<=5){
     //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
     //recherche de la réponse associée à la question dans la BDD
     $reponseFutur = $bdd->query("SELECT intitule_reponse 
@@ -46,40 +57,53 @@
     $donnees = $reponseFutur->fetch();
 
     //Comparaison réponse de l'utilisateur et réponse correcte
-    $isCorrect=false;
     $_SESSION['reponseCorrecte'] = $donnees['intitule_reponse'];   
     /*$pattern = '/' . preg_quote($reponseUtilisateur) . '/';*/
     $reponseFutur->closeCursor();
 
-    
-
     //CAS 1 **** RÉPONSE CORRECTE
+    $isCorrect=false; 
     if($reponseUtilisateur != null && ($reponseUtilisateur===$_SESSION['reponseCorrecte']))
-    { 
-      $isCorrect === true; 
+      {
+      $isCorrect === true;       
       // + 1 point
-      $_SESSION['score']++; 
-      //question suivante
-      header( "Location: futur_1.php"); 
+      $_SESSION['score']++;
 
-    }//CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
-      else {
- 		verifierReponseUtilisateur();
-        header( "refresh:2;url=futur_1.php") ?>
-              </div>
-            </div>
-          </div>
-        </section>
-        <?php
-      }
-      
+      //ESPACE COMMENTAIRE BONNE RÉPONSE
       ?>
-     <?php
-
-
-     //AU DESSUS DE 10 QUESTIONS
+      <section>
+      <?php
+        //RECHERCHE COMMENTAIRE ALÉATOIRE BONNE RÉPONSE DANS LA BDD
+        $commentaireReussite = $bdd->query("SELECT commentaire_reussite, id_image FROM reussite ORDER BY RAND() LIMIT 1");
+        $donneesReussite = $commentaireReussite->fetch();
+        $felicitaion = $donneesReussite['commentaire_reussite'];
+        //$image=$donneesReussite['id_image'];
+        $commentaireReussite->closeCursor();
+        ?>
+        <header class="row justify-content-center">
+          <h3><?php echo $felicitaion; ?></h3>
+        </header>
+        <p><i class="fas fa-laugh-squint fa-3x green-text pr-3 row justify-content-center" aria-hidden="true"></i></p>
+      </section> 
+      <?php
+      }
+      else{//CAS 2 : réponse incorrecte
+        afficherCommentaireMauvaiseReponse();  
+ 		    afficherReponseCorrecte();
+        ?>
+        <?php
+        }
+    //question suivante 
+    header("refresh:2; url=futur_1.php");     
+     //AU DESSUS DU NOMBRE DE QUESTIONS SOUHAITÉE
     }else{
     	afficherScore();
+      //REINITIALISATION NOMBRE QUESTIONS ET SCORE
+      $_SESSION['score'] = 0;
+      $_GET['numeroDeQuestionPosee'] = 0;
+
+      //redirection rejouer ou accueil
+      redirectionFrancais();
     }      
   ?>
   </body>

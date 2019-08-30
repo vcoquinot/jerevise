@@ -113,10 +113,6 @@ function afficherScore(){
             //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
             $_SESSION['score'] = 0; 
             $_SESSION['numeroQuestion'] = 0;
-            //TO DO************
-            //*****************
-            //retour accueil
-            header( "refresh:5;url=accueil.php"); 
 }
 
 function calculerNombreDeQuestionsPosees(){
@@ -267,6 +263,23 @@ ________________________________________________________
     <section class="container col-lg-12" id="redirection" style = "text-align:center;">
       <div class="row justify-content-center">
         <a href="maths.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Rejouer</button></a>
+      <div class="col-lg-1"></div>
+        <a href="maths.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Accueil</button></a>
+      </div>
+    </section>
+    <?php
+    }
+    ?>
+
+
+    <!-- REDIRECTION-->
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+    <?php function redirectionFrancais(){
+    ?>
+    <section class="container col-lg-12" id="redirection" style = "text-align:center;">
+      <div class="row justify-content-center">
+        <a href="francais.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Rejouer</button></a>
       <div class="col-lg-1"></div>
         <a href="accueil.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Accueil</button></a>
       </div>
@@ -532,30 +545,24 @@ function poseAddition($firstNumber, $secondNumber){
   <!--total opération-->
   <div class="container">
     <div class = "col-lg-12">
-      <div class="row">
-        <span class="col-lg-4"></span>
-        <div class="col-lg-2">Mon total est : </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 md-form">
         <!--Résultat opération-->
-        <input class="col-lg-3" name="somme"  type="text">
+        <input type="text" id="form1" class="form-control" class="col-lg-4" name="somme" style="color:#FF502F; border-bottom: 1px solid #FF502F !important">
+        <label for="form1" class="col-lg-4" style=" color:#FF502F; font-weight: bold">TOTAL:</label>
         <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($firstNumber, $secondNumber); 
           echo $sommeCorrecte; ?>">
         <input type="hidden" name="numeroDeQuestionPosee" value="1">
-        <div class="col-lg-4"></div>
       </div>
     </div>
   </div>
-  <br/>
-  <br/>
-
-  <div class="row text-center">
-    <div class="col-lg-6 text-center"></div>
-    <input type="submit" value="Vérifier">
-  </div>
+  <div class="row justify-content-center">
+    <input class="col-lg-3 row justify-content-center" type="submit" value="Vérifier" style=" color:white; font-weight: bold; background-color: #007065 !important; border: none; ">
   </div>
 </form>
 <?php
 }
-?> 
+?>
 
 <?php
 function poseAdditionTroisChiffres($firstNumber, $secondNumber){
@@ -650,7 +657,6 @@ function poseAdditionTroisChiffres($firstNumber, $secondNumber){
   <div class="container">
     <div class = "col-lg-12">
       <div class="row justify-content-center">
-        
         <div class="col-lg-4 md-form">
         <!--Résultat opération-->
         <input type="text" id="form1" class="form-control" class="col-lg-4" name="somme" style="color:#FF502F; border-bottom: 1px solid #FF502F !important">
@@ -838,38 +844,34 @@ ________________________________________________________
 <?php 
 function afficherFormulaireConjugaison(){
   ?>
-  <div class="col-lg-12">
-    <div class="row">
-      <div class="col-lg-4"></div>
-        <div class="col-lg-6">
-          <input type="text" name="reponseFutur" placeholder="ma réponse">
-          <input type="hidden" name="numeroDeQuestionPosee" value="1">
-        </div>
-      </div>
-    </div>
-            
-    <div class="col-lg-12">
-      <div class="row">
-        <div class="col-lg-4"></div>
-          <div class="col-lg-6">
-            <input type="submit" value=" Phrase suivante ">
-        </div>
-      </div>
+  <div class="row justify-content-center">
+    <input type="text" name="reponseFutur" placeholder="verbe au futur" style= "margin-bottom : 30px;">
+  </div>
+  <input type="hidden" name="numeroDeQuestionPosee" value="1">
+  <div class="row justify-content-center">
+    <input type="submit" value=" Vérifier ma réponse">
+  </div>
+
+
 
 <?php
 }
-      
-function verifierReponseUtilisateur(){
+
+function AfficherCommentaireMauvaiseReponse(){
   ?>
-  <section class="verification">
-    <div class="container_conjugaison">
-      <div class="row justify-content-center">
-        <div class= "col-lg-3"></div>
-          <div class="col-lg-6">Oups, mauvaise réponse!</div>
-        </div> 
-        <div class="row justify-content-center">
-          <div class= "col-lg-3"></div>     
-          <div class="col-lg-6">La réponse est  : <?php echo $_SESSION['reponseCorrecte']; ?>
+  <div class="container-fluid">
+    <div class="row justify-content-center" style="font-size: 40px;"><b>Oups, mauvaise réponse!</b></div>
+    <p><i class="fas fa-frown-open fa-3x red-text pr-3 row justify-content-center" aria-hidden="true"></i></p>
+  </div> 
+<?php  
+}
+function afficherReponseCorrecte(){
+  ?>
+  <div class="container-fluid">   
+      <div class="row justify-content-center" style="font-size: 30px;"><b>C'était : <?php echo $_SESSION['reponseCorrecte']; ?></b>
+      </div>
+  </div>
+</section>
 <?php
 }
 ?>
