@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Calcul mental</title>      
+      <title>Maths</title>      
       <link href="main1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -35,36 +35,44 @@
     </br>
     </br>
 
-    <div class="container col-lg-12" id="titres" >
-      <div class="row justify-content-center">
-        <div class="col-lg-2">
-          <h1>Addition</h1>
-        </div>
-        <div class="col-lg-2">
-          <h1>Soustraction</h1>
-        </div>
-        <div class="col-lg-2">
-          <h1>Multiplication</h1>
-        </div>
-        <div class="col-lg-2">
-          <h1>Division</h1>
+ <div class="container">
+    <!-- Three columns -->
+    <div class="row justify-content-center">
+      <div class="row justify-content-center col-lg-3">
+        <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="additions"><rect width="100%" height="100%" fill="#777"/>
+        <h2>Additions</h2>
+         <div class="list-group">
+          <a href="#!" class="list-group-item list-group-item-action">
+            +7
+          </a>
+          <a href="#!" class="list-group-item list-group-item-action">+8</a>
+          <a href="#!" class="list-group-item list-group-item-action">+9</a>
+          <a href="#!" class="list-group-item list-group-item-action">+10</a>
+          <a href="#!" class="list-group-item list-group-item-action disabled">+100</a>
         </div>
       </div>
-      <!-- images-->
-      <div class="row justify-content-center">
-        <div class="col-lg-2">
-          <img class="img-fluid" src="assets/img/add.png" alt="addition">
-        </div>
-        <div class="col-lg-2">
-          <img class="img-fluid" src="assets/img/add.png" alt="addition">
-        </div>
-        <div class="col-lg-2">
-          <img class="img-fluid" src="assets/img/add.png" alt="addition">
-        </div>
-        <div class="col-lg-2">
-          <img class="img-fluid" src="assets/img/add.png" alt="addition">
-        </div>
-      </div>      
-    </div>
+      <div class="row justify-content-center col-lg-3">
+        <img width="140" height="140" src="assets/img/substract.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="Soustractions"><rect width="100%" height="100%" fill="#777"/>
+        <h2>Soustractions</h2>
+         <p><a class="btn blue-gradient" href="additions.php" role="button">quizz</a></p>
+      </div>
+      <div class="row justify-content-center col-lg-3">
+        <img width="140" height="140" src="assets/img/reduce" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="Multiplications"><rect width="100%" height="100%" fill="#777"/>
+        <h2>Multiplications</h2>
+         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
+      </div>
+      <div class="row justify-content-center col-lg-3">
+        <img width="140" height="140" src="assets/img/divide" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="Divisions"><rect width="100%" height="100%" fill="#777"/>
+        <h2>Divisions</h2>
+         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
+      </div>
+    </div><!-- /.row -->
+  </div>
+</br></br></br></br>
+    <!-- row-->
+
   </body>
 </html>
+
+
+          

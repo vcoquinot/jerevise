@@ -41,19 +41,43 @@
       <div class="row justify-content-center col-lg-4">
         <img width="140" height="140" src="assets/img/thinking.png" preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
         <h2>Calcul mental</h2>
-         <p><a class="btn btn-secondary" href="#" role="button">quizz</a></p>
+         <p><a class="btn blue-gradient" href="calcul_mental.php" role="button">quizz</a></p>
       </div>
       <div class="row justify-content-center col-lg-4">
         <img width="140" height="140" src="assets/img/copywriting.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
         <h2>Opérations</h2>
-         <p><a class="btn btn-secondary" href="#" role="button">quizz</a></p>
+         <p><a class="btn blue-gradient" href="operations.php" role="button">quizz</a></p>
       </div>
             <div class="row justify-content-center col-lg-4">
         <img width="140" height="140" src="assets/img/recycle" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
         <h2>Conversions</h2>
-         <p><a class="btn btn-secondary" href="#" role="button">quizz</a></p>
+         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
       </div>
     </div><!-- /.row -->
+  </div>
+</br></br></br></br>
+    <!-- row-->
+
+     <div class="container">
+    <!-- Three columns -->
+    <div class="row justify-content-center">
+      <div class="row justify-content-center col-lg-4">
+        <img width="140" height="140" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="fractions"><rect width="100%" height="100%" fill="#777"/>
+        <h2>Fractions</h2>
+         <p><a class="btn blue-gradient" href="fractions.php" role="button">quizz</a></p>
+      </div>
+      <div class="row justify-content-center col-lg-4">
+        <img width="140" height="140" src="assets/img/puzzle.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="problèmes"><rect width="100%" height="100%" fill="#777"/>
+        <h2>Problèmes</h2>
+         <p><a class="btn blue-gradient" href="problemes.php" role="button">quizz</a></p>
+      </div>
+            <div class="row justify-content-center col-lg-4">
+        <img width="140" height="140" src="assets/img/puzzle" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="problèmes"><rect width="100%" height="100%" fill="#777"/>
+        <h2>Conversions</h2>
+         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
+      </div>
+    </div><!-- /.row -->
+
 
   </body>
 </html>
