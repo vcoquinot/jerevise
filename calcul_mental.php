@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Maths</title>      
+      <title>Calcul mental</title>      
       <link href="main1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -29,34 +29,42 @@
   <body>
     <section id="accueil">
       <header class="row justify-content-center">
-         <h1>titre !</h1>
+         <h1>Calcul mental</h1>
       </header>
     </section>
     </br>
     </br>
 
- <div class="container">
-    <!-- Three columns -->
-    <div class="row justify-content-center">
-      <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/thinking.png" preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Calcul mental</h2>
-         <p><a class="btn btn-secondary" href="#" role="button">quizz</a></p>
+    <div class="container col-lg-12" id="titres" >
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <h1>Addition</h1>
+        </div>
+        <div class="col-lg-2">
+          <h1>Soustraction</h1>
+        </div>
+        <div class="col-lg-2">
+          <h1>Multiplication</h1>
+        </div>
+        <div class="col-lg-2">
+          <h1>Division</h1>
+        </div>
       </div>
-      <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/copywriting.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Opérations</h2>
-         <p><a class="btn btn-secondary" href="#" role="button">quizz</a></p>
-      </div>
-            <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/recycle" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Conversions</h2>
-         <p><a class="btn btn-secondary" href="#" role="button">quizz</a></p>
-      </div>
-    </div><!-- /.row -->
-
+      <!-- images-->
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/add.png" alt="addition">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/add.png" alt="addition">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/add.png" alt="addition">
+        </div>
+        <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/add.png" alt="addition">
+        </div>
+      </div>      
+    </div>
   </body>
 </html>
-
-
-          
