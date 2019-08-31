@@ -29,20 +29,29 @@
   <body>
     <section id="accueil">
       <header class="row justify-content-center">
-         <h1>Les maths, c'est parti !</h1>
+         <h1>titre !</h1>
       </header>
     </section>
    
  
     <div class="container col-lg-12" id="titres" >
       <div class="row justify-content-center">
-        <div class="col-lg-4 row justify-content-center">
+        <div class="col-lg-2 row justify-content-center">
           <h3>Calcul mental</h3>
         </div>
-        <div class="col-lg-4 row justify-content-center">
-        <h3>Opérations posées</h3> 
+        <div class="col-lg-1 row justify-content-center">
         </div>
-        <div class="col-lg-4 row justify-content-center">
+        <div class="col-lg-2 row justify-content-center">
+        <h3>Opérations</h3> 
+        </div>
+        <div class="col-lg-1 row justify-content-center">
+        </div>
+        <div class="col-lg-2 row justify-content-center">
+        <h3>Conversions</h3> 
+        </div>
+        <div class="col-lg-1 row justify-content-center">
+        </div>
+        <div class="col-lg-2 row justify-content-center">
         <h3>Problèmes</h3>
         </div>
       </div>
@@ -50,157 +59,28 @@
 <!--images-->
     <div class="container col-lg-12" id="images" >
       <div class="row justify-content-center">
-        <div class="col-lg-1"></div>
         <div class="col-lg-2 row justify-content-center">
           <img class="img-fluid" src="assets/img/thinking.png" alt="calcul mental">
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-1 row justify-content-center">
+        </div>
         <div class="col-lg-2 row justify-content-center">
           <img class="img-fluid" src="assets/img/copywriting.png" alt="calcul mental"> 
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-1 row justify-content-center">
+        </div>
+        <div class="col-lg-2 row justify-content-center">
+          <img class="img-fluid" src="assets/img/recycle.png" alt="problèmes">
+        </div>
+        <div class="col-lg-1 row justify-content-center">
+        </div>
+
         <div class="col-lg-2 row justify-content-center">
           <img class="img-fluid" src="assets/img/puzzle.png" alt="problèmes">
         </div>
-        <div class="col-lg-1"></div>
+
       </div>
     </div>
-
-<!--opérations-->
-    <div class="container col-lg-12">
-      <div class="row justify-content-center">
-        <div class="col-lg-4 row justify-content-center">
-          <a href="addition_mental_7.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              7
-            </button>
-          </a>
-          <a href="addition_mental_8.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              8
-            </button>
-          </a>
-          <a href="addition_mental_9.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              9
-            </button>
-          </a>
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-          <a href="pose.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              2 chiffres
-            </button>
-          </a> 
-          <a href="pose.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              3 chiffres
-            </button>
-          </a>
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-        <a href="addition_mental_9.php">
-            <button type="button" class="btn btn-cyan">Conversions</button>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!--opérations-->
-    <div class="container col-lg-12" id="titres" >
-      <div class="row justify-content-center">
-        <div class="col-lg-4 row justify-content-center">
-          <a href="addition_mental_10.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              10
-            </button>
-          </a>
-          <a href="addition_mental_100.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              100
-            </button>
-          </a>
-          <a href="addition_mental_1000.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              1000
-            </button>
-          </a>
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-          <a href="pose.php">
-            <button type="button" class="btn btn-cyan">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              À toi de poser
-            </button>
-          </a> 
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-        <a href="addition_mental_9.php">
-            <button type="button" class="btn btn-cyan">durée</button>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!--opérations-->
-    <div class="container col-lg-12">
-      <div class="row justify-content-center">
-        <div class="col-lg-4 row justify-content-center">
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-          
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-        <a href="addition_mental_9.php">
-            <button type="button" class="btn btn-cyan">périmètre</i></button>
-          </a>
-        </div>
-      </div>
-    </div>
-
-        <!--opérations-->
-    <div class="container col-lg-12" id="titres" >
-      <div class="row justify-content-center">
-        <div class="col-lg-4 row justify-content-center">
-          <a href="addition_mental_10.php">
-            <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
-              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-              10
-            </button>
-          </a>
-          <a href="addition_mental_100.php">
-            <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
-              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-              100
-            </button>
-          </a>
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-          <a href="pose.php">
-            <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
-              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
-              xx
-            </button>
-          </a> 
-        </div>
-        <div class="col-lg-4 row justify-content-center">
-        <a href="addition_mental_9.php">
-            <button type="button" class="btn btn-cyan">durée</button>
-          </a>
-        </div>
-      </div>
-    </div>
-
   </section>
 
 <!--
