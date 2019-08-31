@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include "fonction.php" ?>
+<?php include "fonctions_francais.php" ?>
 <?php require_once("connexion_bdd.php")?>
 
 <!DOCTYPE html>
@@ -42,7 +43,7 @@
   <?php
      
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $reponseUtilisateur = $_GET['reponseFutur'];
+  $reponseUtilisateur = $_GET["reponseFutur"];
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_GET['numeroDeQuestionPosee'];
 
@@ -91,8 +92,6 @@
         afficherCommentaireMauvaiseReponse();
         //affichage de la bonne réponse
         afficherReponseCorrecte();
-              //question suivante
-        header( "refresh:2;url=futur_verbe_re.php"); 
       }
       
      //AU DESSUS DU NOMBRE DE QUESTIONS SOUHAITEES

@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include ("fonction.php"); ?>
+<?php include ("fonctions_francais.php"); ?>
 <?php require_once("connexion_bdd.php"); ?>
 
 <!DOCTYPE html>
@@ -37,13 +38,13 @@
     //****************************
 
     //COMPTEUR SCORE      
-    calculerScore();
+    initialisationScore();
 
     //COMPTEUR NOMBRE DE QUESTIONS 
     calculerNombreDeQuestionsPosees();
 
 
-  if($_SESSION['numeroQuestion'] = 6){
+  if($_SESSION['numeroQuestion'] >=5){
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
     header("Location:accueil.php");

@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include ("fonction.php"); ?>
+<?php include ("fonctions_francais.php"); ?>
 <?php require_once("connexion_bdd.php"); ?>
 
 <!DOCTYPE html>
@@ -37,13 +38,13 @@
     //****************************
 
     //COMPTEUR SCORE      
-    calculerScore();
+    initialisationScore();
 
     //COMPTEUR NOMBRE DE QUESTIONS 
     calculerNombreDeQuestionsPosees();
 
 
-  if($_SESSION['numeroQuestion'] = 8){
+  if($_SESSION['numeroQuestion'] > 5){
     afficherScore();
     $_SESSION['numeroQuestion'] = 0;
     $_SESSION['score'] = 0;
@@ -51,18 +52,15 @@
     ?>
     <section id="futur_verbes_irreguliers">
       <div class="row justify-content-center">
-        <h2> Le futur des verbes bizarres... On les appelle verbes irréguliers</h2>
+        <h2> Le futur des verbes bizarres... On les appelle les verbes irréguliers</h2>
       </div>
       <div class="row justify-content-center">
         <img class="img-fluid" src="assets/img/futur_irregulier_girl.png" alt="conjugaison">
       </div>
     </section>
           
-          
      <!-- affichage des questions-->
-
-
-      <section class="questionnaire"> 
+    <section class="questionnaire"> 
       <div class="row justify-content-center">
         <h2>Entraîne-toi !</h2>
       </div>      
@@ -93,9 +91,9 @@
     <!--**************************
         RÉPONSES UTILISATEUR
     ****************************-->
-      <section id="reponse_futur1">
+      <section>
         <div class="container">
-          <form action="cible_futur_irregulier.php" method="post">
+          <form action="cible_futur_irregulier.php" method="get">
             <?php afficherFormulaireConjugaison(); ?>
           </form>
         </div>

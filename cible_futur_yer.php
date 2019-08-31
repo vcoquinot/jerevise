@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php include "fonction.php" ?>
+
 <?php require_once("connexion_bdd.php")?>
 
 <!DOCTYPE html>
@@ -16,10 +16,15 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-<!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,6 +35,9 @@
   </head>
 
   <body>
+    <div class="row justify-content-center">
+      <img class="img-fluid" src="assets/img/futur_girl_yer.png" alt="conjugaison verbes _YER">
+    </div>
   <?php
      
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
@@ -37,8 +45,8 @@
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
 
-  //*****LIMITATION À 6 QUESTIONS
-  if($numeroQuestion<=5){
+  //*****LIMITATION NOMBRE QUESTIONS
+  if($numeroQuestion<=6){
     //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
     //recherche de la réponse associée à la question dans la BDD
     $reponseFutur = $bdd->query("SELECT intitule_reponse 
@@ -58,27 +66,56 @@
       $isCorrect === true; 
       // + 1 point
       $_SESSION['score']++; 
-      //question suivante
-      header( "Location: futur_verbe_yer.php"); 
 
-    }//CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
-      else {
-        verifierReponseUtilisateur();
-        header( "refresh:2;url=futur_verbe_yer.php") ?>
-              </div>
-            </div>
-          </div>
-        </section>
-        <?php
-      }
-      
+      //ESPACE COMMENTAIRE BONNE RÉPONSE
       ?>
-     <?php
-
-
-     //AU DESSUS DE 6 QUESTIONS
+      <section>
+      <?php
+        //RECHERCHE COMMENTAIRE ALÉATOIRE BONNE RÉPONSE DANS LA BDD
+        $commentaireReussite = $bdd->query("SELECT commentaire_reussite, id_image FROM reussite ORDER BY RAND() LIMIT 1");
+        $donneesReussite = $commentaireReussite->fetch();
+        $felicitaion = $donneesReussite['commentaire_reussite'];
+        //$image=$donneesReussite['id_image'];
+        $commentaireReussite->closeCursor();
+        ?>
+        <header class="row justify-content-center">
+          <h3><?php echo $felicitaion; ?></h3>
+        </header>
+        <p><i class="fas fa-laugh-squint fa-3x green-text pr-3 row justify-content-center" aria-hidden="true"></i></p>
+      </section> 
+      <?php
+      //question suivante
+      header( "Location: futur_verbe_yer.php");
+      
+      } else{//CAS 2 : réponse incorrecte
+      ?>
+      <!-- indication réponse incorrecte-->
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <p style="font-size: 40px;"><b>Oups, mauvaise réponse!</b></p>
+        </div>
+        <div class="row justify-content-center">
+          <p><i class="fas fa-frown-open fa-3x red-text pr-3 row justify-content-center" aria-hidden="true"></i></p>
+        </div>
+      </div>
+      <!-- affichage réponse correcte-->    
+        <div class="container-fluid">   
+          <div class="row justify-content-center" style="font-size: 30px;"><b>C'était : <?php echo $_SESSION['reponseCorrecte']; ?></b>
+          </div>
+        </div>
+      <?php
+      }
+      //question suivante 
+      header("refresh:2; url=futur_verbe_yer.php");     
+     //AU DESSUS DU NOMBRE DE QUESTIONS SOUHAITÉE
     }else{
       afficherScore();
+      //REINITIALISATION NOMBRE QUESTIONS ET SCORE
+      $_SESSION['score'] = 0;
+      $_GET['numeroDeQuestionPosee'] = 0;
+
+      //redirection rejouer ou accueil
+      redirectionFrancais();
     }      
   ?>
   </body>
