@@ -5,6 +5,10 @@ body {
   margin: 0 auto;
 }
 
+h2{
+  color: #2D3561;
+}
+
 /*ACCUEIL _ CONNEXION*/
 #accueil h1{
   color : #F64754;
@@ -55,6 +59,13 @@ button:hover {
 
 }
 
+.btn .btn-success{
+  margin-right: 1px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  border-radius: 25px;
+}
+
 #number{
   border: solid 1px grey;
 }
@@ -98,6 +109,31 @@ text-decoration: none;
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+/*MATHS*/
+/***************************************************************/
+#add_2_chiffres input{
+  border-color:red;
+}
+
+.btn.btn-operation{
+  border-radius: 2px;
+}
+
+input[type=submit]{
+  border-color:#CF455C; 
+  background-color: #CF455C; 
+  color: white
+}
+
+.form-elegant .z-depth-1a {
+-webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+-webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
 /***************************************************************
 /*RENAISSANCE*/
 /***************************************************************/

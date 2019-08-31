@@ -98,7 +98,7 @@ function displayFormCreationCompte(){
 <!-- *************************************************************--> 
 
 <?php
-function calculerScore(){
+function initialisationScore(){
     if (!isset ($_SESSION['score'])){
       $_SESSION['score']=0 ;
     }
@@ -107,20 +107,21 @@ function calculerScore(){
 
 function afficherScore(){
   ?>
+  <!-- TO DO : numero question en dur !!-->
         <section class="container-scoreFinal">
           <header class="row justify-content-center">
-            <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $_SESSION['numeroQuestion'];?></h3>
+            <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur 5";?></h3>
             <?php
             //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
             $_SESSION['score'] = 0; 
-            $_SESSION['numeroQuestion'] = 0;
+            $_SESSION['numeroDeQuestionPosee'] = 1;
 }
 
 function calculerNombreDeQuestionsPosees(){
-    if (!isset ($_SESSION['numeroQuestion'])){
-      $_SESSION['numeroQuestion']= 1;
+    if (!isset ($_SESSION['numeroDeQuestionPosee'])){
+      $_SESSION['numeroDeQuestionPosee']= 1;
     }else{
-      $_SESSION['numeroQuestion']++;
+      $_SESSION['numeroDeQuestionPosee']++;
     }
 }
 ?>
@@ -837,41 +838,6 @@ function poseAdditionTroisChiffres($firstNumber, $secondNumber){
     }
 ?>
 
-<!-- FRANçAIS
-________________________________________________________
--->
-
-<!-- FONCTIONS AFFICHAGE-->
-<?php 
-function afficherFormulaireConjugaison(){
-  ?>
-  <div class="row justify-content-center">
-    <input type="text" name="reponseFutur" placeholder="verbe au futur" style= "margin-bottom : 30px;">
-  </div>
-  <input type="hidden" name="numeroDeQuestionPosee" value="1">
-  <div class="row justify-content-center">
-    <input type="submit" value=" Vérifier ma réponse">
-  </div>
-<?php
-}
 
 
-function AfficherCommentaireMauvaiseReponse(){
-  ?>
-  <div class="container-fluid">
-    <div class="row justify-content-center" style="font-size: 40px;"><b>Oups, mauvaise réponse!</b></div>
-    <p><i class="fas fa-frown-open fa-3x red-text pr-3 row justify-content-center" aria-hidden="true"></i></p>
-  </div> 
-<?php  
-}
-function afficherReponseCorrecte(){
-  ?>
-  <div class="container-fluid">   
-      <div class="row justify-content-center" style="font-size: 30px;"><b>C'était : <?php echo $_SESSION['reponseCorrecte']; ?></b>
-      </div>
-  </div>
-</section>
-<?php
-}
-?>
 

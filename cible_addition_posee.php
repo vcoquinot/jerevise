@@ -5,8 +5,8 @@
 //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
 $numeroQuestion = $_SESSION['numeroQuestion'];
 
-//*****LIMITATION À 8 QUESTIONS
-if($numeroQuestion<=8){
+//*****LIMITATION À 4 QUESTIONS
+if($_SESSION['score']<=4){
     //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
 
       //CAS 1 **** RÉPONSE CORRECTE
@@ -44,7 +44,7 @@ if($numeroQuestion<=8){
             </div> 
             <div class="row justify-content-center">
               <div class= "col-lg-3"></div>     
-              <div class="col-lg-6">Le résultat est : <?php echo $_POST["sommeCorrecte"] ?></div>
+              <div class="col-lg-6">Le résultat est : <?php echo $_GET["sommeCorrecte"] ?></div>
             </div>
           </div>
         </section>

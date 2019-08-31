@@ -5,15 +5,16 @@ body {
   margin: 0 auto;
 }
 
+
 /*ACCUEIL */
 /* --------------------------------------------------
 -----------------------------------------------------
 */
 #accueil h1{
-  color : #b88a9f;  
+  color : #b88a9f;  /*#F64754*/
   font-size: 80px;
   padding-bottom: 1rem;
-  } 
+  }   } 
 
 .font-weight-light{
   color: #b88a9f;
@@ -78,12 +79,29 @@ button:hover {
   margin-bottom : 50px;
 }
 
+/*MATHS - OPERATIONS */
+/* --------------------------------------------------
+-----------------------------------------------------*/
 
+#operations h3{
+  text-align: middle;
+}
+
+.align-middle{
+  display: flex;
+  align-items: center;
+}
 
 /*MATHS - ADDITIONS */
 /* --------------------------------------------------
 -----------------------------------------------------
 */
+
+/*.md-form input[type=text]:focus {
+box-shadow: 0 1px 0 0 green !important;
+border-bottom: 1px solid green !important;
+color:#FF502F;
+}
 .addition{
   border: solid 5px #009999;
   border-radius: 1rem;
@@ -97,11 +115,19 @@ button:hover {
 
 #number{
   border: solid 1px grey;
-}
+}*/
 
 /*queston*/
 .question{
   margin-top: 20px;
+}
+
+.commentaire {
+  color: #FF8080;
+}
+
+#redirection{
+  margin-top : 40px;
 }
 
 /***************************************************************
@@ -178,4 +204,224 @@ animate mixed > span:nth-child(odd){
   from { top 0; transform : rotate(0deg); }
   to { top .9em; transform : rotate(25deg); }
 }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+body {
+  font-family: "Open Sans";
+  margin: 0 auto;
+}
+
+/*SECTIONS ACCUEIL*/
+/*-------------------------*/
+#accueil h1{
+  color : #F64754;
+  }
+
+/* FORMULAIRES */
+/*-------------------------*/
+input {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.15rem;
+  border: 2px solid #2C003E;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+
+/*ACCUEIL _ CONNEXION*/
+.font-weight-light{
+  font-size: 1.5rem;
+}
+
+
+
+#valider {
+  background-color: #009999;
+  color: #fff;
+  border: none;
+  opacity: 0.8;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.15rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer ;
+    background-color: lighten(#009999,10%);
+  }
+
+/*MATHS*/
+/*-------------------------*/
+/*PAGE MATHS*/
+.btn .btn-success{
+  margin-right: 1px;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  border-radius: 25px;
+}
+
+
+.addition{
+  border: solid 5px #009999;
+  border-radius: 1rem;
+  background-color: #009999;
+  opacity: 0.8;
+  padding : 2rem;
+  color: #fff;
+  font-weight: 800;
+
+}
+
+
+
+#number{
+  border: solid 1px grey;
+}
+
+/*queston*/
+.question{
+  margin-top: 20px;
+}
+
+/***************************************************************
+/*FRANCAIS*/
+/***************************************************************/
+#conjugaison{
+  margin-top: 40px;
+}
+
+#conjugaison a{
+text-decoration: none;
+}
+
+.bloc{
+  border: 1px solid black;
+  margin-right :10px;
+}
+
+.questionnaire{
+  margin-top: 40px;
+}
+
+/*Futur -RE*/
+#futur_verbe_re .img-fluid{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/*TO DO : optimisation code en passant en classe iso id*/
+#futur_accent .img-fluid{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#futur_verbes_irreguliers .img-fluid{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*MATHS*/
+/***************************************************************/
+#add_2_chiffres input{
+  border-color:red;
+}
+
+.btn.btn-operation{
+  border-radius: 2px;
+}
+.form-elegant .z-depth-1a {
+-webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+-webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
+/***************************************************************
+/*RENAISSANCE*/
+/***************************************************************/
+#renaissance {
+  padding: 1rem;
+  text-align: center;
+
+}
+
+#accueil_renaissance h3 {
+  color: #009999;
+  font-size: 5rem;
+  padding-bottom:2rem;
+}
+
+/*A voir*/
+#questionnaire_renaissance p{
+  color: white;
+  font-size: 3rem;
+}
+/*progress bar*/
+.bar {
+  height : 25%;
+  border: solid black 10px;
+}
+/*A voir*/
+.img-fluid{
+  max-width: 5%;
+}
+/*A voir*/
+.btn-primary{
+  border: solid 1px #009999;
+  background-color: #009999;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: lighten(#009999,10%);
+  }
+
+.btn-primary a {
+     text-decoration: none;
+     font-weight: 300;
+     color: lighten(#009999, 25%);
+  }
+      
+a:hover {
+      text-decoration: underline;
+   }
+
+/***************************************************************
+/*FUTUR*/
+/***************************************************************/
+
+#futur_premier_groupe{
+  margin-bottom: 25px;
+}
+
+
+/*********essai animation déséquilibre****/
+animate.span{
+  display: block;
+  position: relative;
+  text-align : center;
+}
+
+animate backwards > span{
+  animation:animateBackwards 1s ease-in-out forwards;
+}
+
+animate forwards > span{
+  animation:animateforwards 1s ease-in-out forwards;
+}
+
+animate mixed > span:nth-child(odd){
+  animation:animateForwards 1s ease-in-out forwards;
+}
+
+@keyFrames animateForwards {
+  from { top 0; transform : rotate(0deg); }
+  to { top .9em; transform : rotate(25deg); }
+}
+
+
 

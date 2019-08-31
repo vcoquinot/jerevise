@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include ("fonction.php"); ?>
+<?php include "fonctions_francais.php" ?>
 <?php require_once("connexion_bdd.php"); ?>
 
 <!DOCTYPE html>
@@ -37,7 +38,7 @@
     //****************************
 
     //COMPTEUR SCORE      
-    calculerScore();
+    initialisationScore();
 
     //COMPTEUR NOMBRE DE QUESTIONS 
     calculerNombreDeQuestionsPosees();

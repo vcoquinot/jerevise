@@ -36,7 +36,7 @@ calculerNombreDeQuestionsPosees();
   //****************************
     //QUESTIONS
     //****************************
-    //LIMITATION À 8 QUESTIONS OU RETOUR ACCUEIL 
+    //LIMITATION DU NOMBRE DE QUESTIONS  
     if($_SESSION['numeroQuestion'] >4){
       $_SESSION['numeroQuestion'] =0;
       $_SESSION['score'] =0;

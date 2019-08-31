@@ -95,9 +95,15 @@
           <a href="pose.php">
             <button type="button" class="btn btn-cyan">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              additions à poser 2 chiffres
+              2 chiffres
             </button>
           </a> 
+          <a href="pose.php">
+            <button type="button" class="btn btn-cyan">
+              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
+              3 chiffres
+            </button>
+          </a>
         </div>
         <div class="col-lg-4 row justify-content-center">
         <a href="addition_mental_9.php">
@@ -134,7 +140,7 @@
           <a href="pose.php">
             <button type="button" class="btn btn-cyan">
               <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              additions à poser 3 chiffres
+              À toi de poser
             </button>
           </a> 
         </div>
@@ -150,13 +156,29 @@
     <div class="container col-lg-12">
       <div class="row justify-content-center">
         <div class="col-lg-4 row justify-content-center">
-          <a href="soustraction_mental_10.php">
+        </div>
+        <div class="col-lg-4 row justify-content-center">
+          
+        </div>
+        <div class="col-lg-4 row justify-content-center">
+        <a href="addition_mental_9.php">
+            <button type="button" class="btn btn-cyan">périmètre</i></button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+        <!--opérations-->
+    <div class="container col-lg-12" id="titres" >
+      <div class="row justify-content-center">
+        <div class="col-lg-4 row justify-content-center">
+          <a href="addition_mental_10.php">
             <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
               <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
               10
             </button>
           </a>
-          <a href="soustraction_mental_100.php">
+          <a href="addition_mental_100.php">
             <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
               <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
               100
@@ -165,15 +187,15 @@
         </div>
         <div class="col-lg-4 row justify-content-center">
           <a href="pose.php">
-            <button type="button" class="btn btn-light-blue">
-              <i class="fa fa-plus justify-content-center" aria-hidden="true"></i>
-              addition : à toi de la poser ! 
+            <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">
+              <i class="fa fa-minus justify-content-center" aria-hidden="true"></i>
+              xx
             </button>
-          </a>  
+          </a> 
         </div>
         <div class="col-lg-4 row justify-content-center">
         <a href="addition_mental_9.php">
-            <button type="button" class="btn btn-cyan">périmètre</i></button>
+            <button type="button" class="btn btn-cyan">durée</button>
           </a>
         </div>
       </div>
