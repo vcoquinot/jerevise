@@ -6,14 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Maths</title>      
+      <title>Calcul mental</title>      
       <link href="main1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
-
-<!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Material Design Bootstrap -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -35,42 +34,59 @@
     </br>
     </br>
 
- <div class="container">
-    <!-- Three columns -->
-    <div class="row justify-content-center">
-      <div class="row justify-content-center col-lg-3">
-        <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="additions"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Additions</h2>
-         <div class="list-group">
-          <a href="#!" class="list-group-item list-group-item-action">
-            +7
-          </a>
-          <a href="#!" class="list-group-item list-group-item-action">+8</a>
-          <a href="#!" class="list-group-item list-group-item-action">+9</a>
-          <a href="#!" class="list-group-item list-group-item-action">+10</a>
-          <a href="#!" class="list-group-item list-group-item-action disabled">+100</a>
+  <!-- images -4 colonnes -->
+    <div class="container">
+      <div class="row justify-content-center col-lg-12">
+        <div class="row justify-content-center col-lg-3">
+          <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="additions">      
+        </div>
+        <div class="row justify-content-center col-lg-3">
+          <img width="140" height="140" src="assets/img/substract.png" preserveAspectRatio="xMidYMid slice" alt="soustractions">      
+        </div>
+        <div class="row justify-content-center col-lg-3">
+          <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="multiplications">      
+        </div>
+        <div class="row justify-content-center col-lg-3">
+          <img width="140" height="140" src="assets/img/divide.png" preserveAspectRatio="xMidYMid slice" alt="divisions">      
         </div>
       </div>
-      <div class="row justify-content-center col-lg-3">
-        <img width="140" height="140" src="assets/img/substract.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="Soustractions"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Soustractions</h2>
-         <p><a class="btn blue-gradient" href="additions.php" role="button">quizz</a></p>
-      </div>
-      <div class="row justify-content-center col-lg-3">
-        <img width="140" height="140" src="assets/img/reduce" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="Multiplications"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Multiplications</h2>
-         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
-      </div>
-      <div class="row justify-content-center col-lg-3">
-        <img width="140" height="140" src="assets/img/divide" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="Divisions"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Divisions</h2>
-         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
-      </div>
-    </div><!-- /.row -->
-  </div>
-</br></br></br></br>
-    <!-- row-->
+      <br/>
 
+      <div class="row justify-content-center col-lg-12">
+        <div class="row justify-content-center col-lg-3">
+          <div class="row justify-content-center list-group">
+          <a href="additions_mentales.php" class="list-group-item list-group-item-action">  unités</a></a>
+          <a href="#!" class="list-group-item list-group-item-action">+10</a>
+          <a href="#!" class="list-group-item list-group-item-action">+100</a>
+          <a href="#!" class="list-group-item list-group-item-action">+1000</a>
+        </div>     
+        </div>
+        <div class="row justify-content-center col-lg-3">
+          <div class="row justify-content-center list-group">
+          <a href="#!" class="list-group-item list-group-item-action">  unités</a></a>
+          <a href="#!" class="list-group-item list-group-item-action">+10</a>
+          <a href="#!" class="list-group-item list-group-item-action">+100</a>
+          <a href="#!" class="list-group-item list-group-item-action">+1000</a>
+        </div>     
+        </div>
+        <div class="row justify-content-center col-lg-3">
+          <div class="list-group">
+          <a href="#!" class="list-group-item list-group-item-action">  unités</a></a>
+          <a href="#!" class="list-group-item list-group-item-action">+10</a>
+          <a href="#!" class="list-group-item list-group-item-action">+100</a>
+          <a href="#!" class="list-group-item list-group-item-action">+1000</a>
+        </div>    
+        </div>
+        <div class="row justify-content-center col-lg-3">
+          <div class="list-group">
+          <a href="#!" class="list-group-item list-group-item-action">  unités</a></a>
+          <a href="#!" class="list-group-item list-group-item-action">+10</a>
+          <a href="#!" class="list-group-item list-group-item-action">+100</a>
+          <a href="#!" class="list-group-item list-group-item-action">+1000</a>
+        </div>      
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
