@@ -102,19 +102,21 @@ function initialisationScore(){
     if (!isset ($_SESSION['score'])){
       $_SESSION['score']=0 ;
     }
-}
+  }
 
 
 function afficherScore(){
   ?>
   <!-- TO DO : numero question en dur !!-->
-        <section class="container-scoreFinal">
-          <header class="row justify-content-center">
-            <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur 5";?></h3>
-            <?php
-            //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
-            $_SESSION['score'] = 0; 
-            $_SESSION['numeroDeQuestionPosee'] = 1;
+  <section class="container-scoreFinal">
+    <header class="row justify-content-center">
+      <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur 5";?></h3>
+    </header>
+  </section>
+      <?php
+      //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
+      $_SESSION['score'] = 0; 
+      $_SESSION['numeroDeQuestionPosee'] = 1;
 }
 
 function calculerNombreDeQuestionsPosees(){
@@ -125,100 +127,6 @@ function calculerNombreDeQuestionsPosees(){
     }
 }
 ?>
-
-
-<!-- MATHS
-________________________________________________________
--->
-
-<!-- FONCTIONS OPÉRATIONS-->
-<?php
-    function addition($a,$b){
-      $additionResult = $a + $b;
-      return $additionResult;
-    }
-
-    function soustraction($a,$b){
-      $additionResult = $a - $b;
-      return $additionResult;
-    }
-
-    function randCountNumberWithTwoFigures($a){
-      //for($i=1; $i<7; $i++)
-      $randNumberTwoFigures = $a.rand(10,99);
-      echo $randNumberTwoFigures;
-      //}
-      return $randNumberTwoFigures;
-    }
-
-    function randCountNumberwithThreeFigures($a){
-      //for($i=1; $i<7; $i++) {
-      $randNumberThreeFigures = $a.rand(100,999);
-      echo $randNumberThreeFigures;
-      //}
-      return $randNumberThreeFigures;
-    }
-  ?>
-
-  <?php
-  function randCountNumberOverHundred($a){
-      //for($i=1; $i<7; $i++) {
-      $randCountNumberOverHundred = $a.rand(101,999);
-      echo $randCountNumberOverHundred;
-      //}
-      return $randCountNumberOverHundred;
-    }
-  ?>
-
-    <!-----------------------------------------------------------------
-    <------------------------------------------------------------------>
-    <!-- SCORE TOTAL OPERATIONS-->
-    <!-----------------------------------------------------------------
-    <------------------------------------------------------------------>
-  <?php 
-    function calculerScoreTotalOperations(){
-      $nombreCalculs= 4;
-      $score= $_GET['score'];
-      $resultatUn= $_GET['resultatUn'];
-      $resultatCorrectUn= $_GET['resultatCorrectUn'];
-      $resultatDeux= $_GET['resultatDeux'];
-      $resultatCorrectDeux= $_GET['resultatCorrectDeux'];
-      $resultatTrois= $_GET['resultatTrois'];
-      $resultatCorrectTrois= $_GET['resultatCorrectTrois'];
-      $resultatQuatre= $_GET['resultatQuatre'];
-      $resultatCorrectQuatre= $_GET['resultatCorrectQuatre'];
-      //* TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR */
-      $isCorrect=false;
-      if($resultatUn == $resultatCorrectUn){ 
-        $isCorrect === true; 
-        $score++; 
-      }
-      if($resultatDeux == $resultatCorrectDeux){ 
-        $isCorrect === true; 
-        $score++; 
-      }
-      if($resultatTrois == $resultatCorrectTrois){ 
-        $isCorrect === true; 
-        $score++; 
-      }
-      if($resultatQuatre == $resultatCorrectQuatre){ 
-        $isCorrect === true; 
-        $score++; 
-      }
-         ?>
-      <section class="container" id="score">
-        <div class="row justify-content-center">
-          <div class="col-lg-2">
-          <img class="img-fluid" src="assets/img/target.png" alt ="cible">
-          </div>
-        </div>
-        <header class="row justify-content-center">
-          <h3><?php echo "Tu as obtenu ". $score. " points sur ". $nombreCalculs;?></h3>
-        </header>
-      </section>
-    <?php
-    }
-    ?>
 
 
     <!-----------------------------------------------------------------
