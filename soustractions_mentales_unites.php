@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include("fonction.php");?>
+<?php include("fonctions_maths.php");?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -8,8 +9,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>-100</title>      
-      <link href="mainAll.css"  type="text/css" rel="stylesheet">
+      <title >Soustractions unités</title>      
+      <link href="style1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
@@ -29,21 +30,21 @@
   <body>
     <section>
       <div class="row justify-content-center">
-      <img class="img-fluid" src="assets/img/maths_-100.png" alt="addition de 7">
+      <img class="img-fluid" src="assets/img/maths_+7.png" alt="addition d' unités">
       </div>
     </section>
 
     <?php
     //initialisation des variables
     $firstNumber=0;
-    $secondNumber=100;
+    $secondNumber=0;
     ?>
 
     <!--****************************
     //QUESTIONS
     //****************************-->
 
-    <form action="cible_operation_mentale.php" method="get">
+    <form action="cible_calcul_mental.php" method="get">
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">            
@@ -52,26 +53,28 @@
 
               <!-- premier chiffre aléatoire-->
               <span class="col-lg-1">
-              <b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber);?></b></span>
-              <i class="fa fa-minus-circle" style="color:#CF455C"></i> 
-              <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
+              <b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+              <i class="fa fa-minus-circle" style="color:#FF502F"></i> 
+              <span class="col-lg-1"><b><?php $randSecondNumber = calculMentalUnité($secondNumber) ;?></b></span>
               <span class="col-lg-1"><b>=</b></span>
               <!-- transmission des données-->
-              <input class="col-lg-3" name="resultatUn" type="text" placeholder="total" style="border-color:#CF455C"></input>
+              <input class="col-lg-3" name="resultatUn" type="text" placeholder="total"></input>
               <input class="col-lg-2" name="resultatCorrectUn" type="hidden"
-               value="<?php echo $resultatCorrectUn= soustraction($randFirstNumber, $secondNumber); 
-              ?>">
+               value="<?php echo $resultatCorrectUn= soustraction($randFirstNumber, $randSecondNumber);?>">
+               <input class="col-lg-2" name="score" type="hidden"
+               value="0";></input>
             </div>
             <!--Calcul N° deux-->
             <div class="col-lg-5">
-              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber) ;?></b></span>
-              <i class="fa fa-minus-circle" style="color:#CF455C"></i>
-              <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
-              <span class="col-lg-1"><b>=</b></span>
-              <input class="col-lg-3" name="resultatDeux" type="text" placeholder="total"style="border-color:#CF455C"></input>            
-              <input class="col-lg-2" type="hidden"
-              name="resultatCorrectDeux" value="<?php echo $resultatCorrectDeux= soustraction($randFirstNumber, $secondNumber); 
-              ?>">
+              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span>
+            <i class="fa fa-minus-circle" style="color:#FF502F"></i>
+            <span class="col-lg-1"><b><?php $randSecondNumber =calculMentalUnité($secondNumber) ;?></b></span>
+            <span class="col-lg-1"><b>=</b></span>
+            <input class="col-lg-3" name="resultatDeux" type="text" placeholder="total"></input>
+            
+            <input class="col-lg-2" type="hidden"
+            name="resultatCorrectDeux" value="<?php echo $resultatCorrectDeux= soustraction($randFirstNumber, $randSecondNumber); 
+            ?>">
             </div>
           </div>
           <!--Calcul N° trois-->
@@ -79,33 +82,34 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-5">
               <!-- premier chiffre aléatoire-->
-              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber);?></b></span>
-              <i class="fa fa-minus-circle" style="color:#CF455C"></i> 
-              <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
+              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+              <i class="fa fa-minus-circle" style="color:#FF502F"></i> 
+              <span class="col-lg-1"><b><?php $randSecondNumber =calculMentalUnité($secondNumber) ;?></b></span>
               <span class="col-lg-1"><b>=</b></span>
               <!-- transmission des données-->
-              <input class="col-lg-3" name="resultatTrois" type="text" placeholder="total" style="border-color:#CF455C"></input>
+              <input class="col-lg-3" name="resultatTrois" type="text" placeholder="total"></input>
               <input class="col-lg-2" name="resultatCorrectTrois" type="hidden"
-               value="<?php echo $resultatCorrectDeux= soustraction($randFirstNumber, $secondNumber); 
+               value="<?php echo $resultatCorrectDeux= soustraction($randFirstNumber, $randSecondNumber); 
               ?>">
             </div>
             <!--Calcul N° quatre-->
             <div class="col-lg-5">
-              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberOverHundred($firstNumber) ;?></b></span> 
-            <i class="fa fa-minus-circle" style="color:#CF455C"></i> 
-            <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
+              <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span> 
+            <i class="fa fa-minus-circle" style="color:#FF502F"></i> 
+            <span class="col-lg-1"><b><?php $randSecondNumber =calculMentalUnité($secondNumber) ;?></b></span>
             <span class="col-lg-1"><b>=</b></span>
-            <input class="col-lg-3" name="resultatQuatre" type="text" placeholder="total" style="border-color:#CF455C"></input>            
+            <input class="col-lg-3" name="resultatQuatre" type="text" placeholder="total"></input>
+            
             <input class="col-lg-2" type="hidden"
-            name="resultatCorrectQuatre" value="<?php echo $resultatCorrectQuatre= soustraction($randFirstNumber, $secondNumber); 
+            name="resultatCorrectQuatre" value="<?php echo $resultatCorrectQuatre= soustraction($randFirstNumber, $randSecondNumber); 
             ?>">
             </div>
           </div>
 
       
       <div class = "col-lg-12">
-        <div class="row justify-content-center" id="monScore">
-          <input type="submit" value=" Mon score " style="border-color:#CF455C; background-color: #CF455C; color: white; font-weight: bold; font-size:20px;" >
+        <div class="row justify-content-center">
+          <input type="submit" value=" Mon score " style="border-color:#FF502F; background-color: #FF502F; color: white; font-weight: bold; font-size:20px;" >
           <input class="col-lg-2" name="score" type="hidden" value="0">
         </div>
       </div>

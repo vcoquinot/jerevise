@@ -55,27 +55,26 @@
       <div class="row justify-content-center col-lg-12">
         <div class="row justify-content-center col-lg-3">
           <div class="row justify-content-center list-group">
-          <a href="additions_mentales.php" class="list-group-item list-group-item-action">Unités</a></a>
-          <a href="addition_mental_10" class="list-group-item list-group-item-action">+10</a>
-          <a href="addition_mental_100" class="list-group-item list-group-item-action">+100</a>
-          <a href="addition_mental_1000" class="list-group-item list-group-item-action">+1000</a>
+          <a href="additions_mentales.php" class="list-group-item list-group-item-action">+2 à 9</a></a>
+          <a href="addition_mental_10" class="list-group-item list-group-item-action">+ 10</a>
+          <a href="addition_mental_100" class="list-group-item list-group-item-action">+ 100</a>
+          <a href="addition_mental_1000" class="list-group-item list-group-item-action">+ 1000</a>
         </div>     
         </div>
         <div class="row justify-content-center col-lg-3">
           <div class="row justify-content-center list-group">
-          <a href="#!" class="list-group-item list-group-item-action">  unités</a></a>
-          <a href="#!" class="list-group-item list-group-item-action">+10</a>
-          <a href="#!" class="list-group-item list-group-item-action">+100</a>
-          <a href="#!" class="list-group-item list-group-item-action">+1000</a>
+          <a href="soustractions_mentales_unites.php" class="list-group-item list-group-item-action">- 2 à 9</a></a>
+          <a href="soustractions_mentales_10" class="list-group-item list-group-item-action">- 10</a>
+          <a href="soustractions_mentales_100" class="list-group-item list-group-item-action">- 100</a>
+          <a href="soustractions_mentales_1000" class="list-group-item list-group-item-action">- 1000</a>
         </div>     
         </div>
         <div class="row justify-content-center col-lg-3">
           <div class="list-group">
-          <a href="#!" class="list-group-item list-group-item-action">  unités</a></a>
-          <a href="#!" class="list-group-item list-group-item-action">+10</a>
-          <a href="#!" class="list-group-item list-group-item-action">+100</a>
-          <a href="#!" class="list-group-item list-group-item-action">+1000</a>
-        </div>    
+          <a href="multiplications_mentales_unité.php" class="list-group-item list-group-item-action">* 2 à  9</a></a>
+          <a href="multiplications_mentales_10" class="list-group-item list-group-item-action">* 10</a>
+          <a href="multiplications_mentales_100" class="list-group-item list-group-item-action">* 100</a>
+          </div>    
         </div>
         <div class="row justify-content-center col-lg-3">
           <div class="list-group">

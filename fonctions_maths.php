@@ -35,6 +35,16 @@
       return $additionResult;
     }
 
+    function multiplication($a,$b){
+      $additionResult = $a * $b;
+      return $additionResult;
+    }
+
+    function division($a,$b){
+      $additionResult = $a / $b;
+      return $additionResult;
+    }
+
     function calculMentalUnité($a){
       $uniteAleatoire = $a.rand(2,9);
       echo $uniteAleatoire;
