@@ -86,7 +86,7 @@
           <a href=fraction.php><img width="140" height="140" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="fractions"><rect width="100%" height="100%"/></a>        
         </div>
         <div class="row justify-content-center col-lg-4">
-          <a href="probleme.php"><img width="140" height="140" src="assets/img/english-language.png" alt="problèmes"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
+          <a href="probleme.php"><img width="140" height="140" src="assets/img/puzzle.png" alt="problèmes"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
         </div>
         <div class="row justify-content-center col-lg-4">
           <img width="140" height="140" src="assets/img/chemistry.png" alt="sciences"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/>
