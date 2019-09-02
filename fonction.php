@@ -163,25 +163,6 @@ function calculerNombreDeQuestionsPosees(){
     } 
     ?> 
 
-    <!-----------------------------------------------------------------
-    <------------------------------------------------------------------>
-    <!-- REDIRECTION-->
-    <!-----------------------------------------------------------------
-    <------------------------------------------------------------------>
-    <?php function redirection(){
-    ?>
-    <section class="container col-lg-12" id="redirection" style = "text-align:center;">
-      <div class="row justify-content-center">
-        <a href="maths.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Rejouer</button></a>
-      <div class="col-lg-1"></div>
-        <a href="maths.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Accueil</button></a>
-      </div>
-    </section>
-    <?php
-    }
-    ?>
-
-
     <!-- REDIRECTION-->
     <!-----------------------------------------------------------------
     <------------------------------------------------------------------>
@@ -667,85 +648,6 @@ function poseAdditionTroisChiffres($firstNumber, $secondNumber){
 <?php 
     }
 ?>
-
-<?php function displayExerciceSoustractionPoseeTroisChiffres(){ 
-  $a=0;
-?>
-  <br/>
-  <br/>
-        
-    <form action="cible_addition_posee.php" method="post">
-        <div class="container">
-          <div class = "col-lg-12">
-            <div class="row">
-              <div class="col-lg-5"></div>
-              <input class="col-lg-3" name="retenue"  type="text"  id="inputRetenue" placeholder="retenue">
-              </input>
-              <div class="col-lg-4"></div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class = "col-lg-12">
-          <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-3"><?php $randFirstNumber = randCountNumberWithThreeFigures($a) ;?></div>
-            <div class="col-lg-3"></div>
-          </div>
-        </div>
-      </div>
-        <div class="container">
-        <div class = "col-lg-12">
-          <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-1">-</div>
-            <div class="col-lg-3"><?php $randSecondNumber = randCountNumberWithThreeFigures($a)  ;?></div>
-            <div class="col-lg-3"></div>
-          </div>
-        </div>
-      </div>
-        <div class="container">
-        <div class = "col-lg-12">
-          <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3"></div>
-          </div>
-        </div>
-        </div>
-        <div class="container">
-        <div class = "col-lg-12">
-          <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-1">=</div>
-        </div>
-        <div class="container">
-        <div class = "col-lg-12">
-          <div class="row">
-            <div class="col-lg-5"></div>
-            <input class="col-lg-3" name="somme" type="text" placeholder="total"></input>
-            <input class="col-lg-2" type="hidden"
-            name="sommeCorrecte" value="<?php $sommeCorrecte= soustraction($randFirstNumber, $randSecondNumber); 
-            echo $sommeCorrecte;
-            ?>">
-
-            <div class="col-lg-4"></div>
-          </div>
-        </div>
-      </div>
-        <br/>
-        <br/>
-
-        <div class="row text-center">
-          <div class="col-lg-6 text-center"></div>
-          <input type="submit" value="Vérifier">
-        </div>
-      </div>
-    </form>
-<?php 
-    }
-?>
-
 
 
 

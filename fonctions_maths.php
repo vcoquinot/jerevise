@@ -5,6 +5,24 @@
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
 
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+    <!-- REDIRECTION-->
+    <!-----------------------------------------------------------------
+    <------------------------------------------------------------------>
+    <?php function redirection(){
+    ?>
+    <section class="container col-lg-12" id="redirection" style = "text-align:center;">
+      <div class="row justify-content-center">
+        <a href="calcul_mental.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Rejouer</button></a>
+      <div class="col-lg-1"></div>
+        <a href="maths.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Accueil</button></a>
+      </div>
+    </section>
+    <?php
+    }
+    ?>
+
 <!-- FONCTIONS OPÉRATIONS-->
 <?php
     function addition($a,$b){

@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include("fonction.php");?>
+<?php include("fonctions_maths.php");?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -43,7 +44,7 @@
     //QUESTIONS
     //****************************-->
 
-    <form action="cible_operation_mentale.php" method="get">
+    <form action="cible_additions_mentales.php" method="get">
       <div class="container">
         <div class = "col-lg-12">
           <div class="row">            
