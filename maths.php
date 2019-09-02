@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Site de révisions pour les élèves de CM1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Maths</title>      
-      <link href="main1.css"  type="text/css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+    <title>Maths</title>      
+    <link href="main.css"  type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-<!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Material Design Bootstrap -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,54 +29,71 @@
   <body>
     <section id="accueil">
       <header class="row justify-content-center">
-         <h1>titre !</h1>
+         <h1>Fais ton choix !</h1>
       </header>
     </section>
     </br>
     </br>
-
- <div class="container">
-    <!-- Three columns -->
+  <!-- Titres en 3 colonnes -->
+   <div class="container">
     <div class="row justify-content-center">
       <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/thinking.png" preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
         <h2>Calcul mental</h2>
-         <p><a class="btn blue-gradient" href="calcul_mental.php" role="button">quizz</a></p>
       </div>
       <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/copywriting.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
         <h2>Opérations</h2>
-         <p><a class="btn blue-gradient" href="operations.php" role="button">quizz</a></p>
       </div>
-            <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/recycle" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="calcul"><rect width="100%" height="100%" fill="#777"/>
+      <div class="row justify-content-center col-lg-4">
         <h2>Conversions</h2>
-         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
       </div>
-    </div><!-- /.row -->
-  </div>
-</br></br></br></br>
-    <!-- row-->
-
-     <div class="container">
-    <!-- Three columns -->
+      </div>
+    </div>
+  </br>
+    <!-- images et lien  en colonnes -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="row justify-content-center col-lg-4">
+          <a href=calcul_mental.php><img width="140" height="140" src="assets/img/thinking.png" preserveAspectRatio="xMidYMid slice" alt="maths"></a>        
+        </div>
+        <div class="row justify-content-center col-lg-4">
+          <a href="oerations.php"><img width="140" height="140" src="assets/img/copywriting.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="conversions"></a>
+        </div>
+        <div class="row justify-content-center col-lg-4">
+          <a href="convertions.php"><img width="140" height="140" src=assets/img/recycle.png alt="conversions"preserveAspectRatio="xMidYMid slice"></a>
+        </div>
+      </div>
+    </div>
+  </br></br></br>
+      <!-- Titres en 3 colonnes -->
+   <div class="container">
     <div class="row justify-content-center">
       <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="fractions"><rect width="100%" height="100%" fill="#777"/>
         <h2>Fractions</h2>
-         <p><a class="btn blue-gradient" href="fractions.php" role="button">quizz</a></p>
       </div>
       <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/puzzle.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="problèmes"><rect width="100%" height="100%" fill="#777"/>
         <h2>Problèmes</h2>
-         <p><a class="btn blue-gradient" href="problemes.php" role="button">quizz</a></p>
       </div>
-            <div class="row justify-content-center col-lg-4">
-        <img width="140" height="140" src="assets/img/puzzle" alt="conversions"preserveAspectRatio="xMidYMid slice" alt="problèmes"><rect width="100%" height="100%" fill="#777"/>
-        <h2>Conversions</h2>
-         <p><a class="btn blue-gradient" href="conversions" role="button">quizz</a></p>
+      <div class="row justify-content-center col-lg-4">
+        <h2>XXX</h2>
       </div>
-    </div><!-- /.row -->
+      </div>
+    </div>
+  </br>
+    <!-- images et lien  en colonnes -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="row justify-content-center col-lg-4">
+          <a href=fraction.php><img width="140" height="140" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="fractions"><rect width="100%" height="100%"/></a>        
+        </div>
+        <div class="row justify-content-center col-lg-4">
+          <a href="probleme.php"><img width="140" height="140" src="assets/img/english-language.png" alt="problèmes"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
+        </div>
+        <div class="row justify-content-center col-lg-4">
+          <img width="140" height="140" src="assets/img/chemistry.png" alt="sciences"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/>
+        </div>
+      </div>
+    </div>
+
 
 
   </body>
