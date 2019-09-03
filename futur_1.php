@@ -41,7 +41,7 @@
     initialisationScore();
 
     //COMPTEUR NOMBRE DE QUESTIONS 
-    calculerNombreDeQuestionsPosees();
+    //calculerNombreDeQuestionsPosees();
 
   if($_SESSION['numeroDeQuestionPosee'] > 6){
     afficherScore();

@@ -53,10 +53,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="row justify-content-center col-lg-4">
-          <a href=calcul_mental.php><img width="140" height="140" src="assets/img/thinking.png" preserveAspectRatio="xMidYMid slice" alt="maths"></a>        
+          <a href=calcul_mental.php><img width="140" height="140" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="maths"></a>        
         </div>
         <div class="row justify-content-center col-lg-4">
-          <a href="oerations.php"><img width="140" height="140" src="assets/img/copywriting.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="conversions"></a>
+          <a href="operations.php"><img width="140" height="140" src="assets/img/arithmetic.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="conversions"></a>
         </div>
         <div class="row justify-content-center col-lg-4">
           <a href="convertions.php"><img width="140" height="140" src=assets/img/recycle.png alt="conversions"preserveAspectRatio="xMidYMid slice"></a>
@@ -74,7 +74,7 @@
         <h2>Problèmes</h2>
       </div>
       <div class="row justify-content-center col-lg-4">
-        <h2>XXX</h2>
+        <h2>Durée</h2>
       </div>
       </div>
     </div>
@@ -86,10 +86,10 @@
           <a href=fraction.php><img width="140" height="140" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="fractions"><rect width="100%" height="100%"/></a>        
         </div>
         <div class="row justify-content-center col-lg-4">
-          <a href="probleme.php"><img width="140" height="140" src="assets/img/puzzle.png" alt="problèmes"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
+          <a href="probleme.php"><img width="140" height="140" src="assets/img/jigsaw.png" alt="problèmes"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
         </div>
         <div class="row justify-content-center col-lg-4">
-          <img width="140" height="140" src="assets/img/chemistry.png" alt="sciences"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/>
+          <img width="140" height="140" src="assets/img/clock.png" alt="durée"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/>
         </div>
       </div>
     </div>
