@@ -11,7 +11,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Futur verbes bizarres</title>      
+      <title>cible futur verbes bizarres</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -32,25 +32,12 @@
 
 
   <body>
-  <?php
-      //****************************
-    //INITIALISATION DES COMPTEURS
-    //****************************
-
+    <?php     
     //COMPTEUR SCORE      
     initialisationScore();
-
-    //COMPTEUR NOMBRE DE QUESTIONS 
-    calculerNombreDeQuestionsPosees();
-
-
-  if($_SESSION['numeroQuestion'] > 5){
-    afficherScore();
-    $_SESSION['numeroQuestion'] = 0;
-    $_SESSION['score'] = 0;
-  }else{
     ?>
-    <section id="futur_verbes_irreguliers">
+
+    <section>
       <div class="row justify-content-center">
         <h2> Le futur des verbes bizarres... On les appelle les verbes irréguliers</h2>
       </div>
@@ -59,47 +46,29 @@
       </div>
     </section>
           
-     <!-- affichage des questions-->
-    <section class="questionnaire"> 
+    <!-- affichage des questions + formulaire réponse-->
+    <section class="questionnaire">      
       <div class="row justify-content-center">
-        <h2>Entraîne-toi !</h2>
-      </div>      
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-8">
-              <form action="cible_futur_irregulier.php" method="post">
-              <?php
-              //recherche alléatoire d'une question
-              $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 8 ORDER BY RAND() LIMIT 1");
-              $donneesFutur = $questionFutur->fetch();
-              ?>
-              <h2><?php echo $donneesFutur['intitule_question'];?></h2>
-              <?php
-             
-              $_SESSION['id_question'] = $donneesFutur['id_question'];
-              ?>
-              </form>
-            </div>
-            
-          </div>
-              <?php $questionFutur->closeCursor();?>
-
-        </div>
-      </section>
-
-    <!--**************************
-        RÉPONSES UTILISATEUR
-    ****************************-->
-      <section>
-        <div class="container">
+        <h2 style =" color:#007065; margin-bottom:20px;">Entraîne-toi !</h2>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
           <form action="cible_futur_irregulier.php" method="get">
-            <?php afficherFormulaireConjugaison(); ?>
-          </form>
-        </div>
-      </section>
-      <?php
-    }
-      ?>
+            <?php
+            //recherche alléatoire d'une question
+            $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 8 ORDER BY RAND() LIMIT 1");
+            $donneesFutur = $questionFutur->fetch();
+            ?>
+            <h2><?php echo $donneesFutur['intitule_question'];?></h2>
+            <?php
+            $_SESSION['id_question'] = $donneesFutur['id_question'];
+            $questionFutur->closeCursor();?>
+    
+          <!--Formulaire réponse-->
+         <?php afficherFormulaireConjugaison(); ?>
+        </form>
+      </div>
+    </section>
+
   </body>
 </html>
