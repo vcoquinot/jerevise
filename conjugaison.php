@@ -63,11 +63,11 @@
       <div class="row justify-content-center col-lg-12">
         <div class="row justify-content-center col-lg-4">
           <div class="row justify-content-center list-group">
-          <b><a href="additions_mentales.php" class="list-group-item list-group-item-action">1er groupe</a></a>
-          <a href="addition_mental_10" class="list-group-item list-group-item-action">-yer</a>
-          <a href="addition_mental_100" class="list-group-item list-group-item-action">-re</a>
-          <a href="addition_mental_1000" class="list-group-item list-group-item-action">être et avoir</a>
-          <a href="addition_mental_1000" class="list-group-item list-group-item-action">on mélange tout !</a></b>
+          <b><a href="en_construction.html" class="list-group-item list-group-item-action">1er groupe</a></a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">-yer</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">-re</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">on mélange tout !</a></b>
           </div>     
         </div>
         <div class="row justify-content-center col-lg-4">
