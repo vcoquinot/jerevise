@@ -58,44 +58,64 @@
     $reponseFutur = $bdd->query("SELECT intitule_reponse 
       FROM question,reponse
       WHERE question.id_question = $idQuestion AND reponse.id_reponse = $idQuestion");
-    $donnees = $reponseFutur->fetch();
+    $donneesReponseFutur = $reponseFutur->fetch();
 
     //Comparaison réponse de l'utilisateur et réponse correcte
     $isCorrect=false;
-    $_SESSION['reponseCorrecte'] = $donnees['intitule_reponse'];   
+    $reponseCorrecte = $donneesReponseFutur['intitule_reponse'];   
     /*$pattern = '/' . preg_quote($reponseUtilisateur) . '/';*/
     $reponseFutur->closeCursor();
-    
+
 
     //CAS 1 **** RÉPONSE CORRECTE
-    if($reponseUtilisateur != null && ($_SESSION['reponseCorrecte'] === $reponseUtilisateur))
+    if($reponseUtilisateur == $reponseCorrecte)
     { 
       $isCorrect === true; 
       // + 1 point
-      $_SESSION['score']++; 
+      $_SESSION['score']++;
+      $commentaireReussite = $bdd->query("SELECT commentaire_reussite FROM reussite ORDER BY RAND() LIMIT 1");
+      // recherche d'un commentaire de réussite alléatoire   
+      $donneesReussite = $commentaireReussite->fetch();
+      $felicitation = $donneesReussite['commentaire_reussite'];
+      ?>
+      <!--affichage du commentaire-->
+      <section class="row justify-content-center">
+      <h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2>
+    </section>
+      <?php 
+
       //question suivante
       header( "refresh:2;url=futur_1"); 
 
-    }//CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
-      else {
-                    ?>
-            <h2 class="commentaire" style="color:#FF8080"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2>
-          <?php
-        header( "refresh:2;url=futur_1.php") ?>
-              </div>
-            </div>
+    }else
+    //CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
+      {
+        ?>
+        <div class="container">
+          <div class="row justify-content-center ">
+            <h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></b></h2>
           </div>
-         </section>
+        <div class="row justify-content-center col-12">
+        <?php
+        header( "refresh:2;url=futur_1.php") ?>
         <?php
       }
-     echo $_SESSION['numeroQuestion']++; 
+      $_SESSION['numeroQuestion']++; 
       ?>
-     <?php
+      <?php
 
-
-     //AU DESSUS DE 6 QUESTIONS
+    //AU DESSUS DE 6 QUESTIONS
     }else{
       afficherScore();
+      if($_SESSION['score'] <= ($_SESSION['numeroQuestion']-1)){
+        ?>        
+        <div class="container">
+          <div class="row justify-content-center ">
+            <h2 class="commentaire" style="color:#569ef6"><b><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></b></h2> 
+          </div>
+        </div>
+      <?php
+      }
       reinitialiserCompteurs();
       ?>
       <section class="container">
