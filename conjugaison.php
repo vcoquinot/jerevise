@@ -75,16 +75,16 @@
           <b><a href="futur_1.php" class="list-group-item list-group-item-action">verbes en -ER et -IR</a></a>
           <a href="futur_verbe_re.php" class="list-group-item list-group-item-action">verbes en -RE</a>
           <a href="futur_verbe_yer.php" class="list-group-item list-group-item-action">verbes en -YER</a>
-          <a href="futur_auxiliaires.php" class="list-group-item list-group-item-action">être et avoir</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
           <a href="futur_irregulier.php" class="list-group-item list-group-item-action">verbes bizarres</a>
-          <a href="futur.php" class="list-group-item list-group-item-action">un petit mélange de tout !</a></b>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">un petit mélange de tout !</a></b>
         </div>     
         </div>
         <div class="row justify-content-center col-lg-4">
           <div class="list-group">
           <b><a href="multiplications_mentales_unité.php" class="list-group-item list-group-item-action">* 2 à  9</a></a>
-          <a href="multiplications_mentales_10" class="list-group-item list-group-item-action">* 10</a>
-          <a href="multiplications_mentales_100" class="list-group-item list-group-item-action">* 100</a></b>
+          <a href="multiplications_mentales_10.php" class="list-group-item list-group-item-action">* 10</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">* 100</a></b>
           </div>    
         </div>
       </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-    <title>Maths</title>      
+    <title>Français</title>      
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -56,10 +56,10 @@
           <a href=conjugaison.php><img width="140" height="140" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice" alt="conjugaison"></a>        
         </div>
         <div class="row justify-content-center col-lg-4">
-          <a href="grammaire.php"><img width="140" height="140" src="assets/img/grammaire.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="grammaire"></a>
+          <a href="en_construction.html"><img width="140" height="140" src="assets/img/grammaire.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="grammaire"></a>
         </div>
         <div class="row justify-content-center col-lg-4">
-          <a href="vocabulaire.php"><img width="140" height="140" src=assets/img/vocab.png alt="vocabulaire"preserveAspectRatio="xMidYMid slice"></a>
+          <a href="en_construction.html"><img width="140" height="140" src=assets/img/vocab.png alt="vocabulaire"preserveAspectRatio="xMidYMid slice"></a>
         </div>
       </div>
     </div>

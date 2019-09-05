@@ -59,7 +59,7 @@
           <a href="operations.php"><img width="140" height="140" src="assets/img/arithmetic.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="conversions"></a>
         </div>
         <div class="row justify-content-center col-lg-4">
-          <a href="convertions.php"><img width="140" height="140" src=assets/img/recycle.png alt="conversions"preserveAspectRatio="xMidYMid slice"></a>
+          <a href="en_construction.html"><img width="140" height="140" src=assets/img/recycle.png alt="conversions"preserveAspectRatio="xMidYMid slice"></a>
         </div>
       </div>
     </div>
@@ -83,13 +83,13 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="row justify-content-center col-lg-4">
-          <a href=fraction.php><img width="140" height="140" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="fractions"><rect width="100%" height="100%"/></a>        
+          <a href=en_construction.html><img width="140" height="140" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="fractions"><rect width="100%" height="100%"/></a>        
         </div>
         <div class="row justify-content-center col-lg-4">
-          <a href="probleme.php"><img width="140" height="140" src="assets/img/jigsaw.png" alt="problèmes"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
+          <a href="en_construction.html"><img width="140" height="140" src="assets/img/jigsaw.png" alt="problèmes"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
         </div>
         <div class="row justify-content-center col-lg-4">
-          <img width="140" height="140" src="assets/img/clock.png" alt="durée"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/>
+          <a href=en_construction.html><img width="140" height="140" src="assets/img/clock.png" alt="durée"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/></a>
         </div>
       </div>
     </div>

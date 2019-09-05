@@ -78,10 +78,10 @@
         </div>
         <div class="row justify-content-center col-lg-3">
           <div class="list-group">
-          <a href="#!" class="list-group-item list-group-item-action">  unités</a></a>
-          <a href="#!" class="list-group-item list-group-item-action">+10</a>
-          <a href="#!" class="list-group-item list-group-item-action">+100</a>
-          <a href="#!" class="list-group-item list-group-item-action">+1000</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">  unités</a></a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">+10</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">+100</a>
+          <a href="en_construction.html" class="list-group-item list-group-item-action">+1000</a>
         </div>      
         </div>
       </div>
