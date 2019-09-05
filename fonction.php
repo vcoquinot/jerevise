@@ -110,20 +110,25 @@ function afficherScore(){
   <!-- TO DO : numero question en dur !!-->
   <section class="container-scoreFinal">
     <header class="row justify-content-center">
-      <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur 5";?></h3>
+      <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $_SESSION['numeroQuestion']-- ;?></h3>
     </header>
   </section>
-      <?php
-      //RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
-      $_SESSION['score'] = 0; 
-      $_SESSION['numeroDeQuestionPosee'] = 1;
+  <?php
 }
 
+function reinitialiserCompteurs(){
+//RÉINITIALISATION DU NOMBRE DE QUESTIONS ET DU SCORE
+$_SESSION['score'] = 0; 
+$_SESSION['numeroQuestion'] = 1;
+}
+?>
+
+<?php
 function calculerNombreDeQuestionsPosees(){
-    if (!isset ($_SESSION['numeroDeQuestionPosee'])){
-      $_SESSION['numeroDeQuestionPosee']= 1;
+    if (!isset ($_SESSION['numeroQuestion'])){
+      $_SESSION['numeroQuestion']= 1;
     }else{
-      $_SESSION['numeroDeQuestionPosee']++;
+      $_SESSION['numeroQuestion']++;
     }
 }
 ?>

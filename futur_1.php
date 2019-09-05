@@ -43,12 +43,6 @@
     //COMPTEUR NOMBRE DE QUESTIONS 
     //calculerNombreDeQuestionsPosees();
 
-  if($_SESSION['numeroDeQuestionPosee'] > 6){
-    afficherScore();
-    $_SESSION['numeroDeQuestionPosee'] = 1;
-    $_SESSION['score'] = 0;
-    redirectionFrancais();
-  }else{
     ?>
     <section id="futur_premier_groupe">
       <div class="row justify-content-center">
@@ -83,8 +77,6 @@
         </form>
       </div>
     </section>
-    <?php
-    }
-    ?>
+
   </body>
 </html>

@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 
+<?php include ("fonction.php"); ?>
 <?php require_once("connexion_bdd.php")?>
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Futur -YER</title>      
+      <title>cible futur 1er groupe</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -49,7 +50,7 @@
   $reponseUtilisateur = $_GET["reponseFutur"];
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
-echo $_SESSION['numeroQuestion']++;
+  
   //*****LIMITATION À 6 QUESTIONS
   if($numeroQuestion<=5){
       //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
@@ -87,7 +88,7 @@ echo $_SESSION['numeroQuestion']++;
          </section>
         <?php
       }
-      
+     echo $_SESSION['numeroQuestion']++; 
       ?>
      <?php
 
@@ -95,7 +96,16 @@ echo $_SESSION['numeroQuestion']++;
      //AU DESSUS DE 6 QUESTIONS
     }else{
       afficherScore();
+      reinitialiserCompteurs();
+      ?>
+      <section class="container">
+        <div class="row justify-content-center">
+          <a href="francais.php"><button type="button" class="btn">Rejouer</button></a>
+          <a href="accueil.php"><button type="button" class="btn">Accueil</button></a>
+        </div>
+      </section>
+    <?php
     }      
-  ?>
+    ?>
   </body>
   </body>
