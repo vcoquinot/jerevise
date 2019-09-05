@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <section id="futur_premier_groupe">
+    <section>
       <div class="row justify-content-center">
         <h2>Le futur des verbes en -ER et -IR</h2>
       </div>
@@ -127,5 +127,4 @@
     <?php
     }      
     ?>
-  </body>
   </body>
