@@ -46,7 +46,7 @@
     </section>
   <?php
      
-//***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
+  //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
   $reponseUtilisateur = $_GET["reponseFutur"];
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
