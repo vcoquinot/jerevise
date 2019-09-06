@@ -35,14 +35,14 @@
     <br /><br />
 
     <div class="container" style="background-color:white;">
- <div class="sommaire">
+      <div class="sommaire">
 <!---- haut-->
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="card lg-4 align-items-center">
             <h2 class="row text-center">FRANCAIS</h2>
-            <a href=francais.php><img width="140" height="140" src="assets/img/folders.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail"></a>
+            <img width="140" height="140" src="assets/img/folders.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail">
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
               <a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
@@ -56,7 +56,7 @@
         <div class="col-lg-4">
           <div class="card lg-4 align-items-center">
             <h2 class="row text-center">MATHS</h2>
-            <a href=maths.php><img width="140" height="140" src="assets/img/math.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"></a> 
+            <img width="140" height="140" src="assets/img/math.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
               <a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> calcul mental</a>
