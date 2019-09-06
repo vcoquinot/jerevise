@@ -34,61 +34,69 @@
     </br>
     </br>
 
-  <!-- images -4 colonnes -->
+    <div class="container" style="background-color:white;">
+      <div class="sommaire">
+<!---- haut-->
     <div class="container">
-      <div class="row justify-content-center col-lg-12">
-        <div class="row justify-content-center col-lg-3">
-          <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="additions">      
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card lg-3 align-items-center">
+            <h2 class="row text-center">ADDITION</h2>
+            <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail">
+            <rect width="100%" height="100%" fill="#55595c"/>
+            <div class="card-body">
+              <a href="additions_unites.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/dices.png" preserveAspectRatio="xMidYMid slice"alt="additions d'unités"> unités</a>
+              <a href="addition_mental_10.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="+10"> + 10</a>
+              <a href="addition_mentale_100" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="+100"> +100</a>
+              <a href="addition_mentale_1000" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> +1000</a>
+              <div class="d-flex justify-content-between align-items-center">                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row justify-content-center col-lg-3">
-          <img width="140" height="140" src="assets/img/substract.png" preserveAspectRatio="xMidYMid slice" alt="soustractions">      
+        <div class="col-lg-3">
+          <div class="card lg-3 align-items-center">
+            <h2 class="row text-center">SOUSTRACTION</h2>
+            <img width="140" height="140" src="assets/img/substract.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
+            <rect width="100%" height="100%" fill="#55595c"/>
+            <div class="card-body">
+              <a href="soustractions.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> unités</a>
+              <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 10</a>
+              <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 100</a>
+              <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 1000</a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row justify-content-center col-lg-3">
-          <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="multiplications">      
+        <div class="col-lg-3">
+          <div class="card lg-3 align-items-center">
+            <h2 class="row text-center">MULTIPLICATION</h2>
+            <a href=en_construction.html><img width="140" height="140" src="assets/img/multiply.png" preserveAspectRatio="xMidYMid slice" alt="multiplication" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> unités</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 10</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 100</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 1000</a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row justify-content-center col-lg-3">
-          <img width="140" height="140" src="assets/img/divide.png" preserveAspectRatio="xMidYMid slice" alt="divisions">      
+                <div class="col-lg-3">
+          <div class="card lg-3 align-items-center">
+            <h2 class="row text-center">DIVISION</h2>
+            <img width="140" height="140" src="assets/img/divide.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
+            <rect width="100%" height="100%" fill="#55595c"/>
+            <div class="card-body">
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> unités</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 10</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 100</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 1000</a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <br/>
-
-      <div class="row justify-content-center col-lg-12">
-        <div class="row justify-content-center col-lg-3">
-          <div class="row justify-content-center list-group">
-          <a href="additions_mentales.php" class="list-group-item list-group-item-action">+2 à 9</a></a>
-          <a href="addition_mental_10" class="list-group-item list-group-item-action">+ 10</a>
-          <a href="addition_mental_100" class="list-group-item list-group-item-action">+ 100</a>
-          <a href="addition_mental_1000" class="list-group-item list-group-item-action">+ 1000</a>
-        </div>     
-        </div>
-        <div class="row justify-content-center col-lg-3">
-          <div class="row justify-content-center list-group">
-          <a href="soustractions_mentales_unites.php" class="list-group-item list-group-item-action">- 2 à 9</a></a>
-          <a href="soustractions_mentales_10" class="list-group-item list-group-item-action">- 10</a>
-          <a href="soustractions_mentales_100" class="list-group-item list-group-item-action">- 100</a>
-          <a href="soustractions_mentales_1000" class="list-group-item list-group-item-action">- 1000</a>
-        </div>     
-        </div>
-        <div class="row justify-content-center col-lg-3">
-          <div class="list-group">
-          <a href="tables_multiplication.php" class="list-group-item list-group-item-action">tables de multiplication</a></a>
-          <a href="multiplications_mentales_unité.php" class="list-group-item list-group-item-action">* 2 à  9</a></a>
-          <a href="multiplications_mentales_10" class="list-group-item list-group-item-action">* 10</a>
-          <a href="multiplications_mentales_100" class="list-group-item list-group-item-action">* 100</a>
-          </div>    
-        </div>
-        <div class="row justify-content-center col-lg-3">
-          <div class="list-group">
-          <a href="en_construction.html" class="list-group-item list-group-item-action">  unités</a></a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">+10</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">+100</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">+1000</a>
-        </div>      
-        </div>
-      </div>
-    </div>
   </body>
 </html>
-
-
-          
