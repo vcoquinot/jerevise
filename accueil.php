@@ -32,70 +32,56 @@
          <h1>Au programme...</h1>
       </header>
     </section>
-    </br>
-    </br>
-  <!-- Titres en 3 colonnes -->
-   <div class="container">
-    <div class="row justify-content-center">
-      <div class="row justify-content-center col-lg-4">
-        <h2>Maths</h2>
-      </div>
-      <div class="row justify-content-center col-lg-4">
-        <h2>Français</h2>
-      </div>
-      <div class="row justify-content-center col-lg-4">
-        <h2>Histoire</h2>
-      </div>
-      </div>
-    </div>
-  </br>
-    <!-- images et lien  en colonnes -->
+    <br /><br />
+
+    <div class="container" style="background-color:white;">
+ <div class="sommaire">
+<!---- haut-->
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="row justify-content-center col-lg-4">
-          <a href=maths.php><img width="140" height="140" src="assets/img/math.png" preserveAspectRatio="xMidYMid slice" alt="maths"><rect width="100%" height="100%"/></a>        
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card lg-4 align-items-center">
+            <h2 class="row text-center">FRANCAIS</h2>
+            <a href=francais.php><img width="140" height="140" src="assets/img/folders.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail"></a>
+            <rect width="100%" height="100%" fill="#55595c"/>
+            <div class="card-body">
+              <a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/vocab.png" preserveAspectRatio="xMidYMid slice" alt="grammaire"> grammaire</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a>
+              <div class="d-flex justify-content-between align-items-center">                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row justify-content-center col-lg-4">
-          <a href="francais.php"><img width="140" height="140" src="assets/img/folders.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="francais"><rect width="100%" height="100%"/></a>
+        <div class="col-lg-4">
+          <div class="card lg-4 align-items-center">
+            <h2 class="row text-center">MATHS</h2>
+            <a href=maths.php><img width="140" height="140" src="assets/img/math.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"></a> 
+            <rect width="100%" height="100%" fill="#55595c"/>
+            <div class="card-body">
+              <a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> calcul mental</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/arithmetic.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> opérations posées</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/recycle.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> conversions</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/clock.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> heures et durée</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> fractions</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/jigsaw.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> problèmes</a>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row justify-content-center col-lg-4">
-          <img width="140" height="140" src=assets/img/papyrus.png alt="histoire"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/>
+        <div class="col-lg-4">
+          <div class="card lg-4 align-items-center">
+            <h2 class="row text-center">ANGLAIS</h2>
+            <a href=en_construction.html><img width="140" height="140" src="assets/img/anglais.png" preserveAspectRatio="xMidYMid slice" alt="anglais" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
+              <div class="d-flex justify-content-between align-items-center">
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </br></br></br>
-      <!-- Titres en 3 colonnes -->
-   <div class="container">
-    <div class="row justify-content-center">
-      <div class="row justify-content-center col-lg-4">
-        <h2>Géographie</h2>
-      </div>
-      <div class="row justify-content-center col-lg-4">
-        <h2>Anglais</h2>
-      </div>
-      <div class="row justify-content-center col-lg-4">
-        <h2>Sciences</h2>
-      </div>
-      </div>
-    </div>
-  </br>
-    <!-- images et lien  en colonnes -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="row justify-content-center col-lg-4">
-          <a href=geographie.php><img width="140" height="140" src="assets/img/globe.png" preserveAspectRatio="xMidYMid slice" alt="géo"><rect width="100%" height="100%"/></a>        
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <a href="anglais.php"><img width="140" height="140" src="assets/img/english-language.png" alt="opérations"preserveAspectRatio="xMidYMid slice" alt="anglais"><rect width="100%" height="100%"/></a>
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <img width="140" height="140" src="assets/img/chemistry.png" alt="sciences"preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%"/>
-        </div>
-      </div>
-    </div>
-
-
-
   </body>
 </html>
 

@@ -71,6 +71,7 @@
         </div>
         <div class="row justify-content-center col-lg-3">
           <div class="list-group">
+          <a href="tables_multiplication.php" class="list-group-item list-group-item-action">tables de multiplication</a></a>
           <a href="multiplications_mentales_unité.php" class="list-group-item list-group-item-action">* 2 à  9</a></a>
           <a href="multiplications_mentales_10" class="list-group-item list-group-item-action">* 10</a>
           <a href="multiplications_mentales_100" class="list-group-item list-group-item-action">* 100</a>
