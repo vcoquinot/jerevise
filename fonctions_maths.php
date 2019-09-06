@@ -16,7 +16,7 @@
       <div class="row justify-content-center">
         <a href="calcul_mental.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Rejouer</button></a>
       <div class="col-lg-1"></div>
-        <a href="maths.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Accueil</button></a>
+        <a href="accueil.php"><button type="button" class="btn" style="border-color:#none; background-color: #2D3561; color: white; font-weight: bold; font-size:20px;">Accueil</button></a>
       </div>
     </section>
     <?php
@@ -49,6 +49,12 @@
       $uniteAleatoire = $a.rand(2,9);
       echo $uniteAleatoire;
       return $uniteAleatoire;
+    }
+
+function randCountNumberWithOneFigure($a){
+      $randNumberOneFigure = $a.rand(1,9);
+      echo $randNumberOneFigure;
+      return $randNumberOneFigure;
     }
 
     function randCountNumberWithTwoFigures($a){
