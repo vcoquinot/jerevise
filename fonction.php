@@ -188,8 +188,6 @@ function calculerNombreDeQuestionsPosees(){
 
 <!-- ADDITIONS-->
   <?php function afficherExerciceAdditionPoseeDeuxChiffres(){ 
-    $a=0;
-    $_SESSION['numeroQuestion'] = 0;
     // deux nombres aléatoires à additioner        
     $a=0;
     $b=0;

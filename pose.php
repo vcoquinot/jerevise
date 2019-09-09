@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php include("fonction.php");?>
+<?php include("fonctions_maths.php");?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>

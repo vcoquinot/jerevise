@@ -132,3 +132,18 @@ function randCountNumberWithOneFigure($a){
     }
     ?>
 
+    <?php
+    function calculerScore(){
+      if($resultatAdditionCorrect = addition($nombreAleatoireUn,$nombreAleatoireDeux)){
+        echo "resultatAdditionCorrect = ".$resultatAdditionCorrect;
+
+      }
+        
+       
+        if($_POST["somme"] == $resultatAdditionCorrect){
+          $score++;
+          echo "Bravo !! Tu as ". $score . "point";
+    }
+  }
+    ?>
+

@@ -11,7 +11,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Futur -ER, -IR</title>      
+      <title>Passé composé avec avoir</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -42,10 +42,10 @@
     ?>
     <section>
       <div class="row justify-content-center">
-        <h2>Le futur des verbes en -ER et -IR</h2>
+        <h2>Le passé composé avec l'auxiliaire avoir</h2>
       </div>
       <div class="row justify-content-center">
-        <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
+        <img class="img-fluid" src="assets/img/passe_compose_avoir.png" alt="passé composé">
       </div>
     </section>
 
@@ -57,10 +57,10 @@
       </div>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <form action="cible_futur1.php" method="get">
+          <form action="cible_passe_compose_avoir.php" method="get">
             <?php
             //recherche alléatoire d'une question
-            $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 5 ORDER BY RAND() LIMIT 1");
+            $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 11 ORDER BY RAND() LIMIT 1");
             $donneesFutur = $questionFutur->fetch();
             ?>
             <h2><?php echo $donneesFutur['intitule_question'];?></h2>
