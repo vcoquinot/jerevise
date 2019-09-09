@@ -12,7 +12,7 @@
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
       <title>Futur -ER, -IR</title>      
-      <link href="style1.css"  type="text/css" rel="stylesheet">
+      <link href="style1.css" type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">

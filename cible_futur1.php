@@ -1,5 +1,4 @@
 <?php session_start(); ?>
-
 <?php include ("fonction.php"); ?>
 <?php require_once("connexion_bdd.php")?>
 
@@ -44,8 +43,8 @@
         <img class="img-fluid" src="assets/img/futur_boy.png" alt="conjugaison">
       </div>
     </section>
+
   <?php
-     
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
   $reponseUtilisateur = $_GET["reponseFutur"];
   $idQuestion= $_SESSION['id_question'];
@@ -120,7 +119,7 @@
       ?>
       <section class="container">
         <div class="row justify-content-center">
-          <a href="francais.php"><button type="button" class="btn">Rejouer</button></a>
+          <a href="futur_1.php"><button type="button" class="btn">Rejouer</button></a>
           <a href="accueil.php"><button type="button" class="btn">Accueil</button></a>
         </div>
       </section>
