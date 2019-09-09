@@ -60,7 +60,7 @@
             <img width="140" height="140" src="assets/img/substract.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <a href="soustractions.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> unités</a>
+              <a href="soustractions.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/counting.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> unités</a>
               <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 10</a>
               <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 100</a>
               <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 1000</a>
@@ -73,7 +73,7 @@
           <div class="card lg-3 align-items-center">
             <h2 class="row text-center">MULTIPLICATION</h2>
             <a href=en_construction.html><img width="140" height="140" src="assets/img/multiply.png" preserveAspectRatio="xMidYMid slice" alt="multiplication" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> unités</a>
+              <a href="tables_multiplication.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> tables de 1 à 10</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 10</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 100</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> - 1000</a>

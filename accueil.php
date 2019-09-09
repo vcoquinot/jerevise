@@ -45,9 +45,9 @@
             <img width="140" height="140" src="assets/img/folders.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail">
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/vocab.png" preserveAspectRatio="xMidYMid slice" alt="grammaire"> grammaire</a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a>
+              <a href="conjugaison.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="grammaire"> grammaire</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/vocab.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a>
               <div class="d-flex justify-content-between align-items-center">                
               </div>
             </div>
