@@ -34,61 +34,106 @@
     </br>
     </br>
 
-  <!-- images -4 colonnes -->
-    <div class="container">
-      <div class="row justify-content-center col-lg-12">
-        <div class="row justify-content-center col-lg-4">
-          <h2>présent</h2>     
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <h2>futur</h2>      
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <h2>imparfait</h2>
-        </div> 
-      </div>
-
-      <div class="row justify-content-center col-lg-12">
-        <div class="row justify-content-center col-lg-4">
-          <img width="140" height="140" src="assets/img/present.png" preserveAspectRatio="xMidYMid" alt="present">      
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <img width="140" height="140" src="assets/img/wall-clock.png" preserveAspectRatio="xMidYMid" alt="futur">      
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <img width="140" height="140" src="assets/img/history.png" preserveAspectRatio="xMidYMid" alt="imparfait">
-      </div>
-      <br/>
-
-      <div class="row justify-content-center col-lg-12">
-        <div class="row justify-content-center col-lg-4">
-          <div class="row justify-content-center list-group">
-          <b><a href="en_construction.html" class="list-group-item list-group-item-action">1er groupe</a></a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">-yer</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">-re</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">on mélange tout !</a></b>
-          </div>     
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <div class="row justify-content-center list-group">
-          <b><a href="futur_1.php" class="list-group-item list-group-item-action">verbes en -ER et -IR</a></a>
-          <a href="futur_verbe_re.php" class="list-group-item list-group-item-action">verbes en -RE</a>
-          <a href="futur_verbe_yer.php" class="list-group-item list-group-item-action">verbes en -YER</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
-          <a href="futur_irregulier.php" class="list-group-item list-group-item-action">verbes bizarres</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">un petit mélange de tout !</a></b>
-        </div>     
-        </div>
-        <div class="row justify-content-center col-lg-4">
-          <div class="list-group">
-          <b><a href="multiplications_mentales_unité.php" class="list-group-item list-group-item-action">* 2 à  9</a></a>
-          <a href="multiplications_mentales_10.php" class="list-group-item list-group-item-action">* 10</a>
-          <a href="en_construction.html" class="list-group-item list-group-item-action">* 100</a></b>
-          </div>    
-        </div>
-      </div>
-    </div>
+    <div class="container" style="background-color:white;">
+      <div class="quizz">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card lg-4 align-items-center">
+                <h2 class="row text-center">PRÉSENT</h2>
+                <img width="140" height="140" src="assets/img/present.png" preserveAspectRatio="xMidYMid slice" alt="present" aria-label="Placeholder: Thumbnail">
+                <rect width="100%" height="100%" fill="#55595c"/>
+                  <div class="card-body">
+                  <b><a href="en_construction.html" class="list-group-item list-group-item-action">1er groupe</a></a>
+                  <a href="en_construction.html" class="list-group-item list-group-item-action">-yer</a>
+                  <a href="en_construction.html" class="list-group-item list-group-item-action">-re</a>
+                  <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
+                  <a href="en_construction.html" class="list-group-item list-group-item-action">on mélange tout !</a></b>
+                    <div class="d-flex justify-content-between align-items-center">                
+                    </div>
+                  </div>
+              </div>
+              <br /><br />
+            </div>
+            <div class="col-lg-4">
+              <div class="card lg-4 align-items-center">
+                <h2 class="row text-center">FUTUR</h2>
+                <img width="140" height="140" src="assets/img/wall-clock.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
+                <rect width="100%" height="100%" fill="#55595c"/>
+                <div class="card-body">
+                  <b><a href="futur_1.php" class="list-group-item list-group-item-action">verbes en -ER et -IR</a></a>
+                  <a href="futur_verbe_re.php" class="list-group-item list-group-item-action">verbes en -RE</a>
+                  <a href="futur_verbe_yer.php" class="list-group-item list-group-item-action">verbes en -YER</a>
+                  <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
+                  <a href="futur_irregulier.php" class="list-group-item list-group-item-action">verbes bizarres</a>
+                  <a href="en_construction.html" class="list-group-item list-group-item-action">un petit mélange de tout !</a></b>
+                    <div class="d-flex justify-content-between align-items-center">
+                    </div>
+                </div>
+              </div>
+              <br /><br />
+            </div>
+            <div class="col-lg-4">
+              <div class="card lg-4 align-items-center">
+                <h2 class="row text-center">IMPÉRATIF</h2>
+                <a href=en_construction.html><img width="140" height="140" src="assets/img/alert.png" preserveAspectRatio="xMidYMid slice" alt="impératif" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
+                  <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                  <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> </a>
+                  </div>
+                </div>
+              </div>
+              <br /><br />
+            </div>
+            
+            <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card lg-4 align-items-center">
+                  <h2 class="row text-center">IMPARFAIT</h2>
+                  <img width="140" height="140" src="assets/img/calendar.png" preserveAspectRatio="xMidYMid slice" alt="imparfait" aria-label="Placeholder: Thumbnail">
+                  <rect width="100%" height="100%" fill="#55595c"/>
+                    <div class="card-body">
+                    <b><a href="en_construction.html" class="list-group-item list-group-item-action">1er groupe</a></a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">-yer</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">-re</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">on mélange tout !</a></b>
+                      <div class="d-flex justify-content-between align-items-center">                
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card lg-4 align-items-center">
+                  <h2 class="row text-center">PASSÉ COMPOSÉ</h2>
+                  <img width="140" height="140" src="assets/img/speech-bubble.png" preserveAspectRatio="xMidYMid slice" alt="passé composé" aria-label="Placeholder: Thumbnail"> 
+                  <rect width="100%" height="100%" fill="#55595c"/>
+                  <div class="card-body">
+                    <b><a href="en_construction.html" class="list-group-item list-group-item-action">auxiliaire être</a></a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">auxiliaire avoir</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">être ou avoir ?</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">participe passé</a>
+                    <a href="passe_compose_avoir.p" class="list-group-item list-group-item-action">conjugue avec être</a> 
+                    <a href="passe_compose_avoir.php" class="list-group-item list-group-item-action">conjugue avec avoir</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">on mélange tout !</a></b>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card lg-4 align-items-center">
+                  <h2 class="row text-center">PASSÉ SIMPLE</h2>
+                  <a href=en_construction.html><img width="140" height="140" src="assets/img/history.png" preserveAspectRatio="xMidYMid slice" alt="passé simple" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
+                    <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> </a>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
   </body>
 </html>
 
