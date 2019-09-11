@@ -51,34 +51,47 @@
       return $uniteAleatoire;
     }
 
-function randCountNumberWithOneFigure($a){
-      $randNumberOneFigure = $a.rand(1,9);
-      echo $randNumberOneFigure;
-      return $randNumberOneFigure;
+function randCountNumberWithOneFigure($number){
+      $randNumberOneFigure = $number.mt_rand(1,9);
+      $randNumber=substr($randNumberOneFigure,1);
+      echo $randNumber;
+      return $randNumber;
     }
 
-    function randCountNumberWithTwoFigures($a){
-      $randNumberTwoFigures = $a.rand(10,99);
-      echo $randNumberTwoFigures;
-      return $randNumberTwoFigures;
+    function randCountNumberWithTwoFigures($number){
+      $randNumberTwoFigures = $number.mt_rand(10,99);
+      $randNumber=substr($randNumberTwoFigures,1);
+      echo $randNumber;
+      return $randNumber;
     }
 
-    function randCountNumberwithThreeFigures($a){
+    function randCountNumberwithThreeFigures($number){
       //for($i=1; $i<7; $i++) {
-      $randNumberThreeFigures = $a.rand(100,999);
-      echo $randNumberThreeFigures;
+      $randNumberThreeFigures = $number.mt_rand(100,999);
+      $randNumber=substr($randCountNumberwithThreeFigures,1);
+      echo $randNumber;
       //}
-      return $randNumberThreeFigures;
+      return $randNumber;
     }
   ?>
 
   <?php
-  function randCountNumberOverHundred($a){
+  function randCountNumberOverHundred($number){
       //for($i=1; $i<7; $i++) {
-      $randCountNumberOverHundred = $a.rand(101,999);
-      echo $randCountNumberOverHundred;
+      $randCountNumberOverHundred = $number.mt_rand(101,999);
+      $randNumber=substr($randCountNumberOverHundred,1);
+      echo $randNumber;
       //}
-      return $randCountNumberOverHundred;
+      return $randNumber;
+    }
+  ?>
+
+    <?php
+  function randCountDecimal($number){
+      $randCountDecimal = $number.mt_rand(10,900)/10;
+      $decimal = substr($randCountDecimal, 1);
+      echo $decimal;
+      return $decimal;
     }
   ?>
 
@@ -132,18 +145,15 @@ function randCountNumberWithOneFigure($a){
     }
     ?>
 
-    <?php
-    function calculerScore(){
-      if($resultatAdditionCorrect = addition($nombreAleatoireUn,$nombreAleatoireDeux)){
-        echo "resultatAdditionCorrect = ".$resultatAdditionCorrect;
-
-      }
-        
-       
-        if($_POST["somme"] == $resultatAdditionCorrect){
-          $score++;
-          echo "Bravo !! Tu as ". $score . "point";
+        <?php
+  function conversionKgEnGramme($masse){
+    $masse=0;
+    $resultatGramme = $masse * 1000;
+    echo $resultatGramme;
+    
+    return $resultatGramme;
     }
-  }
-    ?>
+  ?>
+
+
 
