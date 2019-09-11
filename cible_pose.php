@@ -3,21 +3,26 @@
 
 <?php
 //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-$numeroQuestion = $_SESSION['numeroQuestion'];
+  $_GET['numeroQuestion'] = 1;
+
+
+if (!isset($_SESSION['score'])){
+  $_SESSION['score'] = 0;
+}
 
 //*****LIMITATION À 4 QUESTIONS
-if($_SESSION['score']<=4){
+if($_GET['numeroQuestion']<=4){
     //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
 
       //CAS 1 **** RÉPONSE CORRECTE
     $isCorrect=false;
     if($_GET["somme"] == $_GET["sommeCorrecte"]){ 
       $isCorrect === true; 
-      $_SESSION['score']++; ?>
-
-      <!--ESPACE COMMENTAIRE BONNE RÉPONSE-->
-      <section>
-      <?php
+      $_SESSION['score']++;
+    
+?>
+  <section>
+    <?php
       //RECHERCHE COMMENTAIRE ALÉATOIRE BONNE RÉPONSE DANS LA BDD
       $commentaireReussite = $bdd->query("SELECT commentaire_reussite, id_image FROM reussite ORDER BY RAND() LIMIT 1");
       $donneesReussite = $commentaireReussite->fetch();

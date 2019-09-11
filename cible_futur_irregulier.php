@@ -119,7 +119,7 @@
       ?>
       <section class="container">
         <div class="row justify-content-center">
-          <a href="francais.php"><button type="button" class="btn">Rejouer</button></a>
+          <a href="futur_irregulier.php"><button type="button" class="btn">Rejouer</button></a>
           <a href="accueil.php"><button type="button" class="btn">Accueil</button></a>
         </div>
       </section>
