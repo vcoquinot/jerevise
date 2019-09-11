@@ -9,7 +9,7 @@ function afficherFormulaireConjugaison(){
   <div class="row justify-content-center">
     <input type="text" name="reponseFutur" placeholder="verbe au futur" style= "margin-bottom : 30px;">
   </div>
-  <input type="hidden" name="numeroDeQuestionPosee" value="1">
+  <!--<input type="hidden" name="numeroQuestion">-->
   <div class="row justify-content-center">
     <input type="submit" value=" Vérifier ma réponse">
   </div>
