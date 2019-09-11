@@ -64,7 +64,7 @@
                   <b><a href="futur_1.php" class="list-group-item list-group-item-action">verbes en -ER et -IR</a></a>
                   <a href="futur_verbe_re.php" class="list-group-item list-group-item-action">verbes en -RE</a>
                   <a href="futur_verbe_yer.php" class="list-group-item list-group-item-action">verbes en -YER</a>
-                  <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
+                  <a href="futur_aux.php" class="list-group-item list-group-item-action">être et avoir</a>
                   <a href="futur_irregulier.php" class="list-group-item list-group-item-action">verbes bizarres</a>
                   <a href="en_construction.html" class="list-group-item list-group-item-action">un petit mélange de tout !</a></b>
                     <div class="d-flex justify-content-between align-items-center">

@@ -79,7 +79,7 @@
       ?>
       <!--affichage du commentaire-->
       <section class="row justify-content-center">
-      <h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2>
+      <b><h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2></b>
     </section>
       <?php 
 
@@ -92,7 +92,7 @@
         ?>
         <div class="container">
           <div class="row justify-content-center ">
-            <h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></b></h2>
+            <b><h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></h2></b>
           </div>
         <div class="row justify-content-center col-12">
         <?php
@@ -110,7 +110,7 @@
         ?>        
         <div class="container">
           <div class="row justify-content-center ">
-            <h2 class="commentaire" style="color:#569ef6"><b><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></b></h2> 
+            <b><h2 class="commentaire" style="color:#569ef6"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2></b>
           </div>
         </div>
       <?php
@@ -119,7 +119,7 @@
       ?>
       <section class="container">
         <div class="row justify-content-center">
-          <a href="francais.php"><button type="button" class="btn">Rejouer</button></a>
+          <a href="futur_verbe_yer.php"><button type="button" class="btn">Rejouer</button></a>
           <a href="accueil.php"><button type="button" class="btn">Accueil</button></a>
         </div>
       </section>

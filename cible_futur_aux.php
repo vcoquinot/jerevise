@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php include "fonction.php" ?>
+<?php include ("fonction.php"); ?>
 <?php require_once("connexion_bdd.php")?>
 
 <!DOCTYPE html>
@@ -10,16 +10,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Futur verbes -RE</title>      
+      <title>cible futur auxiliaires</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-<!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,12 +35,12 @@
   </head>
 
   <body>
-    <section id="futur_premier_groupe">
+    <section>
       <div class="row justify-content-center">
-        <h2>Le futur des verbes en -RE comme prendre, peindre,...</h2>
+        <h2>Le futur des auxiliaires être et avoir</h2>
       </div>
       <div class="row justify-content-center">
-        <img class="img-fluid" src="assets/img/futur_dre.png" alt="garçon">
+        <img class="img-fluid" src="assets/img/.png" alt="conjugaison">
       </div>
     </section>
 
@@ -79,7 +84,7 @@
       <?php 
 
       //question suivante
-      header( "refresh:2;url=futur_verbe_re.php"); 
+      header( "refresh:2;url=futur_aux.php"); 
 
     }else
     //CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
@@ -87,11 +92,11 @@
         ?>
         <div class="container">
           <div class="row justify-content-center ">
-            <b><h2 style="color:#FF8080"><?php  echo "Oups, mauvaise réponse !"; ?></h2></b>
+            <h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></b></h2>
           </div>
         <div class="row justify-content-center col-12">
         <?php
-        header( "refresh:2;url=futur_verbe_re.php") ?>
+        header( "refresh:2;url=futur_aux.php") ?>
         <?php
       }
       $_SESSION['numeroQuestion']++; 
@@ -105,7 +110,7 @@
         ?>        
         <div class="container">
           <div class="row justify-content-center ">
-            <b><h2 class="commentaire" style="color:#569ef6"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2></b>
+            <h2 class="commentaire" style="color:#569ef6"><b><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></b></h2> 
           </div>
         </div>
       <?php
@@ -114,7 +119,7 @@
       ?>
       <section class="container">
         <div class="row justify-content-center">
-          <a href="futur_verbe_yer.php"><button type="button" class="btn">Rejouer</button></a>
+          <a href="futur_aux.php"><button type="button" class="btn">Rejouer</button></a>
           <a href="accueil.php"><button type="button" class="btn">Accueil</button></a>
         </div>
       </section>

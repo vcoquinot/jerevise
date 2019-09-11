@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>Calcul mental</title>      
+      <title>Conversions</title>      
       <link href="main1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -28,7 +28,7 @@
   <body>
     <section id="accueil">
       <header class="row justify-content-center">
-         <h1>Calcul mental</h1>
+         <h1>Conversions</h1>
       </header>
     </section>
     </br>
@@ -39,13 +39,13 @@
 <!---- haut-->
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
-          <div class="card lg-3 align-items-center">
-            <h2 class="row text-center">ADDITION</h2>
-            <img width="140" height="140" src="assets/img/adding.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail">
+        <div class="col-lg-4">
+          <div class="card lg-4 align-items-center">
+            <h2 class="row text-center">MASSES</h2>
+            <img width="140" height="140" src="assets/img/balance.png" preserveAspectRatio="xMidYMid slice" alt="masses" aria-label="Placeholder: Thumbnail">
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <b><a href="additions_unites.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/counting.png" preserveAspectRatio="xMidYMid slice"alt="additions d'unités"> unités</a>
+              <b><a href="conversion_kg.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/kg.png" preserveAspectRatio="xMidYMid slice"alt="additions d'unités"> kg</a>
               <a href="addition_mental_10.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="+10"> + 10</a>
               <a href="addition_mental_100.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="+100"> +100</a>
               <a href="addition_mental_1000" class="list-group-item list-group-item-action"> +1000</a></b>
@@ -54,10 +54,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="card lg-3 align-items-center">
-            <h2 class="row text-center">SOUSTRACTION</h2>
-            <img width="140" height="140" src="assets/img/substracting.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
+        <div class="col-lg-4">
+          <div class="card lg-4 align-items-center">
+            <h2 class="row text-center">LONGUEURS</h2>
+            <img width="140" height="140" src="assets/img/measuring-tape.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
               <b><a href="soustractions_mentales_unites.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/counting.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> unités</a>
@@ -69,29 +69,16 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="card lg-3 align-items-center">
-            <h2 class="row text-center">MULTIPLICATION</h2>
-            <a href=en_construction.html><img width="140" height="140" src="assets/img/clear.png" preserveAspectRatio="xMidYMid slice" alt="multiplication" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
+        <div class="col-lg-4">
+          <div class="card lg-4 align-items-center">
+            <h2 class="row text-center">DURÉE</h2>
+            <a href=en_construction.html><img width="140" height="140" src="assets/img/clock.png" preserveAspectRatio="xMidYMid slice" alt="multiplication" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
               <b><a href="tables_multiplication.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/dices.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> tables de 1 à 10</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"> entier * 10</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"> entier * 100</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action">entier * 1000</a>
               <div class="d-flex justify-content-between align-items-center">
               <a href="multiplication_decimal_10.php" class="list-group-item list-group-item-action">décimal * 10</a></b>
-              </div>
-            </div>
-          </div>
-        </div>
-                <div class="col-lg-3">
-          <div class="card lg-3 align-items-center">
-            <h2 class="row text-center">DIVISION</h2>
-            <img width="140" height="140" src="assets/img/dividing.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
-            <rect width="100%" height="100%" fill="#55595c"/>
-            <div class="card-body">
-              <b><a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/counting.png" preserveAspectRatio="xMidYMid slice" alt="unités"> unités</a></b>
-             
-              <div class="d-flex justify-content-between align-items-center">
               </div>
             </div>
           </div>
