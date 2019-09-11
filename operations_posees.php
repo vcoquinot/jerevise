@@ -45,8 +45,7 @@
             <img width="140" height="140" src="assets/img/add.png" preserveAspectRatio="xMidYMid slice" alt="additions" aria-label="Placeholder: Thumbnail">
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <a href="addition_posee_deux_chiffres.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/dices.png" preserveAspectRatio="xMidYMid slice"alt="additions à deux chiffres"> à deux chiffres</a>
-              <a href="addiion_posee_trois_chiffres.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="+10"> à trois chiffres</a>
+              <a href="pose.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/dices.png" preserveAspectRatio="xMidYMid slice"alt="additions à deux chiffres"> à deux chiffres</a>
               <a href="addition_decimales.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="+10"> décimales</a>
             </div>
           </div>
