@@ -368,10 +368,11 @@ function poseAddition($firstNumber, $secondNumber){
     <div class = "col-lg-12">
       <div class="row">
         <div class="col-lg-3"></div>
-        <small id="emailHelp" class="form-text text-muted col-lg-3" >Indique ici  les retenues si tu en as -></small>
+        <small id="emailHelp" class="form-text text-muted col-lg-3" >Tes retenues</small>
         <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
         <input class="col-lg-1" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
         <span class="col-lg-1"></span>
+        <br />
       </div>
     </div>
   </div>
@@ -380,7 +381,7 @@ function poseAddition($firstNumber, $secondNumber){
     <div class = "col-lg-12">
       <div class="row">
         <div class="col-lg-3"></div>
-          <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton premier nombre dans les cases -></small>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Place ton premier nombre dans les cases></small>
           <!-- séparation en chiffres par dizaine, unité-->
           <span class="col-lg-1"></span>
           <input class="col-lg-1" style= "font-size:20px; padding:1px">
@@ -427,7 +428,7 @@ function poseAddition($firstNumber, $secondNumber){
       <div class = "col-lg-12">
         <div class="row">
           <div class="col-lg-3"></div>
-          <small id="emailHelp" class="form-text text-muted col-lg-3" >Ton résultat (centaine, dizaine, unité)-></small>
+          <small id="emailHelp" class="form-text text-muted col-lg-3" >Résultat par centaine, dizaine, unité)</small>
           <!-- séparation en chiffres par dizaine, unité-->
           <input class="col-lg-1" style= "font-size:20px; padding:1px">
           <input class="col-lg-1" style= "font-size:20px; padding:1px">
@@ -446,7 +447,7 @@ function poseAddition($firstNumber, $secondNumber){
         <label for="form1" class="col-lg-4" style=" color:#FF502F; font-weight: bold">TOTAL:</label>
         <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($firstNumber, $secondNumber); 
           echo $sommeCorrecte; ?>">
-        <input type="hidden" name="numeroDeQuestionPosee" value="1">
+        <input type="hidden" name="numeroQuestion">
       </div>
     </div>
   </div>
