@@ -39,15 +39,15 @@
 <!---- haut-->
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="card lg-4 align-items-center">
             <h2 class="row text-center">FRANCAIS</h2>
             <img width="140" height="140" src="assets/img/folders.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail">
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <a href="conjugaison.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
+              <b><a href="conjugaison.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="grammaire"> grammaire</a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/vocab.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/vocab.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a></b>
               <div class="d-flex justify-content-between align-items-center">                
               </div>
             </div>
@@ -59,12 +59,11 @@
             <img width="140" height="140" src="assets/img/math.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> calcul mental</a>
+              <b><a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> calcul mental</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/arithmetic.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> opérations posées</a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/recycle.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> conversions</a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/clock.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> heures et durée</a>
+              <a href="conversions.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/recycle.png" preserveAspectRatio="xMidYMid slice" alt="conversions"> conversions</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> fractions</a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/jigsaw.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> problèmes</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/jigsaw.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> problèmes</a></b>
               <div class="d-flex justify-content-between align-items-center">
               </div>
             </div>
@@ -73,10 +72,11 @@
         <div class="col-lg-4">
           <div class="card lg-4 align-items-center">
             <h2 class="row text-center">ANGLAIS</h2>
-            <a href=en_construction.html><img width="140" height="140" src="assets/img/anglais.png" preserveAspectRatio="xMidYMid slice" alt="anglais" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
+              <b><a href=en_construction.html><img width="140" height="140" src="assets/img/anglais.png" preserveAspectRatio="xMidYMid slice" alt="anglais" aria-label="Placeholder: Thumbnail"></a></b>
+                <div class="card-body">
+              <b><a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/pantone.png" preserveAspectRatio="xMidYMid slice"alt="colors"> colors</a></b>
               <div class="d-flex justify-content-between align-items-center">
-              <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a>
+              <b><a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a></b>
               </div>
             </div>
           </div>
