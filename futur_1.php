@@ -77,15 +77,5 @@
         </form>
       </div>
     </section>
-
-    <section id="memo-futur-1">
-      <div class="container" >
-        <div class="row justify-content-center">
-          <div class="col-lg-4 row justify-content-center">
-          <img src="assets/img/futur-lecon-part1.png" alt="le futur"></div>
-        </div>
-      </div>
-    </section>
-
   </body>
 </html>
