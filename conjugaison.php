@@ -28,7 +28,7 @@
   <body>
     <section id="accueil">
       <header class="row justify-content-center">
-         <h1>Conjugaison</h1>
+         <h2>Conjugaison</h2>
       </header>
     </section>
     </br>
@@ -85,8 +85,14 @@
               </div>
               <br /><br />
             </div>
-            
             <div class="container">
+              <div class="row justify-content-center">
+                <a href="#bloc2"><i class="fa fa-chevron-down fa-3x"></i>
+              </div></a>
+            </div>
+            <br/><br/><br/><br/>
+            
+            <div class="container" id="bloc2">
             <div class="row">
               <div class="col-lg-4">
                 <div class="card lg-4 align-items-center">
@@ -94,10 +100,11 @@
                   <img width="140" height="140" src="assets/img/calendar.png" preserveAspectRatio="xMidYMid slice" alt="imparfait" aria-label="Placeholder: Thumbnail">
                   <rect width="100%" height="100%" fill="#55595c"/>
                     <div class="card-body">
-                    <b><a href="en_construction.html" class="list-group-item list-group-item-action">1er groupe</a></a>
-                    <a href="en_construction.html" class="list-group-item list-group-item-action">-yer</a>
-                    <a href="en_construction.html" class="list-group-item list-group-item-action">-re</a>
-                    <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
+                    <b><a href="imparfait_1.php" class="list-group-item list-group-item-action">1er groupe</a></a>
+                    <a href="imparfait_2.php" class="list-group-item list-group-item-action">2e groupe</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">3e groupe</a>
+                    <a href="imparfait_aux.php" class="list-group-item list-group-item-action">être et avoir</a>
+                    <a href="en_construction.html" class="list-group-item list-group-item-action">verbes bizarres</a>
                     <a href="en_construction.html" class="list-group-item list-group-item-action">on mélange tout !</a></b>
                       <div class="d-flex justify-content-between align-items-center">                
                       </div>
