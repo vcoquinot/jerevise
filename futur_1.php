@@ -56,9 +56,7 @@
       <div class="row justify-content-center">
         <h2 style =" color:#007065; margin-bottom:20px;">Entraîne-toi !</h2>
       </div>
-      <div class="row justify-content-center">
-      <a href="#memo-futur-1" class="badge badge-light">Voir la leçon</a>
-    </div>
+
       <div class="container-fluid">
         <div class="row justify-content-center">
           <form action="cible_futur1.php" method="get">
