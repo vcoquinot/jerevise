@@ -37,10 +37,10 @@
   <body>
     <section>
       <div class="row justify-content-center">
-        <h2>Le futur des auxiliaires être et avoir</h2>
+        <h2>futur des auxiliaires</h2>
       </div>
       <div class="row justify-content-center">
-        <img class="img-fluid" src="assets/img/.png" alt="conjugaison">
+        <img class="img-fluid" src="assets/img/imparfait_aux.png" alt="conjugaison">
       </div>
     </section>
 
@@ -84,7 +84,7 @@
       <?php 
 
       //question suivante
-      header( "refresh:2;url=futur_aux.php"); 
+      header( "refresh:2;url=futur_aux"); 
 
     }else
     //CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
@@ -110,7 +110,7 @@
         ?>        
         <div class="container">
           <div class="row justify-content-center ">
-            <h2 class="commentaire" style="color:#569ef6"><b><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></b></h2> 
+            <h2 class="commentaire" style="color:#569ef6"><b><?php  echo "Et si tu t'entraînais encore un peu ?!"; ?></b></h2> 
           </div>
         </div>
       <?php
