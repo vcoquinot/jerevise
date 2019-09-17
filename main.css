@@ -4,8 +4,20 @@
   margin-bottom : 20px;
   border-radius: 25px;
 }
+/**********************************************
+MATHS
+**********************************************/
+/* addition posee*/
+#check{
+  color:white; 
+  font-weight: bold; 
+  background-color: #007065 !important;
+  border: #007065;
+}
 
-
+/**********************************************
+HISTOIRE
+**********************************************/
 #renaissance {
   padding: 1rem;
   text-align: center;
@@ -59,4 +71,52 @@ p {
 
 .container_renaissance{
   overflow:hidden
+}
+
+/*********************/
+/* anglais couleurs*/
+#blue{
+  border : solid 2px blue;
+  background-color: blue; 
+  height: 100px;
+  width:100px;
+  margin: 2px;
+}
+#red{
+  border : solid 2px red;
+  background-color: red; 
+  margin: 2px;
+  height: 100px;
+  width:100px;
+}
+#green{
+  border : solid 2px green;
+  background-color: green; 
+  margin: 2px;
+  height: 100px;
+  width:100px;
+}
+#white{
+  border : solid 2px #fff;
+  background-color: #fff; 
+  margin: 2px;
+  height: 100px;
+  width:100px;
+}
+#dark{
+  border : solid 2px #000;
+  background-color: #000; 
+  margin: 2px;
+  width:100px;
+}
+#yellow{
+  border : solid 2px yellow;
+  background-color: yellow;
+  margin: 2px; 
+  height: 100px;
+  width:100px;
+}
+.colorName{
+  background-color: #fff;
+  margin : 2px;
 }
