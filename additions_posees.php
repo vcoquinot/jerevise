@@ -30,9 +30,8 @@
 
   <body>
     <section id="accueil">
-      <header class="row justify-content-center">
-        <img width="400" preserveAspectRatio="xMidYMid slice" src="assets/img/maths_2_chiffres.png" alt="addition à deux chiffres">
-         <h1 id="titre_operations_posees" class="align-self-center">Opérations posées</h1>
+      <header class="row justify-content-center">        
+         <img width="400" preserveAspectRatio="xMidYMid slice" src="assets/img/maths_2_chiffres.png" alt="addition à deux chiffres">
       </header>
     </section>
     </br>
@@ -49,7 +48,7 @@
       <div class="container">
         <form action="cible_pose.php" method="get">
           <div class="row justify-content-center">
-            <h3 id="intitule" ><b><?php echo "Pose ". $randFirstNumber . " + " . $randSecondNumber ?></b></h3>
+            <h3 id="intitule" class="col-lg-4 row justify-content-center"><b><?php echo "Pose ". $randFirstNumber . " + " . $randSecondNumber ?></b></h3>
           </div>
 
         <!-- retenues-->
