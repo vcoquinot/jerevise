@@ -8,6 +8,10 @@
 MATHS
 **********************************************/
 /* addition posee*/
+#titre_operations_posees{
+  color: #007065;
+}
+
 #check{
   color:white; 
   font-weight: bold; 

@@ -31,26 +31,27 @@
   <body>
     <section id="accueil">
       <header class="row justify-content-center">
-         <h1>Opérations posées</h1>
+        <img width="400" preserveAspectRatio="xMidYMid slice" src="assets/img/maths_2_chiffres.png" alt="addition à deux chiffres">
+         <h1 id="titre_operations_posees" class="align-self-center">Opérations posées</h1>
       </header>
     </section>
     </br>
     </br>
 
     <section id="operation">
-    <?php     // deux nombres aléatoires à additioner        
+    <?php     
+    // deux nombres aléatoires à additioner        
     $a=0;
     $b=0;
     $randFirstNumber = mt_rand(10,999);
     $randSecondNumber = mt_rand(100,999);
     ?>
       <div class="container">
-                  <form action="cible_pose.php" method="get">
-        <div class="row">
-
-            <h3 class="col-12 row justify-content-center"><?php echo "Pose ". $randFirstNumber . "+" . $randSecondNumber ?></h3>
+        <form action="cible_pose.php" method="get">
+          <div class="row justify-content-center">
+            <h3 id="intitule" ><b><?php echo "Pose ". $randFirstNumber . " + " . $randSecondNumber ?></b></h3>
           </div>
-        </div>
+
         <!-- retenues-->
         <div class="row justify-content-center">
           <small id="help" class="form-text text-muted" >Indique ici  les retenues si tu en as</small>
