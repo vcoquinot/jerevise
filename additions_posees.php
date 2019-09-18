@@ -48,7 +48,7 @@
       <div class="container">
         <form action="cible_pose.php" method="get">
           <div class="row justify-content-center">
-            <h3 id="intitule" class="col-lg-4 row justify-content-center"><b><?php echo "Pose ". $randFirstNumber . " + " . $randSecondNumber ?></b></h3>
+            <h3 id="intitule" class="col-lg-4 row justify-content-center"><b><?php echo  $randFirstNumber . " + " . $randSecondNumber ?></b></h3>
           </div>
 
         <!-- retenues-->
@@ -90,23 +90,24 @@
           <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" style= "font-size:20px padding:1px">
         </div>
         <br/>
-        <!-- signe =-->
-          <div class="row justify-content-center">
-            <div class="col-lg-6" style="color:#FF502F; font-size: 30px">=</div>
-          </div>
-            <!--total-->
-            <div class="row justify-content-center">
-              <input class="col-lg-4 col-md-8 col-sm-8 col-xs-8" name="total" type="text" placeholder="total" style= "font-size:20px padding:1px">
-              <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $randSecondNumber); 
-                echo $sommeCorrecte; ?>">
-              <input type="hidden" name="numeroDeQuestionPosee">
-            </div>
-            <br/>
-            <div class="row justify-content-center">
-              <input id="check" class="col-lg-2 col-md-4 col-sm-4 col-xs-4" type="submit" value="Vérifier" style="  ">
-            </div>
-          </form>
 
+        <!--total-->
+        <div class="row justify-content-center">
+           <div class="input-group justify-content-center">
+            <input type="text" class="form-control col-lg-1 justify-content-center" name="total1">
+            <input type="text" class="form-control col-lg-1 justify-content-center" name="total2">
+            <input type="text" class="form-control col-lg-1 justify-content-center" name="total3">
+            <input type="text" class="form-control col-lg-1 justify-content-center" name="total4">
+          </div>
+          <!-- en cache-->
+          <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $randSecondNumber); 
+                echo $sommeCorrecte; ?>">
+          <input type="hidden" name="numeroQuestion">
+        </div>
+        <div class="row justify-content-center">
+          <input id="check" class="col-lg-2 col-md-4 col-sm-4 col-xs-4" type="submit" value="Vérifier" style="  ">
+        </div>
+      </form>
     </section>
-      </body>
+  </body>
 </html>
