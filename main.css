@@ -8,16 +8,23 @@
 MATHS
 **********************************************/
 /* addition posee*/
-#titre{
-  color: #569ef6;
+
+#intituleQuestion{
+  color: #007065;
   font-size: 60px;
 }
-
-#intitule{
-  border: solid 2px #007065;
-  color: #007065;
-  padding: 2px;
+/*marche pas !!!!!!! à voir
+.retenue{
+  font-size:50%;
 }
+
+#operateur{
+  color: #FF502F;
+}
+.input-group-text{
+  color: #FF502F;
+}
+*/
 #check{
   color:white; 
   font-weight: bold; 

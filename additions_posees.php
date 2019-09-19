@@ -29,14 +29,6 @@
   </head>
 
   <body>
-    <section id="accueil">
-      <header class="row justify-content-center">        
-         <img width="400" preserveAspectRatio="xMidYMid slice" src="assets/img/maths_2_chiffres.png" alt="addition à deux chiffres">
-      </header>
-    </section>
-    </br>
-    </br>
-
     <section id="operation">
     <?php     
     // deux nombres aléatoires à additioner        
@@ -47,67 +39,75 @@
     ?>
       <div class="container">
         <form action="cible_pose.php" method="get">
+          <!--partie gauche-->
           <div class="row justify-content-center">
-            <h3 id="intitule" class="col-lg-4 row justify-content-center"><b><?php echo  $randFirstNumber . " + " . $randSecondNumber ?></b></h3>
+            <div class="col-lg-4 justify-content-center"><img width="400" preserveAspectRatio="xMidYMid slice" src="assets/img/maths_2_chiffres.png" alt="addition à deux chiffres"></div>
+            <!--partie droite-->
+            <!--intitulé opération-->
+            <div class="col-lg-8">
+              <div class="row justify-content-center">
+                <span class="justify-content-center"></span>
+                <h3 id="intituleQuestion"><b><?php echo "Calcule ". $randFirstNumber . " + " . $randSecondNumber ?></b></h3>
+              </div>
+              <br/>
+              <!--retenues-->
+              <div class="row justify-content-center">
+                <small id="help" class="form-text text-muted" >Indique ici  les retenues si tu en as</small>
+              </div>              
+              <div class="row justify-content-center"> 
+                <span class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></span> 
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
+              </div>
+              <!--première ligne addition-->
+              <div class="row justify-content-center"> 
+                <small id="help" class="form-text text-muted" >Place ton premier nombre (1 chiffre par case)</small>
+              </div>
+              <div class="row justify-content-center">
+                <span class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></span>
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text"  style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text"  style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text"  style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text" style= "font-size:20px padding:1px">
+              </div>
+              <!--deuxième ligne addition-->
+              <div class="row justify-content-center">
+                <small id="help" class="form-text text-muted" >Place ton second nombre (1 chiffre par case)</small>
+              </div>
+              <div class="row justify-content-center">
+                <div class="input-group-prepend col-lg-1">
+                  <span id="operateur" class="input-group-text">+</span>
+                </div>
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text" style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text" style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text" style= "font-size:20px padding:1px">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" name="chiffre" type="text" style= "font-size:20px padding:1px">
+              </div>
+              <br />
+              <!--Somme totale-->
+              <div class="row justify-content-center">
+                <div class="input-group-prepend col-lg-1">
+                  <span class="input-group-text"> =</span>
+                </div>
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" type="text" class="form-control col-lg-1 justify-content-center" name="total1">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" type="text" class="form-control col-lg-1 justify-content-center" name="total2">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" type="text" class="form-control col-lg-1 justify-content-center" name="total3">
+                <input class="col-lg-2 col-md-2 col-sm-2 col-xs-2" type="text" class="form-control col-lg-1 justify-content-center" name="total4">
+              </div>
+              <br/><br/>
+              <!-- en cache-->
+              <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $randSecondNumber); 
+                    echo $sommeCorrecte; ?>">
+              <input type="hidden" name="numeroQuestion">
+            </div>
+            <!-- bouton validation-->
+            <div class="row justify-content-center">
+              <button type="submit" class="btn btn-primary mb-2 justify-content-center">Vérifier</button>
+            </div>
           </div>
-
-        <!-- retenues-->
-        <div class="row justify-content-center">
-          <small id="help" class="form-text text-muted" >Indique ici  les retenues si tu en as</small>
-        </div>
-        <div class="row justify-content-center">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" placeholder="retenue" style= "font-size:20px padding:1px">
-        </div>
-        <br/>
-        <!-- première ligne de l'addition-->
-        <div class="row justify-content-center">
-          <small id="help" class="form-text text-muted" >Place ton premier nombre (1 chiffre par case)</small>
-        </div>
-        <div class="row justify-content-center">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text"  style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text"  style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text"  style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" style= "font-size:20px padding:1px">
-        </div>
-        <br/>
-        <!-- opérateur-->
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <i class="fa fa-plus-circle col-lg-1" style="color:#FF502F; font-size: 30px"></i>
-          </div>
-        </div>
-        <!-- Second nombre à additionner-->
-        <div class="row justify-content-center">
-          <small id="help" class="form-text text-muted" >Place ton second nombre (1 chiffre par case)</small>
-        </div>
-        <div class="row justify-content-center">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" style= "font-size:20px padding:1px">
-          <input class="col-lg-1 col-md-2 col-sm-2 col-xs-2" name="retenue" type="text" style= "font-size:20px padding:1px">
-        </div>
-        <br/>
-
-        <!--total-->
-        <div class="row justify-content-center">
-           <div class="input-group justify-content-center">
-            <input type="text" class="form-control col-lg-1 justify-content-center" name="total1">
-            <input type="text" class="form-control col-lg-1 justify-content-center" name="total2">
-            <input type="text" class="form-control col-lg-1 justify-content-center" name="total3">
-            <input type="text" class="form-control col-lg-1 justify-content-center" name="total4">
-          </div>
-          <!-- en cache-->
-          <input type="hidden" name="sommeCorrecte" value="<?php $sommeCorrecte= addition($randFirstNumber, $randSecondNumber); 
-                echo $sommeCorrecte; ?>">
-          <input type="hidden" name="numeroQuestion">
-        </div>
-        <div class="row justify-content-center">
-          <input id="check" class="col-lg-2 col-md-4 col-sm-4 col-xs-4" type="submit" value="Vérifier" style="  ">
-        </div>
-      </form>
+        </form>
     </section>
   </body>
 </html>
