@@ -13,7 +13,7 @@ MATHS
   color: #007065;
   font-size: 60px;
 }
-/*marche pas !!!!!!! à voir
+/*marche pas !!!!!!! à voir */
 .retenue{
   font-size:50%;
 }
@@ -24,12 +24,12 @@ MATHS
 .input-group-text{
   color: #FF502F;
 }
-*/
-#check{
-  color:white; 
-  font-weight: bold; 
-  background-color: #007065 !important;
-  border: #007065;
+
+
+/*additions à trou*/
+/*marche pas !!!!!!! à voir*/
+.chiffre{
+  border: 1px solid grey;
 }
 
 /**********************************************
