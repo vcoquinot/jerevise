@@ -93,7 +93,7 @@
             <!--Calcul N° quatre-->
             <div class="col-lg-5">
               <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span> 
-            <i class="fa fa-minus-circle" style="color:#589167"></i> 
+            <i class="fa fa-minus-circle" style="color:#007065"></i> 
             <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
             <span class="col-lg-1"><b>=</b></span>
             <input class="col-lg-3" name="resultatQuatre" type="text" placeholder="total"></input>            
@@ -105,7 +105,7 @@
       
       <div class = "col-lg-12">
         <div class="row justify-content-center">
-          <input type="submit" value=" Mon score " style="border-color:#CF455C; background-color: #CF455C; color: white; font-weight: bold; font-size:20px;" >
+          <input type="submit" value=" Mon score " style="border-color:none; background-color: #007065; color: white; font-weight: bold; font-size:20px;" >
           <input class="col-lg-2" name="score" type="hidden" value="0">
         </div>
       </div>
