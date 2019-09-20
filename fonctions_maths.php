@@ -75,11 +75,9 @@ function randCountNumberWithOneFigure($number){
 
   <?php
   function randCountNumberOverHundred($number){
-      //for($i=1; $i<7; $i++) {
       $randCountNumberOverHundred = $number.mt_rand(101,999);
       $randNumber=substr($randCountNumberOverHundred,1);
       echo $randNumber;
-      //}
       return $randNumber;
     }
   ?>
