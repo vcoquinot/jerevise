@@ -42,12 +42,12 @@
         <div class="col-lg-3">
           <div class="card lg-3 align-items-center">
             <h2 class="row text-center">ADDITION</h2>
-            <img width="140" height="140" src="assets/img/adding.png" preserveAspectRatio="xMidYMid slice" alt="francais" aria-label="Placeholder: Thumbnail">
+            <i class="fa fa-plus fa-3x fa-fw"></i>
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <b><a href="additions_unites.php" class="list-group-item list-group-item-action"> unités<img width="40" height="40" src="assets/img/counting.png" preserveAspectRatio="xMidYMid slice"alt="additions d'unités"></a>
-              <a href="addition_mental_10.php" class="list-group-item list-group-item-action"> + <img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="+10"></a>
-              <a href="addition_mental_100.php" class="list-group-item list-group-item-action"> + <img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="+100"></a>
+              <b><a href="addition_mental_unites.php" class="list-group-item list-group-item-action"> unités</a>
+              <a href="addition_mental_10.php" class="list-group-item list-group-item-action"> + 10</a>
+              <a href="addition_mental_100.php" class="list-group-item list-group-item-action"> + 100</a>
               <a href="addition_mental_1000" class="list-group-item list-group-item-action"> +1000</a></b>
               <div class="d-flex justify-content-between align-items-center">                
               </div>
@@ -57,12 +57,12 @@
         <div class="col-lg-3">
           <div class="card lg-3 align-items-center">
             <h2 class="row text-center">SOUSTRACTION</h2>
-            <img width="140" height="140" src="assets/img/substracting.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
+            <i class="fa fa-minus fa-3x fa-fw"></i>
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <b><a href="soustractions_mentales_unites.php" class="list-group-item list-group-item-action"> unités<img width="40" height="40" src="assets/img/counting.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"></a>
-              <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"> - <img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"></a>
-              <a href="soustractions_mentales_100" class="list-group-item list-group-item-action"> - <img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"></a>
+              <b><a href="soustractions_mentales_unites.php" class="list-group-item list-group-item-action"> unités</a>
+              <a href="soustractions_mentales_10" class="list-group-item list-group-item-action"> - 10 </a>
+              <a href="soustractions_mentales_100" class="list-group-item list-group-item-action"> - 100</a>
               <a href="soustractions_mentales_1000" class="list-group-item list-group-item-action"> - 1000</a></b>
               <div class="d-flex justify-content-between align-items-center">
               </div>
@@ -72,25 +72,26 @@
         <div class="col-lg-3">
           <div class="card lg-3 align-items-center">
             <h2 class="row text-center">MULTIPLICATION</h2>
-            <a href=en_construction.html><img width="140" height="140" src="assets/img/clear.png" preserveAspectRatio="xMidYMid slice" alt="multiplication" aria-label="Placeholder: Thumbnail"></a><div class="card-body">
-              <b><a href="tables_multiplication.php" class="list-group-item list-group-item-action">tables de 1 à 10<img width="40" height="40" src="assets/img/dices.png" preserveAspectRatio="xMidYMid slice" alt="soustractions"> </a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"> entier * <img width="40" height="40" src="assets/img/ten.png" preserveAspectRatio="xMidYMid slice" alt="-10"></a>
-              <a href="en_construction.html" class="list-group-item list-group-item-action"> entier * <img width="40" height="40" src="assets/img/one-hundred.png" preserveAspectRatio="xMidYMid slice" alt="-10"></a>
+            <a href=en_construction.html>
+              <i class="fa fa-times fa-3x"></i></a>
+              <div class="card-body">
+              <b><a href="tables_multiplication.php" class="list-group-item list-group-item-action">tables de 1 à 10</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"> entier * 10</a>
+              <a href="en_construction.html" class="list-group-item list-group-item-action"> entier * 100</a>
               <a href="en_construction.html" class="list-group-item list-group-item-action">entier * 1000</a>
               <div class="d-flex justify-content-between align-items-center">
-              <a href="multiplication_decimal_10.php" class="list-group-item list-group-item-action">décimal * 10</a></b>
+              <a href="multiplication_decimal_10.php" class="list-group-item list-group-item-action"> décimaux</a></b>
               </div>
             </div>
           </div>
         </div>
-                <div class="col-lg-3">
+        <div class="col-lg-3">
           <div class="card lg-3 align-items-center">
             <h2 class="row text-center">DIVISION</h2>
-            <img width="140" height="140" src="assets/img/dividing.png" preserveAspectRatio="xMidYMid slice" alt="maths" aria-label="Placeholder: Thumbnail"> 
+            <i class="fa fa-percent fa-3x"></i></a> 
             <rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
-              <b><a href="en_construction.html" class="list-group-item list-group-item-action"> unités<img width="40" height="40" src="assets/img/counting.png" preserveAspectRatio="xMidYMid slice" alt="unités"></a></b>
-             
+              <b><a href="en_construction.html" class="list-group-item list-group-item-action"> unités</a></b>
               <div class="d-flex justify-content-between align-items-center">
               </div>
             </div>
