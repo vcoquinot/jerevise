@@ -67,7 +67,7 @@
               <div class="collapse" id="collapse_math">
                 <div class="card-body">
                 <b><a href="calcul_mental.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/think.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> calcul mental</a>
-                <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/arithmetic.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> opérations posées</a>
+                <a href="operation_posee.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/arithmetic.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> opérations posées</a>
                 <a href="conversions.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/recycle.png" preserveAspectRatio="xMidYMid slice" alt="conversions"> conversions</a>
                 <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/fraction.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> fractions</a>
                 <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/jigsaw.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> problèmes</a></b>
