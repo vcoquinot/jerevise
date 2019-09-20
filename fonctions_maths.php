@@ -95,6 +95,89 @@ function randCountNumberWithOneFigure($number){
     }
   ?>
 
+
+<!-----------------------------------------------------------------
+<------------------------------------------------------------------>
+<!-- CALCUL MENTAL-->
+<!-----------------------------------------------------------------
+<------------------------------------------------------------------>
+
+<?php
+function afficherCalculMental($firstNumber, $secondNumber){
+  ?>
+  <form action="cible_calcul_mental.php" method="get">
+        <div class="container">
+          <div class = "col-lg-12">
+            <div class="row">            
+              <div class="col-lg-2"></div>
+              <div class="col-lg-5">
+
+                <!-- premier chiffre aléatoire-->
+                <span class="col-lg-1">
+                <b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+                <i class="fa fa-plus-circle" style="color:#FF502F"></i> 
+                <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
+                <span class="col-lg-1"><b>=</b></span>
+                <!-- transmission des données-->
+                <input class="col-lg-3" name="resultatUn" type="text" placeholder="total"></input>
+                <input class="col-lg-2" name="resultatCorrectUn" type="hidden"
+                 value="<?php echo $resultatCorrectUn= addition($randFirstNumber, $secondNumber); 
+                ?>">
+              </div>
+              <!--Calcul N° deux-->
+              <div class="col-lg-5">
+                <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span>
+              <i class="fa fa-plus-circle" style="color:#FF502F"></i>
+              <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
+              <span class="col-lg-1"><b>=</b></span>
+              <input class="col-lg-3" name="resultatDeux" type="text" placeholder="total"></input>
+              
+              <input class="col-lg-2" type="hidden"
+              name="resultatCorrectDeux" value="<?php echo $resultatCorrectDeux= addition($randFirstNumber, $secondNumber); 
+              ?>">
+              </div>
+            </div>
+            <!--Calcul N° trois-->
+            <div class="row">            
+              <div class="col-lg-2"></div>
+              <div class="col-lg-5">
+                <!-- premier chiffre aléatoire-->
+                <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+                <i class="fa fa-plus-circle" style="color:#FF502F"></i> 
+                <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
+                <span class="col-lg-1"><b>=</b></span>
+                <!-- transmission des données-->
+                <input class="col-lg-3" name="resultatTrois" type="text" placeholder="total"></input>
+                <input class="col-lg-2" name="resultatCorrectTrois" type="hidden"
+                 value="<?php echo $resultatCorrectDeux= addition($randFirstNumber, $secondNumber); 
+                ?>">
+              </div>
+              <!--Calcul N° quatre-->
+              <div class="col-lg-5">
+                <span class="col-lg-1"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span> 
+              <i class="fa fa-plus-circle" style="color:#FF502F"></i> 
+              <span class="col-lg-1"><b><?php echo $secondNumber;?></b></span>
+              <span class="col-lg-1"><b>=</b></span>
+              <input class="col-lg-3" name="resultatQuatre" type="text" placeholder="total"></input>
+              
+              <input class="col-lg-2" type="hidden"
+              name="resultatCorrectQuatre" value="<?php echo $resultatCorrectQuatre= addition($randFirstNumber, $secondNumber); 
+              ?>">
+              </div>
+            </div>
+
+        
+        <div class = "col-lg-12">
+          <div class="row justify-content-center">
+            <input type="submit" value=" Mon score " style="border-color:#FF502F; background-color: #FF502F; color: white; font-weight: bold; font-size:20px;" >
+            <input class="col-lg-2" name="score" type="hidden" value="0">
+          </div>
+        </div>
+      </form>
+      <?php
+    }
+    ?>
+
     <!-----------------------------------------------------------------
     <------------------------------------------------------------------>
     <!-- OPERATIONS POSEES-->
