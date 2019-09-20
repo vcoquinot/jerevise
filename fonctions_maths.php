@@ -67,7 +67,7 @@ function randCountNumberWithOneFigure($number){
 
     function randCountNumberwithThreeFigures($number){
       $randNumberThreeFigures = $number.mt_rand(100,999);
-      $randNumber=substr($randCountNumberThreeFigures,1);
+      $randNumber=substr($randNumberThreeFigures,1);
       echo $randNumber;
       return $randNumber;
     }
@@ -191,7 +191,7 @@ function afficherSoustractionMentale($firstNumber, $secondNumber){
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 justify-content-center">
             <!-- premier chiffre aléatoire-->
             <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2 justify-content-center">
-            <b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+            <b><?php $randFirstNumber = randCountNumberWithThreeFigures($firstNumber);?></b></span>
             <i class="fa fa-minus-circle" style="color:#007065"></i> 
             <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php echo $secondNumber;?></b></span>
             <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b>=</b></span>
@@ -204,7 +204,7 @@ function afficherSoustractionMentale($firstNumber, $secondNumber){
             
             <!--Calcul N° deux-->
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 justify-content-center">
-              <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span>
+              <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php $randFirstNumber = randCountNumberWithThreeFigures($firstNumber) ;?></b></span>
               <i class="fa fa-minus-circle" style="color:#007065"></i>
               <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php echo $secondNumber;?></b></span>
               <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b>=</b></span>
@@ -221,7 +221,7 @@ function afficherSoustractionMentale($firstNumber, $secondNumber){
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <!-- premier chiffre aléatoire-->
-                <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber);?></b></span>
+                <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php $randFirstNumber = randCountNumberWithThreeFigures($firstNumber);?></b></span>
                 <i class="fa fa-minus-circle" style="color:#007065"></i> 
                 <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php echo $secondNumber;?></b></span>
                 <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b>=</b></span>
@@ -234,7 +234,7 @@ function afficherSoustractionMentale($firstNumber, $secondNumber){
 
               <!--Calcul N° quatre-->
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php $randFirstNumber = randCountNumberWithTwoFigures($firstNumber) ;?></b></span> 
+                <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php $randFirstNumber = randCountNumberWithThreeFigures($firstNumber) ;?></b></span> 
                 <i class="fa fa-minus-circle" style="color:#007065"></i> 
                 <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b><?php echo $secondNumber;?></b></span>
                 <span class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><b>=</b></span>
