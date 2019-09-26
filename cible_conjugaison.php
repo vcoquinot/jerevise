@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>cible futur -YER</title>      
+      <title>cible conjugaison</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -50,7 +50,6 @@
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
   $url = $_GET["url"];
-  echo "url = ". $url;
   
   //*****LIMITATION À 6 QUESTIONS
   if($numeroQuestion<=5){
@@ -84,7 +83,6 @@
       <b><h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2></b>
     </section>
       <?php 
-      $url = "";
       //question suivante
       header( "refresh:2;url='$url'"); 
 
