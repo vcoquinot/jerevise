@@ -67,7 +67,6 @@
     /*$pattern = '/' . preg_quote($reponseUtilisateur) . '/';*/
     $reponse->closeCursor();
 
-?><section id="remplace"><?php
     //CAS 1 **** RÉPONSE CORRECTE
     if($reponseUtilisateur == $reponseCorrecte)
     { 
@@ -81,9 +80,8 @@
       ?>
       <!--affichage du commentaire-->
       <section class="row justify-content-center">
-        <?php header("location:$url");?>
-      <b><h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2></b>
-    </section>
+        <b><h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2></b>
+      </section>
       <?php 
       //question suivante
       header( "refresh:2;url='$url'"); 
@@ -95,7 +93,7 @@
         <div class="container">
           <div class="row justify-content-center ">
             <b><h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></h2></b>
-            <h3><?php echo $question?></h3>
+            <h3><?php echo $question ?></h3>
             <h4>la réponse est : <?php echo $reponseCorrecte ?></h4>       
           </div>
         <div class="row justify-content-center col-12">
