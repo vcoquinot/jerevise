@@ -67,7 +67,7 @@
     /*$pattern = '/' . preg_quote($reponseUtilisateur) . '/';*/
     $reponse->closeCursor();
 
-
+?><section id="remplace"><?php
     //CAS 1 **** RÉPONSE CORRECTE
     if($reponseUtilisateur == $reponseCorrecte)
     { 
@@ -81,6 +81,7 @@
       ?>
       <!--affichage du commentaire-->
       <section class="row justify-content-center">
+        <?php header("location:$url");?>
       <b><h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2></b>
     </section>
       <?php 
@@ -125,8 +126,9 @@
           <a href="<?php echo $url ?>"><button type="button" class="btn">Rejouer</button></a>
           <a href="accueil.php"><button type="button" class="btn">Accueil</button></a>
         </div>
-      </section>
+    </div>
     <?php
     }      
     ?>
+
   </body>

@@ -34,8 +34,8 @@
     //COMPTEUR SCORE      
     initialisationScore();
     ?>
-
-    <section id="futur_verbe_yer">
+   <!--if(!isset($_GET)) {-->
+    <section id="intro">
       <div class="row justify-content-center">
         <h2> Le futur des verbes en -YER (essuyer)</h2>
       </div>
