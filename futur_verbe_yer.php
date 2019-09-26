@@ -61,6 +61,7 @@
             <h2><?php echo $donnees['intitule_question'];?></h2>
             <?php
             $_SESSION['id_question'] = $donnees['id_question'];
+            $_SESSION['intitule_question'] = $donnees['intitule_question'];
             ?>
 
           <?php $question->closeCursor();?>

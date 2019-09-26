@@ -48,11 +48,12 @@
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
   $reponseUtilisateur = $_GET["reponse"];
   $idQuestion= $_SESSION['id_question'];
+  $question = $_SESSION['intitule_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
   $url = $_GET["url"];
-  
+  $nombreQuestionAposer=6;
   //*****LIMITATION À 6 QUESTIONS
-  if($numeroQuestion<=5){
+  if($numeroQuestion<=$nombreQuestionAposer){
       //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
     //recherche de la réponse associée à la question dans la BDD
     $reponse = $bdd->query("SELECT intitule_reponse 
@@ -93,10 +94,12 @@
         <div class="container">
           <div class="row justify-content-center ">
             <b><h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></h2></b>
+            <h3><?php echo $question?></h3>
+            <h4>la réponse est : <?php echo $reponseCorrecte ?></h4>       
           </div>
         <div class="row justify-content-center col-12">
         <?php
-        header( "refresh:2;url='$url'") ?>
+        header( "refresh:5;url='$url'") ?>
         <?php
       }
       $_SESSION['numeroQuestion']++; 
@@ -105,8 +108,8 @@
 
     //AU DESSUS DE 6 QUESTIONS
     }else{
-      afficherScore();
-      if($_SESSION['score'] <= ($_SESSION['numeroQuestion']-1)){
+      afficherScore($nombreQuestionAposer);
+      if($_SESSION['score'] = ($nombreQuestionAposer)){
         ?>        
         <div class="container">
           <div class="row justify-content-center ">
