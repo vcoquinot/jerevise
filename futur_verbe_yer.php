@@ -52,7 +52,7 @@
       </div>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <form action="cible_futur_yer.php" method="get">
+          <form action="cible_conjugaison.php" method="get">
             <?php
             //recherche alléatoire d'une question
             $question = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 6 ORDER BY RAND() LIMIT 1");
@@ -66,6 +66,9 @@
           <?php $question->closeCursor();?>
           <!--Formulaire réponse-->
           <?php afficherFormulaireConjugaison(); ?>
+          <input type="hidden" name="url" value="futur_verbe_yer.php">
+
+
         </form>
       </div>
     </section>
