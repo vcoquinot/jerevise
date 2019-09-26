@@ -11,7 +11,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM1">
 
-      <title>cible futur verbes bizarres</title>      
+      <title>futur des verbes bizarres</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <script type="text/javascript" src="assets/js/javascript.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -53,19 +53,21 @@
       </div>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <form action="cible_futur_irregulier.php" method="get">
+          <form action="cible_conjugaison.php" method="get">
             <?php
             //recherche alléatoire d'une question
-            $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 8 ORDER BY RAND() LIMIT 1");
-            $donneesFutur = $questionFutur->fetch();
+            $question = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 8 ORDER BY RAND() LIMIT 1");
+            $donnees = $question->fetch();
             ?>
-            <h2><?php echo $donneesFutur['intitule_question'];?></h2>
+            <h2><?php echo $donnees['intitule_question'];?></h2>
             <?php
-            $_SESSION['id_question'] = $donneesFutur['id_question'];
-            $questionFutur->closeCursor();?>
+            $_SESSION['id_question'] = $donnees['id_question'];
+            $_SESSION['intitule_question'] = $donnees['intitule_question'];
+            $question->closeCursor();?>
     
           <!--Formulaire réponse-->
          <?php afficherFormulaireConjugaison(); ?>
+         <input type="hidden" name="url" value="futur_irregulier.php">
         </form>
       </div>
     </section>
