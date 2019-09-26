@@ -55,15 +55,15 @@
           <form action="cible_futur_yer.php" method="get">
             <?php
             //recherche alléatoire d'une question
-            $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 6 ORDER BY RAND() LIMIT 1");
-            $donneesFutur = $questionFutur->fetch();
+            $question = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 6 ORDER BY RAND() LIMIT 1");
+            $donnees = $question->fetch();
             ?>
-            <h2><?php echo $donneesFutur['intitule_question'];?></h2>
+            <h2><?php echo $donnees['intitule_question'];?></h2>
             <?php
-            $_SESSION['id_question'] = $donneesFutur['id_question'];
+            $_SESSION['id_question'] = $donnees['id_question'];
             ?>
 
-          <?php $questionFutur->closeCursor();?>
+          <?php $question->closeCursor();?>
           <!--Formulaire réponse-->
           <?php afficherFormulaireConjugaison(); ?>
         </form>

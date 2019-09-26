@@ -7,7 +7,7 @@ ________________________________________________________
 function afficherFormulaireConjugaison(){
   ?>
   <div class="row justify-content-center">
-    <input type="text" name="reponseFutur" placeholder="verbe au futur" style= "margin-bottom : 30px;">
+    <input type="text" name="reponse" placeholder="verbe au futur" style= "margin-bottom : 30px;">
   </div>
   <!--<input type="hidden" name="numeroQuestion">-->
   <div class="row justify-content-center">

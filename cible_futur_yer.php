@@ -46,7 +46,7 @@
 
   <?php
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $reponseUtilisateur = $_GET["reponseFutur"];
+  $reponseUtilisateur = $_GET["reponse"];
   $idQuestion= $_SESSION['id_question'];
   $numeroQuestion = $_SESSION['numeroQuestion'];
   
@@ -54,16 +54,16 @@
   if($numeroQuestion<=5){
       //***** TRAITEMENT DE LA RÉPONSE DE L'UTILISATEUR *****
     //recherche de la réponse associée à la question dans la BDD
-    $reponseFutur = $bdd->query("SELECT intitule_reponse 
+    $reponse = $bdd->query("SELECT intitule_reponse 
       FROM question,reponse
       WHERE question.id_question = $idQuestion AND reponse.id_reponse = $idQuestion");
-    $donneesReponseFutur = $reponseFutur->fetch();
+    $donneesReponse = $reponse->fetch();
 
     //Comparaison réponse de l'utilisateur et réponse correcte
     $isCorrect=false;
-    $reponseCorrecte = $donneesReponseFutur['intitule_reponse'];   
+    $reponseCorrecte = $donneesReponse['intitule_reponse'];   
     /*$pattern = '/' . preg_quote($reponseUtilisateur) . '/';*/
-    $reponseFutur->closeCursor();
+    $reponse->closeCursor();
 
 
     //CAS 1 **** RÉPONSE CORRECTE
