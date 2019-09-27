@@ -54,19 +54,21 @@
       </div>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <form action="cible_futur_re.php" method="get">
+          <form action="cible_conjugaison.php" method="get">
             <?php
             //recherche alléatoire d'une question
-            $questionFutur = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 7 ORDER BY RAND() LIMIT 1");
-            $donneesFutur = $questionFutur->fetch();
+            $question = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 7 ORDER BY RAND() LIMIT 1");
+            $donnees = $question->fetch();
             ?>
-            <h2><?php echo $donneesFutur['intitule_question'];?></h2>
+            <h2><?php echo $donnees['intitule_question'];?></h2>
             <?php
-            $_SESSION['id_question'] = $donneesFutur['id_question'];
-            $questionFutur->closeCursor();?>
+            $_SESSION['id_question'] = $donnees['id_question'];            
+            $_SESSION['intitule_question'] = $donnees['intitule_question'];
+            $question->closeCursor();?>
     
           <!--Formulaire réponse-->
          <?php afficherFormulaireConjugaison(); ?>
+          <input type="hidden" name="url" value="futur_verbe_re.php">
         </form>
       </div>
     </section>
