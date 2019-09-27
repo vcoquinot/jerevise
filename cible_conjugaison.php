@@ -91,12 +91,13 @@
       {
         ?>
         <div class="container">
-          <div class="row justify-content-center ">
-            <b><h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></h2></b>
-            <h3><?php echo $question ?></h3>
-            <h4>la réponse est : <?php echo $reponseCorrecte ?></h4>       
+          <div class="row justify-content-center">
+            <b><h2 class="row justify-content-center" style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></h2></b>
+            <br/>
+            <h3 class="row justify-content-center"><?php echo $question ?></h3>
+            <h4 class="row justify-content-center"><b><?php echo $reponseCorrecte ?></b></h4>       
           </div>
-        <section class="container">
+          <br/><br/>
           <div class="row justify-content-center">
             <a href="<?php echo $url ?>"><button type="button" class="btn">Question suivante</button></a>
           </div>

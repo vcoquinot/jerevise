@@ -122,7 +122,7 @@
               <div class="collapse" id="collapse_histoire">
               <div class="card-body">
                 <b><a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/dagger.png" preserveAspectRatio="xMidYMid slice" alt="renaissance"> Moyen-âge</a>
-                <a href="renaissance.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/caravel.png" preserveAspectRatio="xMidYMid slice" alt="calcul mental"> Renaissance</a>               
+                <a href="renaissance.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/caravel.png" preserveAspectRatio="xMidYMid slice" alt="renaissance"> Renaissance</a>               
                 </b>
                 <div class="d-flex justify-content-between align-items-center">
                 </div>
