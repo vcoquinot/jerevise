@@ -96,10 +96,12 @@
             <h3><?php echo $question ?></h3>
             <h4>la réponse est : <?php echo $reponseCorrecte ?></h4>       
           </div>
-        <div class="row justify-content-center col-12">
-        <?php
-        header( "refresh:5;url='$url'") ?>
-        <?php
+        <section class="container">
+          <div class="row justify-content-center">
+            <a href="<?php echo $url ?>"><button type="button" class="btn">Question suivante</button></a>
+          </div>
+      </section>
+      <?php
       }
       $_SESSION['numeroQuestion']++; 
       ?>
@@ -115,16 +117,17 @@
             <b><h2 class="commentaire" style="color:#569ef6"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2></b>
           </div>
         </div>
+        <?php reinitialiserCompteurs(); ?>
       <?php
       }
-      reinitialiserCompteurs();
       ?>
       <section class="container">
         <div class="row justify-content-center">
           <a href="<?php echo $url ?>"><button type="button" class="btn">Rejouer</button></a>
           <a href="accueil.php"><button type="button" class="btn">Accueil</button></a>
         </div>
-    </div>
+      </section>
+
     <?php
     }      
     ?>
