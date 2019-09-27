@@ -48,11 +48,11 @@
               <br/>
                 <div class="collapse" id="collapse-present">
                   <div class="card-body">
-                  <b><a href="en_construction.html" class="list-group-item list-group-item-action">1er groupe</a></a>
-                  <a href="en_construction.html" class="list-group-item list-group-item-action">-yer</a>
-                  <a href="en_construction.html" class="list-group-item list-group-item-action">-re</a>
-                  <a href="en_construction.html" class="list-group-item list-group-item-action">être et avoir</a>
-                  <a href="en_construction.html" class="list-group-item list-group-item-action">on mélange tout !</a></b>
+                  <b><a href="present_1.php" class="list-group-item list-group-item-action">Les sympas : 1er groupe</a></a>
+                  <a href="present_piege.php" class="list-group-item list-group-item-action">Les petits piègeurs</a>
+                  <a href="present_irregulier.php" class="list-group-item list-group-item-action">Les bizarres !</a>
+                  <a href="present_auxiliaire.php" class="list-group-item list-group-item-action">Les auxiliaires</a>
+                  <a href="present.php" class="list-group-item list-group-item-action">Le petit mélange !</a></b>
                     <div class="d-flex justify-content-between align-items-center">                
                     </div>
                   </div>
@@ -67,12 +67,12 @@
               <br/>
                 <div class="collapse" id="collapse_futur">
                   <div class="card-body">
-                    <b><a href="futur_1.php" class="list-group-item list-group-item-action">verbes en -ER et -IR</a></a>
-                    <a href="futur_verbe_re.php" class="list-group-item list-group-item-action">verbes en -RE</a>
-                    <a href="futur_verbe_yer.php" class="list-group-item list-group-item-action">verbes en -YER</a>
-                    <a href="futur_aux.php" class="list-group-item list-group-item-action">être et avoir</a>
-                    <a href="futur_irregulier.php" class="list-group-item list-group-item-action">verbes bizarres</a>
-                    <a href="futur.php" class="list-group-item list-group-item-action">un petit mélange de tout !</a></b>
+                    <b><a href="futur_1.php" class="list-group-item list-group-item-action">Les gentils : -ER et -IR</a></a>
+                    <a href="futur_verbe_re.php" class="list-group-item list-group-item-action">Les coquins : -RE</a>
+                    <a href="futur_verbe_yer.php" class="list-group-item list-group-item-action">Les pas beaux :-YER</a>
+                    <a href="futur_aux.php" class="list-group-item list-group-item-action">Les auxiliaires</a>
+                    <a href="futur_irregulier.php" class="list-group-item list-group-item-action">Eux sont étranges !</a>
+                    <a href="futur.php" class="list-group-item list-group-item-action">Le petit mélange !</a></b>
                     <div class="d-flex justify-content-between align-items-center">
                     </div>
                   </div>
