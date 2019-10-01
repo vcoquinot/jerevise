@@ -35,31 +35,56 @@
         </div>
       </section>
       <br/>
+      <!-- QUIZZ-->
+      <form action="cible_grammaire.php" method="get">
+        <?php
+        for($i=1; $i<=4; $i++){
+          //recherche alléatoire des questions
+          $question = $bdd->query("SELECT question.intitule_question, reponse.intitule_reponse FROM question, reponse WHERE question.id_theme= 27
+            AND reponse.id_reponse = question.id_question
+            ORDER BY RAND()
+            LIMIT 4");
+          $donnees = $question->fetch();
 
+        
+          $_SESSION['intitule_question'] = $donnees['intitule_question'];
+          $_SESSION['intitule_reponse'] = $donnees['intitule_reponse'];
 
-      <?php
-          //recherche alléatoire d'une question
-      for($i =0; $i<4; $i++){
-            $question = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 27 ORDER BY RAND() LIMIT 1");
-            $donnees = $question->fetch();
-
-            $_SESSION['id_question'] = $donnees['id_question'];            
-            $_SESSION['intitule_question'] = $donnees['intitule_question'];
-
-            $reponse="";
-            $intitule = $_SESSION['intitule_question'];
-      //Affichage exercice
-      afficherExerciceGrammaireFrancais($intitule, $reponse);
-          }
-            $question->closeCursor();?>
-
-      <?php
-       
-
-      $reponse="";
-      //Affichage exercice
-      afficherExerciceGrammaireFrancais($intitule, $reponse);
-      ?>
+          $intituleQuestion = $_SESSION['intitule_question'];
+          $reponseCorrecte = $_SESSION['intitule_reponse'];
+          $question->closeCursor();
+          ?>
+          <div class="container">
+            <div class="col-12">       
+              <div class="row justify-content-center"> 
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left">
+                  <b><?php echo $intituleQuestion ;?></b></span>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-left">
+                <span class="justify-content-left">Des</span>
+              </div>
+                <!-- transmission des données-->
+                <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur" type="text"></input>
+                <input name="numeroQuestion" value=<?php echo $i ?>>
+              </div>      
+            </div>
+          </div>
+        <?php
+        }
+        ?>
+        
+      <br/>
+      <!--bouton validation-->
+      <section>
+        <div class="row justify-content-center">
+          <input type="submit" value=" Vérifier mes réponses">
+          <input type="hidden" name ="score" value=" 0">
+        </div>
+      </section>
+    </form>
     </body>
   </html>
 

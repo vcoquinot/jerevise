@@ -42,28 +42,30 @@ function afficherReponseCorrecte(){
 <------------------------------------------------------------------>
 
 <?php
-function afficherExerciceGrammaireFrancais($intitule, $reponse){
+function afficherExerciceGrammaireFrancais($intituleQuestion){
   ?>
-  <form action="cible_francais.php" method="get">
     <div class="container">
-      <div class="col-12">
-        <div class="row justify-content-center"> 
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 justify-content-left">
+      <div class="col-12">  
+      <?php
+      for($i=1; $i<=4; $i++){ ?>     
+          <div class="row justify-content-center"> 
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left">
+              <b><?php echo $intituleQuestion ;?></b></span>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+              <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-left">
+              <span class="justify-content-left">Des</span>
+            </div>
+              <!-- transmission des données-->
+              <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur" type="text" placeholder="pluriel"></input>
+              <input name="numeroQuestion" value=$i>
 
-            <!-- premier mot-->
-            <span class="col-lg-4 col-md-2 col-sm-2 col-xs-2 justify-content-left">
-            <b><?php echo $intitule ;?></b></span>
-            <span class="col-lg-4 col-md-2 col-sm-2 col-xs-2 justify-content-left">
-            <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
-            <!-- transmission des données-->
-            <input class="col-lg-4 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="resultatUn" type="text" placeholder="Des..."></input>
-            
-            </div>      
-          </div>
+          </div>      
         </div>
-  </form>
-  <?php
-}
-?>
-
-
+      </div>
+      <?php
+    }
+    }
+    ?>
