@@ -104,13 +104,13 @@ function initialisationScore(){
     }
   }
 
-
-function afficherScore(){
+$nombreQuestionAPoser =0;
+function afficherScore($nombreQuestionAPoser){
   ?>
   <!-- TO DO : numero question en dur !!-->
   <section class="container-scoreFinal">
     <header class="row justify-content-center">
-      <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $_SESSION['numeroQuestion']-- ;?></h3>
+      <h3><?php echo "Tu as obtenu un total de ". $_SESSION['score']. " points sur ". $nombreQuestionAPoser ;?></h3>
     </header>
   </section>
   <?php
@@ -132,6 +132,44 @@ function calculerNombreDeQuestionsPosees(){
     }
 }
 ?>
+
+<?php
+function traiterReponseUtilisateur($question,$reponseUtilisateur, $reponseCorrecte){
+  //Comparaison réponse de l'utilisateur et réponse correcte
+    $isCorrect=false;
+  //CAS 1 **** RÉPONSE CORRECTE
+  if($reponseUtilisateur == $reponseCorrecte){ 
+    $isCorrect === true; 
+    // + 1 point
+    $_SESSION['score']++;
+    //recherche d'un commentaire en BDD
+    $commentaireReussite = $bdd->query("SELECT commentaire_reussite FROM reussite ORDER BY RAND() LIMIT 1");
+    $donneesReussite = $commentaireReussite->fetch();
+    $felicitation = $donneesReussite['commentaire_reussite'];
+    ?>
+    <!--affichage du commentaire-->
+    <section class="row justify-content-center">
+      <b><h2 class="commentaire" style="color:#FF8080"><?php echo $felicitation; ?></h2></b>
+    </section>
+  <?php
+  }else{
+      //CAS 2 **** ESPACE COMMENTAIRE RÉPONSE INCORRECTE
+    ?>
+      <div class="container">
+        <div class="row justify-content-center ">
+          <b><h2 style="color:#FF8080"><b><?php  echo "Oups, mauvaise réponse !"; ?></h2></b>
+          <h3><?php echo $question ?></h3>
+          <h4>la réponse est : <?php echo $reponseCorrecte ?></h4>       
+         </div>
+      <div class="row justify-content-center col-12">
+    <?php
+    }
+  }
+
+?>
+
+
+
 
 
     <!-----------------------------------------------------------------
@@ -183,8 +221,6 @@ function calculerNombreDeQuestionsPosees(){
     <?php
     }
     ?>
-
-<!-- FONCTIONS AFFICHAGE DES OPÉRATIONS-->
 
 
 

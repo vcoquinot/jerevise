@@ -35,3 +35,35 @@ function afficherReponseCorrecte(){
 }
 ?>
 
+<!-----------------------------------------------------------------
+<------------------------------------------------------------------>
+<!-- GrammaireFrancais-->
+<!-----------------------------------------------------------------
+<------------------------------------------------------------------>
+
+<?php
+function afficherExerciceGrammaireFrancais($intitule, $reponse){
+  ?>
+  <form action="cible_francais.php" method="get">
+    <div class="container">
+      <div class="col-12">
+        <div class="row justify-content-center"> 
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 justify-content-left">
+
+            <!-- premier mot-->
+            <span class="col-lg-4 col-md-2 col-sm-2 col-xs-2 justify-content-left">
+            <b><?php echo $intitule ;?></b></span>
+            <span class="col-lg-4 col-md-2 col-sm-2 col-xs-2 justify-content-left">
+            <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
+            <!-- transmission des données-->
+            <input class="col-lg-4 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="resultatUn" type="text" placeholder="Des..."></input>
+            
+            </div>      
+          </div>
+        </div>
+  </form>
+  <?php
+}
+?>
+
+

@@ -1,4 +1,3 @@
-<?php include("addition_posee_deux_chiffres.php");?>
 <?php require_once("connexion_bdd.php")?>
 
 <?php

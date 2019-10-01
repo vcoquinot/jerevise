@@ -51,7 +51,7 @@
                   <div class="collapse" id="collapse">
                     <div class="card-body">
                     <b><a href="conjugaison.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/conjug.png" preserveAspectRatio="xMidYMid slice"alt="conjugaison"> conjugaison</a>
-                    <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="grammaire"> grammaire</a>
+                    <a href="grammaire.php" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/grammaire.png" preserveAspectRatio="xMidYMid slice" alt="grammaire"> grammaire</a>
                     <a href="en_construction.html" class="list-group-item list-group-item-action"><img width="40" height="40" src="assets/img/vocab.png" preserveAspectRatio="xMidYMid slice" alt="vocabulaire"> vocabulaire</a></b>
                     <div class="d-flex justify-content-between align-items-center">  
                   </div>              
@@ -117,7 +117,7 @@
           <div class="col-lg-4">
             <div class="card lg-4 align-items-center">
               <h2 class="row text-center">HISTOIRE</h2>
-              <a data-toggle="collapse" href="#collapse_histoire" role="button" aria-expanded="false" aria-controls="collapse"><img width="140" height="140" src="assets/img/caravel.png" preserveAspectRatio="xMidYMid slice" alt="histoire" aria-label="Placeholder: Thumbnail"></a>
+              <a data-toggle="collapse" href="#collapse_histoire" role="button" aria-expanded="false" aria-controls="collapse"><img width="140" height="140" src="assets/img/scroll.png" preserveAspectRatio="xMidYMid slice" alt="histoire" aria-label="Placeholder: Thumbnail"></a>
               <br/>
               <div class="collapse" id="collapse_histoire">
               <div class="card-body">
@@ -146,6 +146,7 @@
           </div>
         </div>
       </div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
   </body>
 </html>
 

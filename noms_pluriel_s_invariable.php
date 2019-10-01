@@ -1,6 +1,7 @@
 <?php session_start(); ?>
+<?php require_once("connexion_bdd.php"); ?>
 <?php include("fonction.php");?>
-<?php include("fonctions_maths.php");?>
+<?php include("fonctions_francais.php");?>
 <!DOCTYPE html>
   <html lang="fr">
     <head>
@@ -9,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM">
 
-      <title>-100</title>      
+      <title>pluriel noms en -s ou invariable</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -28,20 +29,37 @@
     </head>
 
     <body>
-
       <section>
         <div class="row justify-content-center">
-          <img class="img-fluid" src="assets/img/maths_-100.png" alt="soustraction par 10">
+          <img class="img-fluid" src="assets/img/pluriel_nom_s_invariable.png" alt="pluriel des noms">
         </div>
       </section>
       <br/>
 
+
       <?php
-      //initialisation des variables
-      $firstNumber=0;
-      $secondNumber=100;
-      //Affichage opération
-      afficherSoustractionMentale($firstNumber, $secondNumber);
+          //recherche alléatoire d'une question
+      for($i =0; $i<4; $i++){
+            $question = $bdd->query("SELECT intitule_question, id_question FROM question WHERE id_matiere = 2 && id_theme = 27 ORDER BY RAND() LIMIT 1");
+            $donnees = $question->fetch();
+
+            $_SESSION['id_question'] = $donnees['id_question'];            
+            $_SESSION['intitule_question'] = $donnees['intitule_question'];
+
+            $reponse="";
+            $intitule = $_SESSION['intitule_question'];
+      //Affichage exercice
+      afficherExerciceGrammaireFrancais($intitule, $reponse);
+          }
+            $question->closeCursor();?>
+
+      <?php
+       
+
+      $reponse="";
+      //Affichage exercice
+      afficherExerciceGrammaireFrancais($intitule, $reponse);
       ?>
     </body>
   </html>
+
