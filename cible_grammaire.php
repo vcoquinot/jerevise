@@ -47,14 +47,17 @@
   <?php
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
   $score=0;
-  $reponseUtilisateur = $_GET["reponseUtilisateur"];
+  
+  echo "reponse 1".$_GET['reponseUtilisateur1'];
+  echo "reponse 2".$_GET['reponseUtilisateur2'];
+  echo "reponse 3".$_GET['reponseUtilisateur3'];
+  echo "reponse 4".$_GET['reponseUtilisateur4'];
+  
   $reponseCorrecte=$_SESSION['intitule_reponse'];
-  $nombreDeQuestions = 4;
-  $numeroQuestion =$_GET["numeroQuestion"];
+
   echo "N° question ".$numeroQuestion. "<br/>";
   //$nombreDeQuestions = count($question[])-1;
   $url = "grammaire.php";
-echo "ta reponse :".$reponseUtilisateur. "</br>reponse correcte :". $reponseCorrecte. "<br/>";
   /*for($numeroQuestion=0; $numeroQuestion<=$nombreDeQuestions; $numeroQuestion++){*/
     if($reponseUtilisateur==$reponseCorrecte){
       $score++; 

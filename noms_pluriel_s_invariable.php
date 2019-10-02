@@ -67,8 +67,7 @@
                 <span class="justify-content-left">Des</span>
               </div>
                 <!-- transmission des données-->
-                <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur" type="text"></input>
-                <input name="numeroQuestion" value=<?php echo $i ?>>
+                <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur<?php echo $i; ?>" type="text"></input>
               </div>      
             </div>
           </div>
