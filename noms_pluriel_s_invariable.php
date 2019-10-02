@@ -47,8 +47,8 @@
           $donnees = $question->fetch();
 
         
-          $_SESSION['intitule_question'] = $donnees['intitule_question'];
-          $_SESSION['intitule_reponse'] = $donnees['intitule_reponse'];
+          $_SESSION['intitule_question'.$i] = $donnees['intitule_question'];
+          $_SESSION['intitule_reponse'.$i] = $donnees['intitule_reponse'];
 
           $intituleQuestion = $_SESSION['intitule_question'];
           $reponseCorrecte = $_SESSION['intitule_reponse'];
@@ -58,7 +58,7 @@
             <div class="col-12">       
               <div class="row justify-content-center"> 
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left">
-                  <b><?php echo $intituleQuestion ;?></b></span>
+                  <b><?php echo $_SESSION['intitule_question'.$i] ;?></b></span>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
@@ -68,6 +68,7 @@
               </div>
                 <!-- transmission des données-->
                 <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur<?php echo $i; ?>" type="text"></input>
+                <?php echo $reponseCorrecte.$i ;?>
               </div>      
             </div>
           </div>

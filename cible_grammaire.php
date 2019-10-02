@@ -46,24 +46,30 @@
 
   <?php
   //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $score=0;
-  
-  echo "reponse 1".$_GET['reponseUtilisateur1'];
-  echo "reponse 2".$_GET['reponseUtilisateur2'];
-  echo "reponse 3".$_GET['reponseUtilisateur3'];
-  echo "reponse 4".$_GET['reponseUtilisateur4'];
-  
-  $reponseCorrecte=$_SESSION['intitule_reponse'];
-
-  echo "N° question ".$numeroQuestion. "<br/>";
-  //$nombreDeQuestions = count($question[])-1;
+  $nombreDeQuestions = 4;
+  $score=$_GET['score'];
   $url = "grammaire.php";
-  /*for($numeroQuestion=0; $numeroQuestion<=$nombreDeQuestions; $numeroQuestion++){*/
-    if($reponseUtilisateur==$reponseCorrecte){
-      $score++; 
-      echo "ton score ".$score;
-    }else{
-      echo "ton score ". $score;
+  for($i=1; $i<$nombreDeQuestions+1; $i++){
+    if($_GET['reponseUtilisateur'.$i]==$_SESSION['intitule_reponse'.$i]){
+        $score++;       
+    }
+
+  }
+  ?>    <section class="container" id="score">
+        <div class="row justify-content-center">
+          <div class="col-lg-2">
+          <img class="img-fluid" src="assets/img/target.png" alt ="cible">
+          </div>
+        </div>
+        <header class="row justify-content-center">
+          <h3><?php echo "Tu as obtenu ". $score. " points sur ". $nombreDeQuestions-1;?></h3>
+        </header>
+      </section>
+      <?php
+  if($score<$nombreDeQuestions-1){
+    ?>
+    <h2 class="commentaire" style="color:#FF8080"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2>
+    <?php
     }
 
     reinitialiserCompteurs(); ?>
