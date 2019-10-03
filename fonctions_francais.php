@@ -42,30 +42,25 @@ function afficherReponseCorrecte(){
 <------------------------------------------------------------------>
 
 <?php
-function afficherExerciceGrammaireFrancais($intituleQuestion){
+function afficherExerciceGrammaireFrancais($i){
   ?>
-    <div class="container">
-      <div class="col-12">  
+              <div class="container">
+            <div class="col-12">       
+              <div class="row justify-content-center"> 
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left">
+                  <b><?php echo $_SESSION['intitule_question'.$i] ;?></b></span>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-left">
+                <span class="justify-content-left">Des</span>
+              </div>
+                <!-- transmission des données-->
+                <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur<?php echo $i; ?>" type="text"></input>
+              </div>      
+            </div>
+          </div>
       <?php
-      for($i=1; $i<=4; $i++){ ?>     
-          <div class="row justify-content-center"> 
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left">
-              <b><?php echo $intituleQuestion ;?></b></span>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-              <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-left">
-              <span class="justify-content-left">Des</span>
-            </div>
-              <!-- transmission des données-->
-              <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur" type="text" placeholder="pluriel"></input>
-              <input name="numeroQuestion" value=$i>
-
-          </div>      
-        </div>
-      </div>
-      <?php
-    }
     }
     ?>
