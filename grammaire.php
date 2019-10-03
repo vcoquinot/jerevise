@@ -49,8 +49,10 @@
                 <div class="collapse" id="collapse_pluriel_noms">
                   <div class="card-body">
                   <b><a href="noms_pluriel_s_invariable.php" class="list-group-item list-group-item-action" style= "border-color: #FF502F"><img width="40" height="40" src="assets/img/pencil.png" preserveAspectRatio="xMidYMid slice" alt="s ou invariable"> s ou invariable ?</a>
-                    <a href="en_construction.html" class="list-group-item list-group-item-action" style= "border-color: #FF502F"><img width="40" height="40" src="assets/img/thinking.png" preserveAspectRatio="xMidYMid slice" alt="noms en -al"> noms en -al</a>
-                    <a href="en_construction.html" class="list-group-item list-group-item-action" style= "border-color: #FF502F"><img width="40" height="40" src="assets/img/owl.png" preserveAspectRatio="xMidYMid slice" alt="noms en -ou"> noms en -ou</a></b>
+                    <a href="noms_pluriel_al.php" class="list-group-item list-group-item-action" style= "border-color: #FF502F"><img width="40" height="40" src="assets/img/horse.png" preserveAspectRatio="xMidYMid slice" alt="noms en -al"> noms en -al</a>
+                    <a href="noms_pluriel_ou.php" class="list-group-item list-group-item-action" style= "border-color: #FF502F"><img width="40" height="40" src="assets/img/owl.png" preserveAspectRatio="xMidYMid slice" alt="noms en -ou"> noms en -ou</a>
+                    <a href="noms_pluriel_ail.php" class="list-group-item list-group-item-action" style= "border-color: #FF502F"><img width="40" height="40" src="assets/img/garlic.png" preserveAspectRatio="xMidYMid slice" alt="noms en -ail"> noms en -ail</a>
+                    <a href="pluriel.php" class="list-group-item list-group-item-action" style= "border-color: #FF502F"><img width="40" height="40" src="assets/img/thinking.png" preserveAspectRatio="xMidYMid slice" alt="noms en -ou"> on mélange tout !</a></b>
                     <div class="d-flex justify-content-between align-items-center">                
                     </div>
                   </div>

@@ -54,7 +54,7 @@
       
     <?php
     //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-    $nombreDeQuestions = 4;
+    $nombreDeQuestions=$_SESSION['nombreDeQuestions'];
     $score=0;
     $url = "grammaire.php";
 

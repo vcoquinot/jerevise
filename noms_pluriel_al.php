@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Site de révisions pour les élèves de CM">
 
-      <title>pluriel noms en -s ou invariable</title>      
+      <title>pluriel noms en -al</title>      
       <link href="style1.css"  type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -31,7 +31,7 @@
     <body>
       <section>
         <div class="row justify-content-center">
-          <img class="img-fluid" src="assets/img/pluriel_nom_s_invariable.png" alt="pluriel des noms">
+          <img class="img-fluid" src="assets/img/noms_pluriel_al.png" alt="pluriel des noms en -al">
         </div>
       </section>
       <br/>
@@ -42,18 +42,14 @@
         $_SESSION['nombreDeQuestions']= $nombreDeQuestions;
         for($i=1; $i<=$nombreDeQuestions; $i++){
           //recherche alléatoire des questions
-          $question = $bdd->query("SELECT question.intitule_question, reponse.intitule_reponse FROM question, reponse WHERE question.id_theme= 27
+          $question = $bdd->query("SELECT question.intitule_question, reponse.intitule_reponse FROM question, reponse WHERE question.id_theme= 26
             AND reponse.id_reponse = question.id_question
             ORDER BY RAND()
             LIMIT 4");
           $donnees = $question->fetch();
-
         
           $_SESSION['intitule_question'.$i] = $donnees['intitule_question'];
           $_SESSION['intitule_reponse'.$i] = $donnees['intitule_reponse'];
-
-          //$intituleQuestion = $_SESSION['intitule_question'];
-          $reponseCorrecte = $_SESSION['intitule_reponse'];
           $question->closeCursor();
           ?>
           <div class="container">
