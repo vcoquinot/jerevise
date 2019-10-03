@@ -51,31 +51,13 @@
           $_SESSION['intitule_question'.$i] = $donnees['intitule_question'];
           $_SESSION['intitule_reponse'.$i] = $donnees['intitule_reponse'];
           $question->closeCursor();
-          ?>
-          <div class="container">
-            <div class="col-12">       
-              <div class="row justify-content-center"> 
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left">
-                  <b><?php echo $_SESSION['intitule_question'.$i] ;?></b></span>
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <i class="fa fa-arrow-circle-right justify-content-left" style="color:#FF502F"></i></span>
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 justify-content-left">
-                <span class="justify-content-left">Des</span>
-              </div>
-                <!-- transmission des données-->
-                <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur<?php echo $i; ?>" type="text"></input>
-
-              </div>      
-            </div>
-          </div>
+          
+          afficherExerciceGrammaireFrancais($i);
+          ?>          
           <br/>
         <?php
         }
         ?>
-        
-      <br/>
       <!--bouton validation-->
       <section>
         <div class="row justify-content-center">
