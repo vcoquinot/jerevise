@@ -43,32 +43,37 @@
         <img class="img-fluid" src="assets/img/futur_girl_yer.png" alt="conjugaison verbes _YER">
       </div>
     </section>-->
-
-  <?php
-  //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
-  $nombreDeQuestions = 4;
-  $score=$_GET['score'];
-  $url = "grammaire.php";
-  for($i=1; $i<$nombreDeQuestions+1; $i++){
-    if($_GET['reponseUtilisateur'.$i]==$_SESSION['intitule_reponse'.$i]){
-        $score++;       
-    }
-
-  }
-  ?>    <section class="container" id="score">
-        <div class="row justify-content-center">
-          <div class="col-lg-2">
+    <br/>
+    <section class="container" id="score">
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
           <img class="img-fluid" src="assets/img/target.png" alt ="cible">
-          </div>
         </div>
+      </div>
+    </section>
+      
+    <?php
+    //***** RÉCUPÉRATION DES DONNÉES SESSION ET FORMULAIRE *****
+    $nombreDeQuestions = 4;
+    $score=0;
+    $url = "grammaire.php";
+
+    //TRAITEMENT DES RÉPONSES
+    //comparaison de chaque réponse utilisateur avec la réponse correcte
+    for($i=1; $i<$nombreDeQuestions+1; $i++){
+      if($_GET['reponseUtilisateur'.$i]==$_SESSION['intitule_reponse'.$i]){
+         $score++;       
+      }
+    }
+  ?>    
         <header class="row justify-content-center">
-          <h3><?php echo "Tu as obtenu ". $score. " points sur ". $nombreDeQuestions-1;?></h3>
+          <h3><?php echo "Tu as obtenu ". $score. " points sur ". $nombreDeQuestions;?></h3>
         </header>
       </section>
       <?php
   if($score<$nombreDeQuestions-1){
     ?>
-    <h2 class="commentaire" style="color:#FF8080"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2>
+    <h2 class="commentaire row justify-content-center" style="color:#FF8080"><?php  echo "Entraîne-toi encore un peu pour obtenir un max de points !"; ?></h2>
     <?php
     }
 

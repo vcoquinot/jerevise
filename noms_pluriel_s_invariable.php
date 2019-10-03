@@ -50,7 +50,7 @@
           $_SESSION['intitule_question'.$i] = $donnees['intitule_question'];
           $_SESSION['intitule_reponse'.$i] = $donnees['intitule_reponse'];
 
-          $intituleQuestion = $_SESSION['intitule_question'];
+          //$intituleQuestion = $_SESSION['intitule_question'];
           $reponseCorrecte = $_SESSION['intitule_reponse'];
           $question->closeCursor();
           ?>
@@ -68,10 +68,11 @@
               </div>
                 <!-- transmission des données-->
                 <input class="col-lg-3 col-md-3 col-sm-3 col-xs-3 justify-content-left" name="reponseUtilisateur<?php echo $i; ?>" type="text"></input>
-                <?php echo $reponseCorrecte.$i ;?>
+
               </div>      
             </div>
           </div>
+          <br/>
         <?php
         }
         ?>
@@ -81,7 +82,7 @@
       <section>
         <div class="row justify-content-center">
           <input type="submit" value=" Vérifier mes réponses">
-          <input type="hidden" name ="score" value=" 0">
+          
         </div>
       </section>
     </form>
